@@ -9,6 +9,7 @@ Usage:
 
 import argparse
 import json
+import os
 import re
 import shutil
 import sys
@@ -495,6 +496,7 @@ class Applier:
         modified_files = 0
         total_links = 0
         backup_manifest = []
+        errors: list[str] = []
 
         for fpath, sugs in filtered.items():
             try:
@@ -532,21 +534,20 @@ class Applier:
                     })
                 else:
                     # Atomic write
-                    backup = fpath.read_bytes()
-                    tmp = tempfile.mkstemp(
+                    fd, tmp_path = tempfile.mkstemp(
                         dir=fpath.parent,
                         prefix=f".{fpath.stem}.",
                         suffix=".tmp"
                     )
-                    os_handle, tmp_path = tmp
                     try:
-                        with open(os_handle, "w", encoding="utf-8") as f:
+                        with os.fdopen(fd, "w", encoding="utf-8") as f:
                             f.writelines(lines)
-                    except Exception:
+                        os.replace(tmp_path, fpath)
+                    except Exception as e:
                         Path(tmp_path).unlink(missing_ok=True)
-                        raise
+                        errors.append(f"{fpath.relative_to(self.graph_path)}: {e}")
+                        continue
 
-                    Path(tmp_path).replace(fpath)
                     modified_files += 1
                     backup_manifest.append({
                         "file": str(fpath.relative_to(self.graph_path)),
@@ -556,13 +557,18 @@ class Applier:
                     })
 
             except Exception as e:
-                print(f"  [red]Error writing {fpath.name}: {e}")
+                errors.append(f"{fpath.relative_to(self.graph_path)}: {e}")
 
-        return {
+        result = {
             "modified_files": modified_files,
             "total_links": total_links,
             "manifest": backup_manifest,
         }
+
+        if errors:
+            raise RuntimeError("Apply failed for:\n- " + "\n- ".join(errors))
+
+        return result
 
 
 # â”€â”€ TUI (Rich) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -604,7 +610,7 @@ class TUI:
     def _header(self):
         self.console.clear()
         self.console.print(Panel.fit(
-            "[bold cyan]Logseq Housekeeper[/] â€” Lean wiki-link suggestion engine\n"
+            "[bold cyan]Logseq Housekeeper by Juan |[/] Lean wiki-link suggestion engine\n"
             "[dim]v1 | dry-run by default | targeted linking[/]",
             border_style="cyan"
         ))
@@ -802,7 +808,12 @@ class TUI:
             self.console.print("[yellow]Write cancelled. Suggestions preserved.[/]")
             return
 
-        result = self.applier.apply(pending, dry_run=False)
+        try:
+            result = self.applier.apply(pending, dry_run=False)
+        except Exception as e:
+            self.console.print(f"[red]Apply failed:[/] {e}")
+            return
+
         self.console.print(Panel(
             f"[green]Applied [bold]{result['total_links']}[/] links "
             f"across [bold]{result['modified_files']}[/] files.[/]\n"
@@ -848,7 +859,12 @@ class TUI:
             s.accepted = True
 
         # Apply
-        result = self.applier.apply(high_conf, dry_run=False)
+        try:
+            result = self.applier.apply(high_conf, dry_run=False)
+        except Exception as e:
+            self.console.print(f"[red]Auto-apply failed:[/] {e}")
+            return
+
         self.console.print(Panel(
             f"[green]Auto-applied [bold]{result['total_links']}[/] high-confidence links "
             f"across [bold]{result['modified_files']}[/] files.[/]\n"
@@ -996,7 +1012,11 @@ class PlainTUI:
         ok = input("Proceed? (y/N): ").strip().lower()
         if ok != "y":
             return
-        result = self.applier.apply(pending, dry_run=False)
+        try:
+            result = self.applier.apply(pending, dry_run=False)
+        except Exception as e:
+            print(f"Apply failed: {e}")
+            return
         print(f"Applied {result['total_links']} links in {result['modified_files']} files.")
 
     def _do_auto_apply(self):
@@ -1013,7 +1033,11 @@ class PlainTUI:
             return
         for s in high:
             s.accepted = True
-        result = self.applier.apply(high, dry_run=False)
+        try:
+            result = self.applier.apply(high, dry_run=False)
+        except Exception as e:
+            print(f"Apply failed: {e}")
+            return
         print(f"Applied {result['total_links']} links.")
 
     def _show_rejected(self):
