@@ -53,8 +53,10 @@ Typical session: **1 (scan)** → **4 (auto-apply high)** → **2 (review remain
 
 Reads every `.md` file in `pages/`, `journals/`, and `wiki/` to build two things:
 
-- **Page index** — all page titles from filenames (URL-decoded), plus `title::`, `alias::`, and `aliases::` properties. Contaminated words (`A`, `OR`, `time`, `people`, etc.) are flagged and excluded from auto-linking.
-- **Suggestion list** — every plain-text mention of an existing page title found outside protected zones.
+- **Page index** — all page titles from filenames (URL-decoded), plus `type::`, `alias::`, `aliases::`, and `title::` properties. `title::` values are registered as aliases (Logseq's display-title semantics), so mentions of a page's display title link to it. Contaminated words (`A`, `OR`, `time`, `people`, etc.) are flagged and excluded from auto-linking.
+- **Suggestion list** — every plain-text mention of an existing page title or unique alias found outside protected zones. Alias mentions resolve to their target page and are wrapped as `[[alias]]` (Logseq resolves them via the target's alias declaration).
+
+Files that can't be read (bad encoding, etc.) are skipped with a warning at the end of the scan instead of aborting it.
 
 ### 2. Review
 
@@ -86,6 +88,7 @@ Writes `housekeeping/link-suggestions.json` in the graph root with every suggest
 
 ```bash
 $ python logseq_housekeeper.py --graph-path ~/Logseq/my-graph
+Using graph: /home/you/Logseq/my-graph
 
 === Logseq Housekeeper ===
 
@@ -98,14 +101,14 @@ $ python logseq_housekeeper.py --graph-path ~/Logseq/my-graph
 [q] Quit
 
 > 1
-  Indexing pages...     1950 pages indexed
-  Scanning files...      883 unlinked mentions found
-                          236 high | 276 med | 371 low
+  Building page index...   1950 pages indexed
+  Scanning files...        883 unlinked mentions found
+                           236 high · 276 med · 371 low confidence
 
 > 4
   236 high-confidence suggestions across 31 files.
   Auto-apply these 236 high-confidence links? [y/N]: y
-  Applied 236 links across 31 files.
+  Auto-applied 236 high-confidence links across 31 files.
 
 > 2
   pages/Some Article.md
@@ -137,7 +140,7 @@ $ python logseq_housekeeper.py --graph-path ~/Logseq/my-graph
 |------|---------|-------------|
 | `--graph-path` | `""` (required) | Path to Logseq graph root (dir containing `pages/`) |
 | `--config` | `housekeeper.config.json` | Path to JSON config file |
-| `--plain` | `false` | Force plain terminal UI (no rich formatting). Use when the Windows console can't render Unicode characters. |
+| `--plain` | `false` | Force plain terminal UI (no rich formatting) — ASCII-only fallback for unusual terminals or scripted runs. |
 
 The `--graph-path` value can also be set in the config file so you don't need to pass it every time.
 
@@ -166,24 +169,29 @@ The `--graph-path` value can also be set in the config file so you don't need to
 **HIGH** — applied when you run auto-apply.
 
 - Multi-word page title match (2+ words)
-- Single-word wiki page (person, company, book, concept)
-- Page has `type:: person|company|book` in frontmatter
+- Any match on a `wiki/` page
+- Target page has `type:: person|company|book` (also matches `[[person]]`-style values)
 
 **MEDIUM** — reviewed manually.
 
-- Single-word proper noun (starts with uppercase)
-- Alias that resolves to exactly one page
+- Single-word page mentioned with an uppercase initial (proper noun), e.g. `Moat`
 
 **LOW** — never auto-applied, shown in review.
 
-- Single-word generic match
-- Ambiguous alias (resolves to multiple pages)
-- Same lowercase form as a contaminated word
+- Single-word page mentioned in lowercase, e.g. `moat`
+
+Confidence is based on the **resolved target page**, not the match type. An alias mention like `Apple` or `WB` resolves to its target (`Apple Inc`, `Warren Buffett`) and inherits that page's confidence. Alias matches are wrapped as `[[Apple]]` / `[[WB]]` — Logseq resolves them through the alias declaration on the target page.
+
+Never suggested at all (skipped before scoring):
+
+- Ambiguous aliases that resolve to more than one page
+- Contaminated / short blocklisted words (see Safety Guarantees)
+- Mentions inside protected zones, and a page mentioning itself (self-links)
 
 ## Safety Guarantees
 
 - **Dry-run by default.** The app never modifies files without explicit confirmation.
-- **Never links inside protected zones.** Existing `[[wikilinks]]`, `((block-refs))`, code fences, `#+BEGIN_QUERY` blocks, HTML comments, URLs, markdown links, and `#tags` are all skipped.
+- **Never links inside protected zones.** Existing `[[wikilinks]]`, `((block-refs))`, code fences, all `#+BEGIN_*` / `#+END_*` blocks (e.g. `#+BEGIN_QUERY`, `#+BEGIN_SRC`), HTML comments, URLs, markdown links, property lines, and `#tags` are skipped.
 - **Contaminated-word blocklist.** Short/garbage words (`A`, `OR`, `what`, `time`, `people`, etc.) from the old linkifier are permanently blocked from auto-linking.
 - **First-mention only.** A page title is linked at most once per file, preventing over-linking.
 - **Per-file cap.** At most 20 new links per file (configurable).
@@ -193,7 +201,7 @@ The `--graph-path` value can also be set in the config file so you don't need to
 
 ## Plain Mode
 
-Pass `--plain` when the terminal can't render rich formatting (common on Windows cmd/PowerShell with certain Unicode characters):
+Pass `--plain` when you want an ASCII-only fallback — e.g. an unusual terminal, a scripted/CI run, or any environment where the rich TUI's formatting doesn't render:
 
 ```bash
 python logseq_housekeeper.py --graph-path /path --plain
@@ -204,7 +212,7 @@ This replaces the rich TUI with a simple `print()`/`input()` menu. All functiona
 ## FAQ / Troubleshooting
 
 **Q: I see garbled characters in the menu.**  
-A: The Windows console (`cp1252`) cannot print all Unicode characters. Use `--plain` to force ASCII-only output.
+A: An older release had corrupted Unicode baked into the source; that's fixed. If you still see mojibake (e.g. an unusual terminal or redirected output), pass `--plain` for an ASCII-only menu.
 
 **Q: The app found links that already exist.**  
 A: The scanner skips text inside existing `[[wikilinks]]`, but a mention like `Charlie Munger` that appears twice in a file — once already linked and once not — will suggest linking the second one. This is intentional: the first is already linked, the second is a legitimate miss.

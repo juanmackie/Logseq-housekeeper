@@ -1,10 +1,15 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
-Logseq Housekeeper â€” auto-scan Logseq graphs for unlinked wiki mentions.
-Lean V1: dry-run default, CLI TUI, manual review + auto-apply high confidence.
+Logseq Housekeeper — auto-scan Logseq graphs for unlinked wiki mentions.
+
+Builds a page index from filenames plus type::/alias::/aliases::/title::
+properties, finds plain-text mentions of known pages and unique aliases outside
+protected zones, scores them HIGH/MEDIUM/LOW, and lets you review, auto-apply
+HIGH, or apply approved edits. Writes are atomic and dry-run by default.
 
 Usage:
     python logseq_housekeeper.py --graph-path <path_to_logseq_graph>
+    python logseq_housekeeper.py --graph-path <path> --plain
 """
 
 import argparse
@@ -36,7 +41,7 @@ try:
 except ImportError:
     HAS_RICH = False
 
-# â”€â”€ Constants â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ── Constants ─────────────────────────────────────────────────────────────────
 
 EXCLUDE_DIRS: set[str] = {
     ".git", "logseq", "node_modules", ".recycle", ".bak", "__pycache__",
@@ -71,7 +76,7 @@ SHORT_ALLOWLIST: set[str] = {
 DEFAULT_MAX_LINKS_PER_FILE = 20
 DEFAULT_MIN_LINK_LENGTH = 3
 
-# â”€â”€ Data Structures â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ── Data Structures ───────────────────────────────────────────────────────────
 
 
 @dataclass
@@ -80,8 +85,8 @@ class PageDef:
     title: str
     source_dir: str  # "pages", "journals", "wiki"
     filepath: Path
-    page_type: str = ""  # "person", "company", "concept", "topic", etc.
-    aliases: list[str] = field(default_factory=list)
+    page_type: str = ""  # from type:: ("person", "company", "book", ...)
+    aliases: list[str] = field(default_factory=list)  # from alias::/aliases::/title::
     contaminated: bool = False
 
 
@@ -98,15 +103,20 @@ class Suggestion:
     reason: str
     context_before: str = ""
     context_after: str = ""
-    accepted: Optional[bool] = None
+    accepted: Optional[bool] = None  # True/False after review, None = undecided
     unique_id: str = ""
 
 
-# â”€â”€ Page Index â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ── Page Index ────────────────────────────────────────────────────────────────
 
 
 class PageIndex:
-    """Builds and queries an index of all pages and aliases in the graph."""
+    """Builds and queries an index of all pages and aliases in the graph.
+
+    Reads type::/alias::/aliases::/title:: properties to populate page types
+    and alias resolution. Ambiguous aliases (multiple targets) are recorded
+    but never auto-resolved.
+    """
 
     def __init__(self, graph_path: Path):
         self.graph_path = graph_path
@@ -144,7 +154,7 @@ class PageIndex:
                        filepath=path, page_type="")
 
         try:
-            content = path.read_text("utf-8")
+            content = path.read_text("utf-8-sig")
             self._extract_properties(content, page)
         except Exception:
             pass
@@ -167,29 +177,29 @@ class PageIndex:
             self.alias_targets.setdefault(al, []).append(title)
 
     def _decode_title(self, stem: str) -> str:
-        t = unquote(stem)
-        # Strip trailing .md if present
-        if t.lower().endswith(".md"):
-            t = t[:-3]
-        return t
+        return unquote(stem)
 
     def _extract_properties(self, content: str, page: PageDef):
         for line in content.splitlines():
             s = line.strip()
             m = re.match(
-                r'^(?:-\s+)?(?:title|type|alias|aliases)\s*::\s*(.+)$',
+                r'^\s*(?:-\s+)?(title|type|alias|aliases)\s*::\s*(.+)$',
                 s, re.IGNORECASE
             )
             if not m:
                 continue
-            key = m.group(1).lower().lstrip()
-            value = m.group(1).strip()
-            if key.startswith("title"):
+            key = m.group(1).lower()
+            value = m.group(2).strip()
+            if key == "title":
+                # Logseq resolves links to the display title; treat it as an alias.
+                t = re.sub(r'^\[\[|\]\]$', '', value)
+                if t and len(t) > 1 and t.lower() != page.title.lower():
+                    page.aliases.append(t)
                 continue
-            if key.startswith("type"):
-                page.page_type = value.strip()
+            if key == "type":
+                page.page_type = re.sub(r'^\[\[|\]\]$', '', value).strip()
                 continue
-            if key.startswith("alias"):
+            if key in ("alias", "aliases"):
                 parts = re.split(r'[,;]', value)
                 for p in parts:
                     p = p.strip()
@@ -217,15 +227,20 @@ class PageIndex:
         return None
 
 
-# â”€â”€ Scanner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ── Scanner ───────────────────────────────────────────────────────────────────
 
 
 class Scanner:
-    """Find unlinked mentions of known pages in the graph."""
+    """Find unlinked mentions of known pages and unique aliases in the graph.
+
+    Skips protected zones: existing links/refs, code fences, all #+BEGIN_* /
+    #+END_* blocks, HTML comments, URLs, markdown links, tags, and property
+    lines. Mentions resolve via page title or unique alias.
+    """
 
     FENCE_PAT = re.compile(r'^(?:`{3,}|~{3,})')
-    QUERY_START = re.compile(r'^#\+BEGIN_QUERY')
-    QUERY_END = re.compile(r'^#\+END_QUERY')
+    BEGIN_BLOCK = re.compile(r'^#\+BEGIN_(\w+)')
+    END_BLOCK = re.compile(r'^#\+END_(\w+)')
     COMMENT_START = re.compile(r'<!--')
     COMMENT_END = re.compile(r'-->')
     PROPERTY_LINE = re.compile(r'^\s*(?:-\s+)?\w[\w-]*\s*::\s')
@@ -250,6 +265,11 @@ class Scanner:
         if self.config.get("include_wiki", True):
             source_dirs.append("wiki")
 
+        self.errors = []
+
+        # Build the combined match pattern once for the whole scan.
+        alt = self._build_pattern()
+
         for sd in source_dirs:
             root = self.graph_path / sd
             if not root.is_dir():
@@ -258,16 +278,17 @@ class Scanner:
                 rel = md.relative_to(self.graph_path)
                 if any(p in EXCLUDE_DIRS or p.startswith(".") for p in rel.parts):
                     continue
-                sug = self._scan_file(md)
+                try:
+                    sug = self._scan_file(md, alt)
+                except Exception as e:
+                    self.errors.append(f"{rel}: {e}")
+                    continue
                 if sug:
                     results.append((md, sug))
         return results
 
-    def _scan_file(self, path: Path) -> list[Suggestion]:
-        content = path.read_text("utf-8")
-        lines = content.splitlines()
-
-        # Build the combined regex for all candidate titles
+    def _build_pattern(self) -> Optional[re.Pattern]:
+        """Build the combined regex over all candidate titles and aliases."""
         candidates = self.index.candidates()
         entries: list[tuple[str, str, int, int]] = []  # (lower, original, word_count, length)
         for p in candidates:
@@ -284,32 +305,36 @@ class Scanner:
                     if not any(e[0] == alias_lower for e in entries):
                         entries.append((alias_lower, tgt, len(alias_lower.split()), len(alias_lower)))
 
-        # Deduplicate and sort by length descending (longest match first)
-        seen_titles: set[str] = set()
+        # Deduplicate by match string (e[0]) and sort by word count descending
+        # (longest match first) so e.g. "Apple Inc" wins over "Apple".
+        seen: set[str] = set()
         deduped: list[tuple[str, str, int, int]] = []
         for e in entries:
-            if e[1] not in seen_titles:
-                seen_titles.add(e[1])
+            if e[0] not in seen:
+                seen.add(e[0])
                 deduped.append(e)
         deduped.sort(key=lambda x: -x[2])
 
-        # Build combined pattern
         if not deduped:
-            return []
+            return None
 
-        pieces = []
-        for lower, original, wc, ll in deduped:
-            pieces.append(re.escape(lower))
-        alt = re.compile(
+        pieces = [re.escape(lower) for lower, original, wc, ll in deduped]
+        return re.compile(
             r'(?<!\w)(' + "|".join(pieces) + r')(?!\w)',
             re.IGNORECASE
         )
+
+    def _scan_file(self, path: Path, alt_pattern: Optional[re.Pattern]) -> list[Suggestion]:
+        if alt_pattern is None:
+            return []
+        content = path.read_text("utf-8-sig")
+        lines = content.splitlines()
 
         file_suggestions: list[Suggestion] = []
         file_title = self._decode_file_title(path)
         links_this_file: dict[str, int] = defaultdict(int)
 
-        self._track_protected_zones(lines, file_suggestions, alt, links_this_file, file_title.lower() if file_title else "")
+        self._track_protected_zones(path, lines, file_suggestions, alt_pattern, links_this_file, file_title.lower() if file_title else "")
 
         return file_suggestions
 
@@ -318,31 +343,34 @@ class Scanner:
         return unquote(stem)
 
     def _track_protected_zones(
-        self, lines: list[str],
+        self, path: Path,
+        lines: list[str],
         suggestions: list,
         alt_pattern: re.Pattern,
         links_this_file: dict,
         file_title_lower: str,
     ):
         in_fence = False
-        in_query = False
+        in_block = None  # name of an open #+BEGIN_* / #+END_* block
         in_comment = False
 
         for li, line in enumerate(lines):
             stripped = line.strip()
 
-            # â”€â”€ Zone transitions â”€â”€
+            # ── Zone transitions ──
             if self.FENCE_PAT.match(stripped):
                 in_fence = not in_fence
                 continue
             if in_fence:
                 continue
-            if self.QUERY_START.match(stripped):
-                in_query = True
+            m_begin = self.BEGIN_BLOCK.match(stripped)
+            if m_begin:
+                in_block = m_begin.group(1)
                 continue
-            if in_query:
-                if self.QUERY_END.match(stripped):
-                    in_query = False
+            if in_block:
+                m_end = self.END_BLOCK.match(stripped)
+                if m_end and m_end.group(1) == in_block:
+                    in_block = None
                 continue
             if self.COMMENT_START.search(stripped):
                 in_comment = True
@@ -355,7 +383,7 @@ class Scanner:
             if self.PROPERTY_LINE.match(line):
                 continue
 
-            # â”€â”€ Find unprotected text ranges â”€â”€
+            # ── Find unprotected text ranges ──
             text = line
             protected: list[tuple[int, int]] = []
 
@@ -386,7 +414,7 @@ class Scanner:
             def is_protected(pos: int) -> bool:
                 return any(st <= pos < en for st, en in protected)
 
-            # â”€â”€ Find mentions in unprotected segments â”€â”€
+            # ── Find mentions in unprotected segments ──
             for m in alt_pattern.finditer(line):
                 matched = m.group(0)
                 start = m.start()
@@ -426,7 +454,7 @@ class Scanner:
                 if len(links_this_file) >= self.max_per_file:
                     continue
 
-                # â”€â”€ Determine confidence â”€â”€
+                # ── Determine confidence ──
                 wc = len(target_title.split())
                 pg2 = self.index.by_lower.get(target_title.lower())
                 is_wiki_page = pg2 and pg2.source_dir == "wiki"
@@ -456,7 +484,7 @@ class Scanner:
                 ctx_after = line[end:ctx_end].strip()
 
                 sug = Suggestion(
-                    filepath=Path(),
+                    filepath=path,
                     line_index=li,
                     column=start,
                     end_column=end,
@@ -466,16 +494,20 @@ class Scanner:
                     reason=reason,
                     context_before=ctx_before,
                     context_after=ctx_after,
-                    unique_id=f"{Path()}:{li}:{start}",
+                    unique_id=f"{path}:{li}:{start}",
                 )
                 suggestions.append(sug)
 
 
-# â”€â”€ Applier â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ── Applier ───────────────────────────────────────────────────────────────────
 
 
 class Applier:
-    """Apply approved suggestions to the graph."""
+    """Apply approved suggestions to the graph.
+
+    Writes are atomic (temp file + os.replace). Re-applying an already applied
+    suggestion is a no-op (matched text is verified at the recorded column).
+    """
 
     def __init__(self, graph_path: Path):
         self.graph_path = graph_path
@@ -571,7 +603,7 @@ class Applier:
         return result
 
 
-# â”€â”€ TUI (Rich) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ── TUI (Rich) ────────────────────────────────────────────────────────────────
 
 
 class TUI:
@@ -653,7 +685,6 @@ class TUI:
         for fpath, sugs in results:
             for s in sugs:
                 s.filepath = fpath
-                s.unique_id = f"{fpath}:{s.line_index}:{s.column}"
             all_suggestions.extend(sugs)
 
         self.suggestions = all_suggestions
@@ -664,11 +695,16 @@ class TUI:
         low = sum(1 for s in self.suggestions if s.confidence == "LOW")
 
         self.console.print()
+        if self.scanner.errors:
+            self.console.print(
+                f"[yellow]{len(self.scanner.errors)} file(s) could not be scanned:[/]\n"
+                + "\n".join(f"  [dim]{e}[/]" for e in self.scanner.errors[:10])
+            )
         self.console.print(Panel(
             f"[bold]Scan complete in {elapsed:.1f}s[/]\n"
             f"[green]{len(self.index.by_lower)}[/] pages indexed\n"
             f"[bold]{len(self.suggestions)}[/] unlinked mentions found\n"
-            f"  [green]{high} high[/] Â· [yellow]{med} medium[/] Â· [red]{low} low[/] confidence",
+            f"  [green]{high} high[/] · [yellow]{med} medium[/] · [red]{low} low[/] confidence",
             border_style="green"
         ))
 
@@ -706,7 +742,7 @@ class TUI:
 
             self.console.clear()
             self.console.print(f"[bold cyan]{fkey}[/]")
-            self.console.print(f"[dim]{len(pending)} unlinked mentions Â· file {file_keys.index(fkey) + 1}/{len(file_keys)}[/]")
+            self.console.print(f"[dim]{len(pending)} unlinked mentions · file {file_keys.index(fkey) + 1}/{len(file_keys)}[/]")
             self.console.print()
 
             for i, sug in enumerate(pending):
@@ -722,7 +758,7 @@ class TUI:
                     f"{sug.context_after}..."
                 )
                 self.console.print(f"      {ctx}")
-                self.console.print(f"      [dim]line {sug.line_index + 1} Â· {sug.reason}[/]")
+                self.console.print(f"      [dim]line {sug.line_index + 1} · {sug.reason}[/]")
                 self.console.print()
 
             # Batch actions for this file
@@ -771,7 +807,7 @@ class TUI:
         self.console.print()
         self.console.print(Panel(
             f"[bold]Review summary[/]\n"
-            f"[green]{accepted} accepted[/] Â· [red]{rejected} rejected[/] Â· "
+            f"[green]{accepted} accepted[/] · [red]{rejected} rejected[/] · "
             f"[dim]{total_undecided} still undecided[/]",
             border_style="blue"
         ))
@@ -886,7 +922,7 @@ class TUI:
             self.console.print(f"[bold red]{len(rejected)} Rejected suggestions:[/]")
             for s in reversed(rejected[-20:]):
                 rel = s.filepath.relative_to(self.index.graph_path)
-                self.console.print(f"  Ã— [[{s.target_title}]] [dim]{rel}:{s.line_index + 1}[/]")
+                self.console.print(f"  × [[{s.target_title}]] [dim]{rel}:{s.line_index + 1}[/]")
             if len(rejected) > 20:
                 self.console.print(f"  [dim]...and {len(rejected) - 20} more[/]")
 
@@ -895,14 +931,14 @@ class TUI:
             for s in ambiguous[:15]:
                 rel = s.filepath.relative_to(self.index.graph_path)
                 self.console.print(
-                    f"  ? [[{s.target_title}]] [dim]{rel}:{s.line_index + 1} Â· {s.reason}[/]"
+                    f"  ? [[{s.target_title}]] [dim]{rel}:{s.line_index + 1} · {s.reason}[/]"
                 )
             if len(ambiguous) > 15:
                 self.console.print(f"  [dim]...and {len(ambiguous) - 15} more[/]")
 
     def _export_report(self):
         self._header()
-        out_dir = self.graph_path / "housekeeping"
+        out_dir = self.index.graph_path / "housekeeping"
         out_dir.mkdir(parents=True, exist_ok=True)
         report_path = out_dir / "link-suggestions.json"
         data = []
@@ -924,7 +960,7 @@ class TUI:
         self.console.print(f"[green]Report written to {report_path}[/]")
 
 
-# â”€â”€ Plain Fallback â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ── Plain Fallback ────────────────────────────────────────────────────────────
 
 
 class PlainTUI:
@@ -980,6 +1016,10 @@ class PlainTUI:
         med = sum(1 for s in self.suggestions if s.confidence == "MEDIUM")
         low = sum(1 for s in self.suggestions if s.confidence == "LOW")
         print(f"Found {len(self.suggestions)} mentions: {high} high, {med} med, {low} low")
+        if self.scanner.errors:
+            print(f"Warning: {len(self.scanner.errors)} file(s) could not be scanned:")
+            for e in self.scanner.errors[:10]:
+                print(f"  - {e}")
 
     def _do_review(self):
         if not self.suggestions:
@@ -1074,7 +1114,7 @@ class PlainTUI:
         print(f"Report written to {report_path}")
 
 
-# â”€â”€ CLI Entry Point â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ── CLI Entry Point ───────────────────────────────────────────────────────────
 
 
 def load_config(config_path: Path) -> dict:
@@ -1086,7 +1126,7 @@ def load_config(config_path: Path) -> dict:
     }
     if config_path.exists():
         try:
-            with open(config_path, "r") as f:
+            with open(config_path, "r", encoding="utf-8-sig") as f:
                 user = json.load(f)
             defaults.update(user)
         except Exception:
@@ -1096,7 +1136,7 @@ def load_config(config_path: Path) -> dict:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Logseq Housekeeper â€” find and suggest missing wikilinks",
+        description="Logseq Housekeeper — find and suggest missing wikilinks",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=textwrap.dedent("""\
             Examples:
@@ -1132,11 +1172,9 @@ def main():
 
     use_rich = HAS_RICH and not args.plain
 
-    print(f"Building index for: {graph_path}")
-    index = PageIndex(graph_path)
-    index.build()
-    print(f"Indexed {len(index.by_lower)} pages")
+    print(f"Using graph: {graph_path}")
 
+    index = PageIndex(graph_path)
     scanner = Scanner(index, graph_path, config)
     applier = Applier(graph_path)
 
