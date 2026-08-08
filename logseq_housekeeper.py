@@ -174,7 +174,9 @@ class PageIndex:
 
         for alias in page.aliases:
             al = alias.lower()
-            self.alias_targets.setdefault(al, []).append(title)
+            targets = self.alias_targets.setdefault(al, [])
+            if title not in targets:
+                targets.append(title)
 
     def _decode_title(self, stem: str) -> str:
         return unquote(stem)
@@ -221,9 +223,9 @@ class PageIndex:
         return lower_title in self.by_lower
 
     def resolve_alias(self, alias_lower: str) -> Optional[str]:
-        t = self.alias_targets.get(alias_lower, [])
-        if len(t) == 1:
-            return t[0]
+        targets = self.alias_targets.get(alias_lower, [])
+        if len(targets) == 1:
+            return targets[0]
         return None
 
 
@@ -239,8 +241,8 @@ class Scanner:
     """
 
     FENCE_PAT = re.compile(r'^(?:`{3,}|~{3,})')
-    BEGIN_BLOCK = re.compile(r'^#\+BEGIN_(\w+)')
-    END_BLOCK = re.compile(r'^#\+END_(\w+)')
+    BEGIN_BLOCK = re.compile(r'^#\+BEGIN_(\w+)', re.IGNORECASE)
+    END_BLOCK = re.compile(r'^#\+END_(\w+)', re.IGNORECASE)
     COMMENT_START = re.compile(r'<!--')
     COMMENT_END = re.compile(r'-->')
     PROPERTY_LINE = re.compile(r'^\s*(?:-\s+)?\w[\w-]*\s*::\s')
@@ -365,19 +367,38 @@ class Scanner:
                 continue
             m_begin = self.BEGIN_BLOCK.match(stripped)
             if m_begin:
-                in_block = m_begin.group(1)
+                in_block = m_begin.group(1).casefold()
                 continue
             if in_block:
                 m_end = self.END_BLOCK.match(stripped)
-                if m_end and m_end.group(1) == in_block:
+                if m_end and m_end.group(1).casefold() == in_block:
                     in_block = None
                 continue
-            if self.COMMENT_START.search(stripped):
-                in_comment = True
-            if in_comment:
-                if self.COMMENT_END.search(stripped):
+            # Collect HTML comment ranges while leaving text outside comments
+            # on the same line available for matching.
+            comment_ranges: list[tuple[int, int]] = []
+            comment_pos = 0
+            while comment_pos < len(line):
+                if in_comment:
+                    end = self.COMMENT_END.search(line, comment_pos)
+                    if not end:
+                        comment_ranges.append((comment_pos, len(line)))
+                        break
+                    comment_ranges.append((comment_pos, end.end()))
                     in_comment = False
-                continue
+                    comment_pos = end.end()
+                    continue
+
+                start = self.COMMENT_START.search(line, comment_pos)
+                if not start:
+                    break
+                end = self.COMMENT_END.search(line, start.end())
+                if not end:
+                    comment_ranges.append((start.start(), len(line)))
+                    in_comment = True
+                    break
+                comment_ranges.append((start.start(), end.end()))
+                comment_pos = end.end()
 
             # Skip property lines
             if self.PROPERTY_LINE.match(line):
@@ -386,6 +407,8 @@ class Scanner:
             # ── Find unprotected text ranges ──
             text = line
             protected: list[tuple[int, int]] = []
+
+            protected.extend(comment_ranges)
 
             # Mark positions of existing wikilinks
             for m in self.LINK_PAT.finditer(line):
@@ -460,11 +483,20 @@ class Scanner:
                 is_wiki_page = pg2 and pg2.source_dir == "wiki"
                 page_type = pg2.page_type if pg2 else ""
 
-                if wc >= 2 or is_wiki_page or page_type in ("person", "company", "book"):
+                page_types = {
+                    part.strip().lower()
+                    for part in re.split(r"[|,]", page_type)
+                    if part.strip()
+                }
+                typed_page = bool(page_types & {"person", "company", "book"})
+                if wc >= 2 or is_wiki_page or typed_page:
                     confidence = "HIGH"
-                    reason = "multi-word title" if wc >= 2 else "wiki page"
-                    if page_type:
-                        reason = f"wiki {page_type}"
+                    if typed_page:
+                        reason = f"page type: {page_type}"
+                    elif wc >= 2:
+                        reason = "multi-word title"
+                    else:
+                        reason = "wiki page"
                 elif wc == 1 and matched[0].isupper():
                     confidence = "MEDIUM"
                     reason = "proper noun"
@@ -532,7 +564,9 @@ class Applier:
 
         for fpath, sugs in filtered.items():
             try:
-                content = fpath.read_text("utf-8")
+                raw = fpath.read_bytes()
+                has_bom = raw.startswith(b"\xef\xbb\xbf")
+                content = raw.decode("utf-8-sig")
                 lines = content.splitlines(keepends=True)
                 changes_made = 0
 
@@ -572,7 +606,12 @@ class Applier:
                         suffix=".tmp"
                     )
                     try:
-                        with os.fdopen(fd, "w", encoding="utf-8") as f:
+                        with os.fdopen(
+                            fd,
+                            "w",
+                            encoding="utf-8-sig" if has_bom else "utf-8",
+                            newline="",
+                        ) as f:
                             f.writelines(lines)
                         os.replace(tmp_path, fpath)
                     except Exception as e:
@@ -1049,7 +1088,16 @@ class PlainTUI:
             print("No accepted suggestions.")
             return
         print(f"{len(pending)} links to apply.")
-        ok = input("Proceed? (y/N): ").strip().lower()
+        ok = input("Preview changes? (y/N): ").strip().lower()
+        if ok != "y":
+            return
+        try:
+            dry = self.applier.apply(pending, dry_run=True)
+        except Exception as e:
+            print(f"Apply preview failed: {e}")
+            return
+        print(f"Dry-run: {dry['modified_files']} files, {dry['total_links']} links")
+        ok = input("Proceed with actual write? (y/N): ").strip().lower()
         if ok != "y":
             return
         try:
