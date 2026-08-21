@@ -93,11 +93,8 @@ def expected_apply(original_bytes: bytes, sugs) -> bytes:
             line = line[:s.column] + inserted + line[s.end_column:]
         lines[li] = line
     out = "".join(lines)
-    # BOM handling: utf-8-sig decode strips BOM; re-add for comparison.
-    if has_bom and not out.startswith("\ufeff"):
-        out = "\ufeff" + out
-    return out.encode("utf-8-sig" if has_bom else "utf-8",
-                      errors="strict") if has_bom else out.encode("utf-8")
+    # utf-8-sig encoding re-adds the BOM; do not prepend it manually too.
+    return out.encode("utf-8-sig") if has_bom else out.encode("utf-8")
 
 
 def corruption_check(fx_dir: Path) -> tuple[bool, str]:
@@ -158,9 +155,11 @@ def main():
     ap.add_argument("--runs", type=int, default=5)
     ap.add_argument("--sizes", default="small,medium,large")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--fixtures-root", default=None,
+                    help="alternative fixture root (e.g. tests/heldout)")
     args = ap.parse_args()
 
-    fixtures = REPO / "tests" / "fixtures"
+    fixtures = Path(args.fixtures_root) if args.fixtures_root else REPO / "tests" / "fixtures"
     report = {"sizes": {}, "corruption_ok": True, "corruption_detail": ""}
 
     for size in args.sizes.split(","):

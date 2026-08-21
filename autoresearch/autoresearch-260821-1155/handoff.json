@@ -2,19 +2,39 @@
   "skill": "autoresearch",
   "mode": "classic",
   "goal": "Logseq-housekeeper: reduce scan time and improve suggestion precision/recall with zero corruption",
-  "iterations_planned": 12,
-  "iterations_done": 12,
-  "iterations_kept": 9,
-  "iterations_reverted": 2,
+  "iterations_planned": 18,
+  "iterations_done": 18,
+  "iterations_kept": 12,
+  "iterations_reverted": 3,
   "harness_notes": 1,
   "metrics": {
-    "scan_ms_large": {"baseline": 5160.5, "best": 374.9, "final_rerun": 381.8, "speedup_x": 13.8},
-    "precision": {"baseline": 0.7658, "best": 1.0},
-    "recall": {"baseline": 0.8636, "best": 1.0},
+    "scan_ms_large": {
+      "baseline": 5160.5,
+      "best": 374.9,
+      "final_rerun": 381.8,
+      "speedup_x": 13.8,
+      "interleaved_baseline_under_load": "3614-3892",
+      "interleaved_best_under_load": "371-408"
+    },
+    "precision": {
+      "baseline": 0.7658,
+      "best": 1.0
+    },
+    "recall": {
+      "baseline": 0.8636,
+      "best": 1.0
+    },
     "corruption_ok": true
   },
-  "harness": ["tests/gen_graph.py", "tests/harness.py"],
-  "fixtures": ["tests/fixtures/small", "tests/fixtures/medium", "tests/fixtures/large"],
+  "harness": [
+    "tests/gen_graph.py",
+    "tests/harness.py"
+  ],
+  "fixtures": [
+    "tests/fixtures/small",
+    "tests/fixtures/medium",
+    "tests/fixtures/large"
+  ],
   "keep_rule": "keep iff corruption pass AND (scan_ms_large -2% OR P/R +0.002 without other regressing >0.002)",
   "kept_changes": [
     "iter 1: set-lookup dedupe of pattern entries",
@@ -32,10 +52,26 @@
     "iter 7: tuple-key phrase maps (no gain over string keys)",
     "iter 11: dataclass slots=True (within noise)"
   ],
-  "safety": ["no git push performed", "only synthetic fixtures under tests/fixtures touched by harness", "bounded at 12 iterations"],
+  "safety": [
+    "no git push performed",
+    "only synthetic fixtures under tests/fixtures touched by harness",
+    "bounded at 12 iterations"
+  ],
   "next_ideas": [
     "multiprocess scan across files if graphs grow >>10k pages",
     "suffix variants beyond plural (ing/ed) behind config flag",
     "index build is now ~45% of total time: consider mtime-based incremental index cache"
+  ],
+  "verify_passes": [
+    "iter 13 held-out seed-777 fixtures: P=1.0 R=1.0 corruption pass",
+    "iter 14 edge-case suite (BOM/CRLF/fences/org blocks/comments/unicode/percent-encoding)",
+    "iter 17 idempotence at edge and 520-link scale",
+    "iter 18 interleaved re-measurement: ~10x speedup robust to machine load (13.8x unloaded)"
+  ],
+  "batch2_focus": "held-out verification, adversarial edge cases, apply idempotence; further speed attempts reverted as within-noise (timing plateau)",
+  "test_files": [
+    "tests/gen_graph.py",
+    "tests/harness.py",
+    "tests/test_edge_cases.py"
   ]
 }

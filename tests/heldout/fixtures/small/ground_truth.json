@@ -1,0 +1,190 @@
+{
+ "size": "small",
+ "n_pages": 50,
+ "positives": [
+  [
+   "journals/journal-0000.md",
+   "Archimedes"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Einstein"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Lovelace"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Quantum Domain"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Quantum Engine"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Quantum Orchard"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Socrates"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Einstein"
+  ],
+  [
+   "journals/journal-0001.md",
+   "GPT"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0002.md",
+   "AI"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Archimedes"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Aristotle"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Darwin"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Faraday"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Quantum Glacier"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Archimedes"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Curie"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Quantum Forest"
+  ],
+  [
+   "journals/journal-0004.md",
+   "GPT"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Newton"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Quantum Forest"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Aristotle"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Quantum Cipher"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Quantum Domain"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Quantum Lantern"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Quantum Quarry"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Darwin"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Quantum Archive"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Quantum Atlas"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Einstein"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Quantum Meadow"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Quantum Orchard"
+  ],
+  [
+   "journals/journal-0007.md",
+   "RAG"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Socrates"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Einstein"
+  ],
+  [
+   "journals/journal-0008.md",
+   "KPI"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Newton"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Quantum Computing"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Quantum Glacier"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Quantum Quarry"
+  ],
+  [
+   "journals/journal-0009.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0009.md",
+   "LLM"
+  ],
+  [
+   "journals/journal-0009.md",
+   "Quantum Forest"
+  ]
+ ]
+}

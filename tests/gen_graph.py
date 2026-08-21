@@ -285,8 +285,12 @@ def write_page(path, page, rng):
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def generate(size_name, n_pages, n_journals, mentions_per_journal):
-    root = Path(__file__).resolve().parent
+def generate(size_name, n_pages, n_journals, mentions_per_journal,
+             seed=None, out_root=None):
+    global SEED
+    if seed is not None:
+        SEED = seed
+    root = Path(out_root) if out_root else Path(__file__).resolve().parent
     fx = root / "fixtures" / size_name
     graph = fx / "graph"
     if graph.exists():
@@ -364,8 +368,14 @@ def generate(size_name, n_pages, n_journals, mentions_per_journal):
 
 
 if __name__ == "__main__":
-    sizes = sys.argv[1:] or ["small", "medium", "large"]
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("sizes", nargs="*", default=["small", "medium", "large"])
+    ap.add_argument("--seed", type=int, default=20240821)
+    ap.add_argument("--out", default=None,
+                    help="output root; fixtures go under <out>/fixtures/<size>")
+    a = ap.parse_args()
     cfg = {"small": (50, 10, 10), "medium": (500, 100, 12),
            "large": (2000, 400, 14)}
-    for s in sizes:
-        generate(s, *cfg[s])
+    for s in a.sizes:
+        generate(s, *cfg[s], seed=a.seed, out_root=a.out)

@@ -13,3 +13,15 @@ iteration	change	scan_ms_large	precision	recall	corruption_ok	kept
 10	first-word prefilter for token windows	393.2	1.0000	1.0000	pass	kept
 11	slots=True on PageDef/Suggestion dataclasses	~387 (392/372/398)	1.0000	1.0000	pass	REVERTED (within noise of 393.2)
 12	char-trigger fast path before PROTECTED_PAT pass	374.9	1.0000	1.0000	pass	kept
+13	held-out verification: regenerated fixtures with unseen seed 777 (no code change)
+	383.1	1.0000	1.0000	pass	verify-pass
+14	edge-case suite (BOM/CRLF/fences/org/comments/unicode/percent-encoding); fixed harness BOM mirror bug
+	-	1.0000	1.0000	pass	kept
+15	first-char zone dispatch + :: property guard
+	~383 (379/394/376)	1.0000	1.0000	pass	REVERTED (within noise of 374.9)
+16	closure removal + single-pass tokenization in _scan_segment
+	~500 (447/474/542)	1.0000	1.0000	pass	REVERTED (slower than 374.9 incumbent)
+17	idempotence property test (apply -> re-scan finds 0 duplicates; edge + 520-link scale)
+	-	1.0000	1.0000	pass	kept
+18	final verification sweep (main + held-out + edge + CLI); interleaved baseline-vs-best re-measurement under load: 3614-3892ms vs 371-408ms
+	383.5	1.0000	1.0000	pass	kept

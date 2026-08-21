@@ -1,0 +1,9634 @@
+{
+ "size": "large",
+ "n_pages": 2000,
+ "positives": [
+  [
+   "journals/journal-0000.md",
+   "AI"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Boreal Harbor"
+  ],
+  [
+   "journals/journal-0000.md",
+   "CRM 2"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Golden Glacier"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Golden Orchard"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Ramanujan XIX"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Silver Cipher"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Curie XIV"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Faraday 23"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Golden Domain"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Ivory Domain"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Lunar Computing"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Opal Computing"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Quantum Lantern Cathedral"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Amber Cathedral"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Cosmic Beacon"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Crimson Valley"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Hopper VII"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Northern Harbor"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Purple Tundra"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Quantum Computing Garden"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Quantum Meadow Valley"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Socrates IX"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Aristotle IV"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Curie XVII"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Faraday XII"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Feynman XVII"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Jade Archive"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Quantum Orchard Orchard"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Woven Domain"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Archimedes 23"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Archimedes II"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Ember Valley"
+  ],
+  [
+   "journals/journal-0004.md",
+   "LLM 18"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Lovelace XV"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Northern Meadow"
+  ],
+  [
+   "journals/journal-0005.md",
+   "RAG 30"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Rustic Cipher"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Crimson Foundry"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Darwin II"
+  ],
+  [
+   "journals/journal-0006.md",
+   "OCR 22"
+  ],
+  [
+   "journals/journal-0006.md",
+   "RAG 26"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Rustic Lantern"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Velvet Orchard"
+  ],
+  [
+   "journals/journal-0007.md",
+   "AI 15"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Cedar Domain"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Drift Summit"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Fermi IV"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Fermi XVII"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Galileo XVI"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Zephyr Summit"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Amber Prism"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Cedar Cipher"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Digital Forest"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Feynman VII"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Gauss XIII"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Quiet Garden"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Thunder Mirage"
+  ],
+  [
+   "journals/journal-0009.md",
+   "Aristotle III"
+  ],
+  [
+   "journals/journal-0009.md",
+   "Kepler XX"
+  ],
+  [
+   "journals/journal-0009.md",
+   "Rustic Glacier"
+  ],
+  [
+   "journals/journal-0010.md",
+   "Cantor XIII"
+  ],
+  [
+   "journals/journal-0010.md",
+   "Cosmic Lantern"
+  ],
+  [
+   "journals/journal-0010.md",
+   "KPI 23"
+  ],
+  [
+   "journals/journal-0010.md",
+   "Lunar Harbor"
+  ],
+  [
+   "journals/journal-0010.md",
+   "Quantum Computing Cathedral"
+  ],
+  [
+   "journals/journal-0010.md",
+   "Turing VIII"
+  ],
+  [
+   "journals/journal-0010.md",
+   "Zephyr Orchard"
+  ],
+  [
+   "journals/journal-0011.md",
+   "Fermi X"
+  ],
+  [
+   "journals/journal-0011.md",
+   "Hopper 24"
+  ],
+  [
+   "journals/journal-0011.md",
+   "Lovelace XIV"
+  ],
+  [
+   "journals/journal-0011.md",
+   "Newton XX"
+  ],
+  [
+   "journals/journal-0012.md",
+   "Aristotle XIX"
+  ],
+  [
+   "journals/journal-0012.md",
+   "Cantor IV"
+  ],
+  [
+   "journals/journal-0012.md",
+   "Einstein XIV"
+  ],
+  [
+   "journals/journal-0012.md",
+   "Newton VII"
+  ],
+  [
+   "journals/journal-0013.md",
+   "AI 5"
+  ],
+  [
+   "journals/journal-0013.md",
+   "Noether IX"
+  ],
+  [
+   "journals/journal-0013.md",
+   "Plato III"
+  ],
+  [
+   "journals/journal-0013.md",
+   "Purple Cipher"
+  ],
+  [
+   "journals/journal-0013.md",
+   "Quantum Orchard Valley"
+  ],
+  [
+   "journals/journal-0013.md",
+   "Socrates 24"
+  ],
+  [
+   "journals/journal-0014.md",
+   "Aristotle II"
+  ],
+  [
+   "journals/journal-0014.md",
+   "Aristotle VIII"
+  ],
+  [
+   "journals/journal-0014.md",
+   "Faraday II"
+  ],
+  [
+   "journals/journal-0014.md",
+   "Quantum Computing Cipher"
+  ],
+  [
+   "journals/journal-0014.md",
+   "Quantum Computing Mirage"
+  ],
+  [
+   "journals/journal-0014.md",
+   "Silver Tundra"
+  ],
+  [
+   "journals/journal-0015.md",
+   "Aristotle XVIII"
+  ],
+  [
+   "journals/journal-0015.md",
+   "Drift River"
+  ],
+  [
+   "journals/journal-0015.md",
+   "Gauss XII"
+  ],
+  [
+   "journals/journal-0015.md",
+   "Golden Cipher"
+  ],
+  [
+   "journals/journal-0015.md",
+   "Jade Computing"
+  ],
+  [
+   "journals/journal-0015.md",
+   "Quantum Cathedral Atlas"
+  ],
+  [
+   "journals/journal-0015.md",
+   "Quantum Orchard Orchard"
+  ],
+  [
+   "journals/journal-0015.md",
+   "RAG 10"
+  ],
+  [
+   "journals/journal-0015.md",
+   "Thunder Cipher"
+  ],
+  [
+   "journals/journal-0016.md",
+   "Cantor VI"
+  ],
+  [
+   "journals/journal-0016.md",
+   "Einstein XX"
+  ],
+  [
+   "journals/journal-0016.md",
+   "Newton VIII"
+  ],
+  [
+   "journals/journal-0016.md",
+   "Opal Orchard"
+  ],
+  [
+   "journals/journal-0016.md",
+   "Purple Domain"
+  ],
+  [
+   "journals/journal-0016.md",
+   "RAG"
+  ],
+  [
+   "journals/journal-0017.md",
+   "ERP 25"
+  ],
+  [
+   "journals/journal-0017.md",
+   "Frozen Valley"
+  ],
+  [
+   "journals/journal-0017.md",
+   "Maxwell 21"
+  ],
+  [
+   "journals/journal-0017.md",
+   "Quantum Lantern"
+  ],
+  [
+   "journals/journal-0017.md",
+   "Ramanujan 21"
+  ],
+  [
+   "journals/journal-0017.md",
+   "Turing XIX"
+  ],
+  [
+   "journals/journal-0018.md",
+   "Cedar Willow"
+  ],
+  [
+   "journals/journal-0018.md",
+   "Digital Cipher"
+  ],
+  [
+   "journals/journal-0018.md",
+   "Fermi 23"
+  ],
+  [
+   "journals/journal-0018.md",
+   "Galileo VIII"
+  ],
+  [
+   "journals/journal-0018.md",
+   "Gauss"
+  ],
+  [
+   "journals/journal-0018.md",
+   "Heisenberg 23"
+  ],
+  [
+   "journals/journal-0018.md",
+   "OCR 18"
+  ],
+  [
+   "journals/journal-0018.md",
+   "Plato"
+  ],
+  [
+   "journals/journal-0018.md",
+   "Silver Summit"
+  ],
+  [
+   "journals/journal-0018.md",
+   "Turing XIX"
+  ],
+  [
+   "journals/journal-0019.md",
+   "Darwin VII"
+  ],
+  [
+   "journals/journal-0019.md",
+   "Ember Forest"
+  ],
+  [
+   "journals/journal-0019.md",
+   "GPT 3"
+  ],
+  [
+   "journals/journal-0019.md",
+   "Neural Lantern"
+  ],
+  [
+   "journals/journal-0019.md",
+   "Purple Orchard"
+  ],
+  [
+   "journals/journal-0019.md",
+   "Ramanujan XII"
+  ],
+  [
+   "journals/journal-0019.md",
+   "Umbral Cathedral"
+  ],
+  [
+   "journals/journal-0019.md",
+   "Zephyr Archive"
+  ],
+  [
+   "journals/journal-0020.md",
+   "Golden Cathedral"
+  ],
+  [
+   "journals/journal-0020.md",
+   "OCR 21"
+  ],
+  [
+   "journals/journal-0020.md",
+   "Quantum Meadow Domain"
+  ],
+  [
+   "journals/journal-0020.md",
+   "Quantum Orchard Archive"
+  ],
+  [
+   "journals/journal-0020.md",
+   "Tesla VI"
+  ],
+  [
+   "journals/journal-0020.md",
+   "Zephyr Beacon"
+  ],
+  [
+   "journals/journal-0021.md",
+   "Bohr 22"
+  ],
+  [
+   "journals/journal-0021.md",
+   "Feynman"
+  ],
+  [
+   "journals/journal-0021.md",
+   "Gauss VII"
+  ],
+  [
+   "journals/journal-0021.md",
+   "Northern Prism"
+  ],
+  [
+   "journals/journal-0021.md",
+   "Purple Engine"
+  ],
+  [
+   "journals/journal-0021.md",
+   "Woven Prism"
+  ],
+  [
+   "journals/journal-0022.md",
+   "Boreal Cipher"
+  ],
+  [
+   "journals/journal-0022.md",
+   "Cedar Prism"
+  ],
+  [
+   "journals/journal-0022.md",
+   "Frozen Valley"
+  ],
+  [
+   "journals/journal-0022.md",
+   "Golden Domain"
+  ],
+  [
+   "journals/journal-0022.md",
+   "Hopper 22"
+  ],
+  [
+   "journals/journal-0022.md",
+   "Tesla 21"
+  ],
+  [
+   "journals/journal-0023.md",
+   "Ancient Forest"
+  ],
+  [
+   "journals/journal-0023.md",
+   "Digital Cathedral"
+  ],
+  [
+   "journals/journal-0023.md",
+   "Hopper 24"
+  ],
+  [
+   "journals/journal-0023.md",
+   "IPO 16"
+  ],
+  [
+   "journals/journal-0023.md",
+   "IPO 5"
+  ],
+  [
+   "journals/journal-0023.md",
+   "Quantum Cathedral Engine"
+  ],
+  [
+   "journals/journal-0024.md",
+   "Archimedes IV"
+  ],
+  [
+   "journals/journal-0024.md",
+   "Curie II"
+  ],
+  [
+   "journals/journal-0024.md",
+   "Galileo VI"
+  ],
+  [
+   "journals/journal-0024.md",
+   "Jade Orchard"
+  ],
+  [
+   "journals/journal-0024.md",
+   "Quantum Cathedral Tundra"
+  ],
+  [
+   "journals/journal-0024.md",
+   "Quantum Harbor Valley"
+  ],
+  [
+   "journals/journal-0024.md",
+   "Quiet Labyrinth"
+  ],
+  [
+   "journals/journal-0024.md",
+   "Thunder Engine"
+  ],
+  [
+   "journals/journal-0024.md",
+   "Woven Lantern"
+  ],
+  [
+   "journals/journal-0025.md",
+   "Amber Harbor"
+  ],
+  [
+   "journals/journal-0025.md",
+   "Lunar Cipher"
+  ],
+  [
+   "journals/journal-0025.md",
+   "Quantum Meadow Labyrinth"
+  ],
+  [
+   "journals/journal-0025.md",
+   "RAG 16"
+  ],
+  [
+   "journals/journal-0025.md",
+   "Turing 21"
+  ],
+  [
+   "journals/journal-0025.md",
+   "Umbral Computing"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Crimson Summit"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Faraday VII"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Fermi V"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Frozen Quarry"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Hidden Beacon"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Plato 24"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Quantum Computing Domain"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Ramanujan 21"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Thunder Computing"
+  ],
+  [
+   "journals/journal-0026.md",
+   "Turing 21"
+  ],
+  [
+   "journals/journal-0027.md",
+   "Archimedes 22"
+  ],
+  [
+   "journals/journal-0027.md",
+   "Boreal Quarry"
+  ],
+  [
+   "journals/journal-0027.md",
+   "LLM 2"
+  ],
+  [
+   "journals/journal-0027.md",
+   "Maxwell XIV"
+  ],
+  [
+   "journals/journal-0027.md",
+   "Opal Atlas"
+  ],
+  [
+   "journals/journal-0028.md",
+   "Bohr XIX"
+  ],
+  [
+   "journals/journal-0028.md",
+   "CRM 12"
+  ],
+  [
+   "journals/journal-0028.md",
+   "Einstein"
+  ],
+  [
+   "journals/journal-0028.md",
+   "Euler"
+  ],
+  [
+   "journals/journal-0028.md",
+   "Frozen Forest"
+  ],
+  [
+   "journals/journal-0028.md",
+   "Golden Quarry"
+  ],
+  [
+   "journals/journal-0028.md",
+   "Mystic Foundry"
+  ],
+  [
+   "journals/journal-0028.md",
+   "Quantum Computing Foundry"
+  ],
+  [
+   "journals/journal-0029.md",
+   "Boreal Quarry"
+  ],
+  [
+   "journals/journal-0029.md",
+   "Cantor 23"
+  ],
+  [
+   "journals/journal-0029.md",
+   "Euler XVII"
+  ],
+  [
+   "journals/journal-0029.md",
+   "Hopper XI"
+  ],
+  [
+   "journals/journal-0029.md",
+   "KPI 30"
+  ],
+  [
+   "journals/journal-0029.md",
+   "Quantum Meadow Garden"
+  ],
+  [
+   "journals/journal-0029.md",
+   "Socrates VIII"
+  ],
+  [
+   "journals/journal-0029.md",
+   "Woven Domain"
+  ],
+  [
+   "journals/journal-0030.md",
+   "Curie V"
+  ],
+  [
+   "journals/journal-0030.md",
+   "GPT 6"
+  ],
+  [
+   "journals/journal-0030.md",
+   "Jade Harbor"
+  ],
+  [
+   "journals/journal-0030.md",
+   "Quantum Lantern Cipher"
+  ],
+  [
+   "journals/journal-0030.md",
+   "Quiet River"
+  ],
+  [
+   "journals/journal-0031.md",
+   "CRM 21"
+  ],
+  [
+   "journals/journal-0031.md",
+   "KPI 20"
+  ],
+  [
+   "journals/journal-0031.md",
+   "Maxwell XI"
+  ],
+  [
+   "journals/journal-0031.md",
+   "Plato 22"
+  ],
+  [
+   "journals/journal-0031.md",
+   "Thunder Lantern"
+  ],
+  [
+   "journals/journal-0031.md",
+   "Turing V"
+  ],
+  [
+   "journals/journal-0032.md",
+   "Hopper XIII"
+  ],
+  [
+   "journals/journal-0032.md",
+   "KPI 30"
+  ],
+  [
+   "journals/journal-0032.md",
+   "Kepler XV"
+  ],
+  [
+   "journals/journal-0032.md",
+   "LLM 18"
+  ],
+  [
+   "journals/journal-0032.md",
+   "Socrates XV"
+  ],
+  [
+   "journals/journal-0033.md",
+   "Fermi X"
+  ],
+  [
+   "journals/journal-0033.md",
+   "IPO 20"
+  ],
+  [
+   "journals/journal-0033.md",
+   "Quantum Harbor Glacier"
+  ],
+  [
+   "journals/journal-0033.md",
+   "Thunder Domain"
+  ],
+  [
+   "journals/journal-0034.md",
+   "CRM 3"
+  ],
+  [
+   "journals/journal-0034.md",
+   "Euler XVI"
+  ],
+  [
+   "journals/journal-0034.md",
+   "Faraday XX"
+  ],
+  [
+   "journals/journal-0034.md",
+   "LLM 28"
+  ],
+  [
+   "journals/journal-0034.md",
+   "Newton XVI"
+  ],
+  [
+   "journals/journal-0034.md",
+   "Quiet Archive"
+  ],
+  [
+   "journals/journal-0034.md",
+   "Umbral Quarry"
+  ],
+  [
+   "journals/journal-0035.md",
+   "Cedar River"
+  ],
+  [
+   "journals/journal-0035.md",
+   "Gauss 22"
+  ],
+  [
+   "journals/journal-0035.md",
+   "IPO 13"
+  ],
+  [
+   "journals/journal-0035.md",
+   "Quantum Computing Valley"
+  ],
+  [
+   "journals/journal-0035.md",
+   "Quantum Meadow Atlas"
+  ],
+  [
+   "journals/journal-0036.md",
+   "Aristotle"
+  ],
+  [
+   "journals/journal-0036.md",
+   "Boreal Glacier"
+  ],
+  [
+   "journals/journal-0036.md",
+   "CRM 28"
+  ],
+  [
+   "journals/journal-0036.md",
+   "Fermi XI"
+  ],
+  [
+   "journals/journal-0036.md",
+   "Newton VI"
+  ],
+  [
+   "journals/journal-0036.md",
+   "Quantum Domain"
+  ],
+  [
+   "journals/journal-0036.md",
+   "Quantum Meadow Glacier"
+  ],
+  [
+   "journals/journal-0037.md",
+   "Archimedes V"
+  ],
+  [
+   "journals/journal-0037.md",
+   "Fermi IX"
+  ],
+  [
+   "journals/journal-0037.md",
+   "Heisenberg XVIII"
+  ],
+  [
+   "journals/journal-0037.md",
+   "Hopper XIX"
+  ],
+  [
+   "journals/journal-0037.md",
+   "Quantum Harbor Valley"
+  ],
+  [
+   "journals/journal-0037.md",
+   "ROI 24"
+  ],
+  [
+   "journals/journal-0037.md",
+   "Ramanujan XVI"
+  ],
+  [
+   "journals/journal-0038.md",
+   "Cantor V"
+  ],
+  [
+   "journals/journal-0038.md",
+   "Heisenberg IX"
+  ],
+  [
+   "journals/journal-0038.md",
+   "Heisenberg XVI"
+  ],
+  [
+   "journals/journal-0038.md",
+   "Hopper XI"
+  ],
+  [
+   "journals/journal-0038.md",
+   "IPO 22"
+  ],
+  [
+   "journals/journal-0038.md",
+   "Maxwell XIV"
+  ],
+  [
+   "journals/journal-0038.md",
+   "Noether IX"
+  ],
+  [
+   "journals/journal-0038.md",
+   "Plato XVII"
+  ],
+  [
+   "journals/journal-0039.md",
+   "Cantor XII"
+  ],
+  [
+   "journals/journal-0039.md",
+   "Fermi XX"
+  ],
+  [
+   "journals/journal-0039.md",
+   "Quiet Cathedral"
+  ],
+  [
+   "journals/journal-0040.md",
+   "Ivory Atlas"
+  ],
+  [
+   "journals/journal-0040.md",
+   "Purple Glacier"
+  ],
+  [
+   "journals/journal-0040.md",
+   "Socrates XIV"
+  ],
+  [
+   "journals/journal-0041.md",
+   "Ember Labyrinth"
+  ],
+  [
+   "journals/journal-0041.md",
+   "IPO 13"
+  ],
+  [
+   "journals/journal-0041.md",
+   "IPO 7"
+  ],
+  [
+   "journals/journal-0041.md",
+   "OCR 15"
+  ],
+  [
+   "journals/journal-0041.md",
+   "Thunder Archive"
+  ],
+  [
+   "journals/journal-0042.md",
+   "Aristotle XVIII"
+  ],
+  [
+   "journals/journal-0042.md",
+   "Bohr XVII"
+  ],
+  [
+   "journals/journal-0042.md",
+   "Faraday XVI"
+  ],
+  [
+   "journals/journal-0042.md",
+   "Rustic Engine"
+  ],
+  [
+   "journals/journal-0042.md",
+   "Tesla XIV"
+  ],
+  [
+   "journals/journal-0043.md",
+   "Crimson Cathedral"
+  ],
+  [
+   "journals/journal-0043.md",
+   "Frozen Summit"
+  ],
+  [
+   "journals/journal-0043.md",
+   "GPT 5"
+  ],
+  [
+   "journals/journal-0043.md",
+   "Galileo XIII"
+  ],
+  [
+   "journals/journal-0043.md",
+   "Mystic Valley"
+  ],
+  [
+   "journals/journal-0043.md",
+   "Newton XX"
+  ],
+  [
+   "journals/journal-0043.md",
+   "Northern Foundry"
+  ],
+  [
+   "journals/journal-0043.md",
+   "Velvet Engine"
+  ],
+  [
+   "journals/journal-0044.md",
+   "Cantor XII"
+  ],
+  [
+   "journals/journal-0044.md",
+   "Crimson Orchard"
+  ],
+  [
+   "journals/journal-0044.md",
+   "ERP 26"
+  ],
+  [
+   "journals/journal-0044.md",
+   "Euler XVII"
+  ],
+  [
+   "journals/journal-0044.md",
+   "Mystic Valley"
+  ],
+  [
+   "journals/journal-0045.md",
+   "Aristotle 24"
+  ],
+  [
+   "journals/journal-0045.md",
+   "Boreal Archive"
+  ],
+  [
+   "journals/journal-0045.md",
+   "KPI 26"
+  ],
+  [
+   "journals/journal-0045.md",
+   "Neural Cipher"
+  ],
+  [
+   "journals/journal-0045.md",
+   "Opal Domain"
+  ],
+  [
+   "journals/journal-0045.md",
+   "Quantum Lantern Computing"
+  ],
+  [
+   "journals/journal-0046.md",
+   "Amber Engine"
+  ],
+  [
+   "journals/journal-0046.md",
+   "Archimedes VII"
+  ],
+  [
+   "journals/journal-0046.md",
+   "Boreal Archive"
+  ],
+  [
+   "journals/journal-0046.md",
+   "Hopper 21"
+  ],
+  [
+   "journals/journal-0046.md",
+   "Hopper VII"
+  ],
+  [
+   "journals/journal-0046.md",
+   "LLM 20"
+  ],
+  [
+   "journals/journal-0047.md",
+   "Aristotle V"
+  ],
+  [
+   "journals/journal-0047.md",
+   "Bohr XVIII"
+  ],
+  [
+   "journals/journal-0047.md",
+   "Boreal Glacier"
+  ],
+  [
+   "journals/journal-0047.md",
+   "CRM 8"
+  ],
+  [
+   "journals/journal-0047.md",
+   "Purple Lantern"
+  ],
+  [
+   "journals/journal-0047.md",
+   "Thunder Glacier"
+  ],
+  [
+   "journals/journal-0048.md",
+   "Curie XV"
+  ],
+  [
+   "journals/journal-0048.md",
+   "Einstein IV"
+  ],
+  [
+   "journals/journal-0048.md",
+   "Frozen Engine"
+  ],
+  [
+   "journals/journal-0048.md",
+   "Gauss XI"
+  ],
+  [
+   "journals/journal-0048.md",
+   "Jade River"
+  ],
+  [
+   "journals/journal-0048.md",
+   "Maxwell XV"
+  ],
+  [
+   "journals/journal-0048.md",
+   "Newton XII"
+  ],
+  [
+   "journals/journal-0048.md",
+   "ROI 7"
+  ],
+  [
+   "journals/journal-0049.md",
+   "Bohr XII"
+  ],
+  [
+   "journals/journal-0049.md",
+   "Bohr XIX"
+  ],
+  [
+   "journals/journal-0049.md",
+   "Einstein X"
+  ],
+  [
+   "journals/journal-0049.md",
+   "Mystic Glacier"
+  ],
+  [
+   "journals/journal-0049.md",
+   "Plato VIII"
+  ],
+  [
+   "journals/journal-0049.md",
+   "ROI 16"
+  ],
+  [
+   "journals/journal-0050.md",
+   "Cantor V"
+  ],
+  [
+   "journals/journal-0050.md",
+   "Cantor XVIII"
+  ],
+  [
+   "journals/journal-0050.md",
+   "Crimson Summit"
+  ],
+  [
+   "journals/journal-0050.md",
+   "ERP 3"
+  ],
+  [
+   "journals/journal-0050.md",
+   "RAG 19"
+  ],
+  [
+   "journals/journal-0050.md",
+   "Silent River"
+  ],
+  [
+   "journals/journal-0051.md",
+   "Archimedes VI"
+  ],
+  [
+   "journals/journal-0051.md",
+   "Feynman 22"
+  ],
+  [
+   "journals/journal-0051.md",
+   "Ivory Valley"
+  ],
+  [
+   "journals/journal-0051.md",
+   "Kepler VIII"
+  ],
+  [
+   "journals/journal-0051.md",
+   "Newton IV"
+  ],
+  [
+   "journals/journal-0051.md",
+   "Quantum Meadow Labyrinth"
+  ],
+  [
+   "journals/journal-0051.md",
+   "Silver Engine"
+  ],
+  [
+   "journals/journal-0052.md",
+   "CRM 29"
+  ],
+  [
+   "journals/journal-0052.md",
+   "Ember Quarry"
+  ],
+  [
+   "journals/journal-0052.md",
+   "Fermi XX"
+  ],
+  [
+   "journals/journal-0052.md",
+   "Lovelace X"
+  ],
+  [
+   "journals/journal-0052.md",
+   "Northern Labyrinth"
+  ],
+  [
+   "journals/journal-0052.md",
+   "Rustic Archive"
+  ],
+  [
+   "journals/journal-0053.md",
+   "Archimedes II"
+  ],
+  [
+   "journals/journal-0053.md",
+   "Cedar Valley"
+  ],
+  [
+   "journals/journal-0053.md",
+   "Rustic Orchard"
+  ],
+  [
+   "journals/journal-0054.md",
+   "Amber Forest"
+  ],
+  [
+   "journals/journal-0054.md",
+   "Faraday XV"
+  ],
+  [
+   "journals/journal-0054.md",
+   "Feynman VI"
+  ],
+  [
+   "journals/journal-0054.md",
+   "Maxwell 22"
+  ],
+  [
+   "journals/journal-0054.md",
+   "Opal Orchard"
+  ],
+  [
+   "journals/journal-0054.md",
+   "Quantum Lantern Atlas"
+  ],
+  [
+   "journals/journal-0054.md",
+   "ROI 13"
+  ],
+  [
+   "journals/journal-0054.md",
+   "ROI 27"
+  ],
+  [
+   "journals/journal-0055.md",
+   "ERP 30"
+  ],
+  [
+   "journals/journal-0055.md",
+   "Ivory Foundry"
+  ],
+  [
+   "journals/journal-0055.md",
+   "OCR 28"
+  ],
+  [
+   "journals/journal-0055.md",
+   "Thunder Valley"
+  ],
+  [
+   "journals/journal-0056.md",
+   "Digital Prism"
+  ],
+  [
+   "journals/journal-0056.md",
+   "Gauss XVI"
+  ],
+  [
+   "journals/journal-0056.md",
+   "Kepler VII"
+  ],
+  [
+   "journals/journal-0056.md",
+   "Kepler XV"
+  ],
+  [
+   "journals/journal-0056.md",
+   "Lunar Orchard"
+  ],
+  [
+   "journals/journal-0056.md",
+   "Tesla VIII"
+  ],
+  [
+   "journals/journal-0056.md",
+   "Umbral Domain"
+  ],
+  [
+   "journals/journal-0057.md",
+   "Galileo V"
+  ],
+  [
+   "journals/journal-0057.md",
+   "Gauss 21"
+  ],
+  [
+   "journals/journal-0057.md",
+   "Newton 22"
+  ],
+  [
+   "journals/journal-0057.md",
+   "Newton XIV"
+  ],
+  [
+   "journals/journal-0057.md",
+   "Quantum Orchard"
+  ],
+  [
+   "journals/journal-0057.md",
+   "Quiet Willow"
+  ],
+  [
+   "journals/journal-0057.md",
+   "Silver River"
+  ],
+  [
+   "journals/journal-0057.md",
+   "Velvet Domain"
+  ],
+  [
+   "journals/journal-0058.md",
+   "Archimedes XIII"
+  ],
+  [
+   "journals/journal-0058.md",
+   "Cantor IX"
+  ],
+  [
+   "journals/journal-0058.md",
+   "Ivory Forest"
+  ],
+  [
+   "journals/journal-0058.md",
+   "LLM 24"
+  ],
+  [
+   "journals/journal-0058.md",
+   "Lovelace IV"
+  ],
+  [
+   "journals/journal-0058.md",
+   "Quantum Harbor Foundry"
+  ],
+  [
+   "journals/journal-0058.md",
+   "Quantum Meadow Valley"
+  ],
+  [
+   "journals/journal-0059.md",
+   "Boreal Valley"
+  ],
+  [
+   "journals/journal-0059.md",
+   "Fermi 22"
+  ],
+  [
+   "journals/journal-0059.md",
+   "Frozen Beacon"
+  ],
+  [
+   "journals/journal-0059.md",
+   "GPT 21"
+  ],
+  [
+   "journals/journal-0059.md",
+   "Galileo X"
+  ],
+  [
+   "journals/journal-0059.md",
+   "IPO 26"
+  ],
+  [
+   "journals/journal-0059.md",
+   "Lovelace XI"
+  ],
+  [
+   "journals/journal-0059.md",
+   "Quiet Summit"
+  ],
+  [
+   "journals/journal-0059.md",
+   "Ramanujan 24"
+  ],
+  [
+   "journals/journal-0060.md",
+   "Faraday IV"
+  ],
+  [
+   "journals/journal-0060.md",
+   "Golden Quarry"
+  ],
+  [
+   "journals/journal-0060.md",
+   "Ivory Domain"
+  ],
+  [
+   "journals/journal-0060.md",
+   "Lunar Cathedral"
+  ],
+  [
+   "journals/journal-0060.md",
+   "Maxwell VI"
+  ],
+  [
+   "journals/journal-0060.md",
+   "Purple Cipher"
+  ],
+  [
+   "journals/journal-0061.md",
+   "Feynman 24"
+  ],
+  [
+   "journals/journal-0061.md",
+   "Mystic Beacon"
+  ],
+  [
+   "journals/journal-0061.md",
+   "Silver Archive"
+  ],
+  [
+   "journals/journal-0062.md",
+   "Archimedes 22"
+  ],
+  [
+   "journals/journal-0062.md",
+   "Hidden Garden"
+  ],
+  [
+   "journals/journal-0062.md",
+   "Lunar Quarry"
+  ],
+  [
+   "journals/journal-0062.md",
+   "Newton VI"
+  ],
+  [
+   "journals/journal-0062.md",
+   "Opal Atlas"
+  ],
+  [
+   "journals/journal-0062.md",
+   "Velvet Atlas"
+  ],
+  [
+   "journals/journal-0063.md",
+   "Darwin VII"
+  ],
+  [
+   "journals/journal-0063.md",
+   "Purple Orchard"
+  ],
+  [
+   "journals/journal-0063.md",
+   "Ramanujan VII"
+  ],
+  [
+   "journals/journal-0063.md",
+   "Rustic Computing"
+  ],
+  [
+   "journals/journal-0063.md",
+   "Tesla XVI"
+  ],
+  [
+   "journals/journal-0063.md",
+   "Zephyr Prism"
+  ],
+  [
+   "journals/journal-0064.md",
+   "Bohr XVIII"
+  ],
+  [
+   "journals/journal-0064.md",
+   "Faraday VII"
+  ],
+  [
+   "journals/journal-0064.md",
+   "Golden Harbor"
+  ],
+  [
+   "journals/journal-0064.md",
+   "Hopper XVI"
+  ],
+  [
+   "journals/journal-0064.md",
+   "Quantum Cathedral Cathedral"
+  ],
+  [
+   "journals/journal-0064.md",
+   "Quantum Meadow Tundra"
+  ],
+  [
+   "journals/journal-0064.md",
+   "Umbral Tundra"
+  ],
+  [
+   "journals/journal-0065.md",
+   "Archimedes XII"
+  ],
+  [
+   "journals/journal-0065.md",
+   "Darwin XVIII"
+  ],
+  [
+   "journals/journal-0065.md",
+   "Drift Garden"
+  ],
+  [
+   "journals/journal-0065.md",
+   "GPT 14"
+  ],
+  [
+   "journals/journal-0065.md",
+   "Ivory Archive"
+  ],
+  [
+   "journals/journal-0065.md",
+   "KPI"
+  ],
+  [
+   "journals/journal-0065.md",
+   "Maxwell"
+  ],
+  [
+   "journals/journal-0066.md",
+   "Darwin XV"
+  ],
+  [
+   "journals/journal-0066.md",
+   "Einstein XVII"
+  ],
+  [
+   "journals/journal-0066.md",
+   "Euler XIV"
+  ],
+  [
+   "journals/journal-0066.md",
+   "Faraday 22"
+  ],
+  [
+   "journals/journal-0066.md",
+   "Jade Computing"
+  ],
+  [
+   "journals/journal-0066.md",
+   "ROI 17"
+  ],
+  [
+   "journals/journal-0067.md",
+   "Boreal Computing"
+  ],
+  [
+   "journals/journal-0067.md",
+   "CRM 19"
+  ],
+  [
+   "journals/journal-0067.md",
+   "Cantor XX"
+  ],
+  [
+   "journals/journal-0067.md",
+   "Galileo XIII"
+  ],
+  [
+   "journals/journal-0067.md",
+   "Ivory Domain"
+  ],
+  [
+   "journals/journal-0067.md",
+   "Lunar Orchard"
+  ],
+  [
+   "journals/journal-0067.md",
+   "Newton X"
+  ],
+  [
+   "journals/journal-0067.md",
+   "Noether XV"
+  ],
+  [
+   "journals/journal-0068.md",
+   "Aristotle XII"
+  ],
+  [
+   "journals/journal-0068.md",
+   "Aristotle XVII"
+  ],
+  [
+   "journals/journal-0068.md",
+   "Cantor III"
+  ],
+  [
+   "journals/journal-0068.md",
+   "Cedar Willow"
+  ],
+  [
+   "journals/journal-0068.md",
+   "Faraday IX"
+  ],
+  [
+   "journals/journal-0068.md",
+   "Hopper IX"
+  ],
+  [
+   "journals/journal-0068.md",
+   "Hopper X"
+  ],
+  [
+   "journals/journal-0068.md",
+   "Tesla VI"
+  ],
+  [
+   "journals/journal-0069.md",
+   "Gauss IV"
+  ],
+  [
+   "journals/journal-0069.md",
+   "Mystic Garden"
+  ],
+  [
+   "journals/journal-0069.md",
+   "Newton 21"
+  ],
+  [
+   "journals/journal-0069.md",
+   "Quantum Orchard Foundry"
+  ],
+  [
+   "journals/journal-0070.md",
+   "Archimedes III"
+  ],
+  [
+   "journals/journal-0070.md",
+   "Archimedes XI"
+  ],
+  [
+   "journals/journal-0070.md",
+   "Crimson Summit"
+  ],
+  [
+   "journals/journal-0070.md",
+   "Faraday XIII"
+  ],
+  [
+   "journals/journal-0070.md",
+   "Newton IV"
+  ],
+  [
+   "journals/journal-0070.md",
+   "Ramanujan XII"
+  ],
+  [
+   "journals/journal-0070.md",
+   "Silver River"
+  ],
+  [
+   "journals/journal-0071.md",
+   "Bohr XVI"
+  ],
+  [
+   "journals/journal-0071.md",
+   "Faraday 24"
+  ],
+  [
+   "journals/journal-0071.md",
+   "Gauss XVI"
+  ],
+  [
+   "journals/journal-0071.md",
+   "Golden Domain"
+  ],
+  [
+   "journals/journal-0071.md",
+   "Hopper II"
+  ],
+  [
+   "journals/journal-0071.md",
+   "Lovelace 22"
+  ],
+  [
+   "journals/journal-0071.md",
+   "Tesla VI"
+  ],
+  [
+   "journals/journal-0072.md",
+   "Ancient Archive"
+  ],
+  [
+   "journals/journal-0072.md",
+   "Darwin IV"
+  ],
+  [
+   "journals/journal-0072.md",
+   "Fermi XIV"
+  ],
+  [
+   "journals/journal-0072.md",
+   "Golden Glacier"
+  ],
+  [
+   "journals/journal-0072.md",
+   "Heisenberg XII"
+  ],
+  [
+   "journals/journal-0072.md",
+   "LLM 23"
+  ],
+  [
+   "journals/journal-0072.md",
+   "Purple Valley"
+  ],
+  [
+   "journals/journal-0073.md",
+   "Ancient Forest"
+  ],
+  [
+   "journals/journal-0073.md",
+   "ERP 2"
+  ],
+  [
+   "journals/journal-0073.md",
+   "Faraday 24"
+  ],
+  [
+   "journals/journal-0073.md",
+   "Feynman VI"
+  ],
+  [
+   "journals/journal-0073.md",
+   "Northern Glacier"
+  ],
+  [
+   "journals/journal-0074.md",
+   "Ancient Cipher"
+  ],
+  [
+   "journals/journal-0074.md",
+   "Feynman XVII"
+  ],
+  [
+   "journals/journal-0074.md",
+   "Galileo IX"
+  ],
+  [
+   "journals/journal-0074.md",
+   "KPI 21"
+  ],
+  [
+   "journals/journal-0074.md",
+   "Quantum Harbor"
+  ],
+  [
+   "journals/journal-0074.md",
+   "Thunder Willow"
+  ],
+  [
+   "journals/journal-0075.md",
+   "Ancient Labyrinth"
+  ],
+  [
+   "journals/journal-0075.md",
+   "Darwin XX"
+  ],
+  [
+   "journals/journal-0075.md",
+   "Golden Willow"
+  ],
+  [
+   "journals/journal-0075.md",
+   "Hopper 22"
+  ],
+  [
+   "journals/journal-0075.md",
+   "Opal Cipher"
+  ],
+  [
+   "journals/journal-0075.md",
+   "Quantum Meadow Atlas"
+  ],
+  [
+   "journals/journal-0076.md",
+   "Cantor VII"
+  ],
+  [
+   "journals/journal-0076.md",
+   "Quiet Tundra"
+  ],
+  [
+   "journals/journal-0076.md",
+   "Thunder Quarry"
+  ],
+  [
+   "journals/journal-0077.md",
+   "Galileo X"
+  ],
+  [
+   "journals/journal-0077.md",
+   "Gauss XII"
+  ],
+  [
+   "journals/journal-0077.md",
+   "Heisenberg V"
+  ],
+  [
+   "journals/journal-0077.md",
+   "Opal Atlas"
+  ],
+  [
+   "journals/journal-0078.md",
+   "Darwin VI"
+  ],
+  [
+   "journals/journal-0078.md",
+   "IPO 14"
+  ],
+  [
+   "journals/journal-0079.md",
+   "CRM 22"
+  ],
+  [
+   "journals/journal-0079.md",
+   "Cedar Cipher"
+  ],
+  [
+   "journals/journal-0079.md",
+   "Curie 21"
+  ],
+  [
+   "journals/journal-0079.md",
+   "Plato XV"
+  ],
+  [
+   "journals/journal-0079.md",
+   "Quantum Glacier"
+  ],
+  [
+   "journals/journal-0079.md",
+   "RAG 18"
+  ],
+  [
+   "journals/journal-0079.md",
+   "Rustic Lantern"
+  ],
+  [
+   "journals/journal-0080.md",
+   "Amber Quarry"
+  ],
+  [
+   "journals/journal-0080.md",
+   "Cedar Prism"
+  ],
+  [
+   "journals/journal-0080.md",
+   "Cosmic Tundra"
+  ],
+  [
+   "journals/journal-0080.md",
+   "Digital Beacon"
+  ],
+  [
+   "journals/journal-0080.md",
+   "Faraday XIX"
+  ],
+  [
+   "journals/journal-0080.md",
+   "Quantum Lantern Garden"
+  ],
+  [
+   "journals/journal-0080.md",
+   "Quantum Lantern Valley"
+  ],
+  [
+   "journals/journal-0080.md",
+   "Zephyr Tundra"
+  ],
+  [
+   "journals/journal-0081.md",
+   "Aristotle IV"
+  ],
+  [
+   "journals/journal-0081.md",
+   "Bohr 21"
+  ],
+  [
+   "journals/journal-0081.md",
+   "Curie 21"
+  ],
+  [
+   "journals/journal-0081.md",
+   "Euler VIII"
+  ],
+  [
+   "journals/journal-0081.md",
+   "GPT 11"
+  ],
+  [
+   "journals/journal-0081.md",
+   "Hopper 22"
+  ],
+  [
+   "journals/journal-0081.md",
+   "KPI 24"
+  ],
+  [
+   "journals/journal-0081.md",
+   "Noether 24"
+  ],
+  [
+   "journals/journal-0081.md",
+   "Opal Cipher"
+  ],
+  [
+   "journals/journal-0081.md",
+   "Rustic Atlas"
+  ],
+  [
+   "journals/journal-0082.md",
+   "Aristotle VII"
+  ],
+  [
+   "journals/journal-0082.md",
+   "Darwin X"
+  ],
+  [
+   "journals/journal-0082.md",
+   "KPI 25"
+  ],
+  [
+   "journals/journal-0082.md",
+   "OCR 3"
+  ],
+  [
+   "journals/journal-0082.md",
+   "Quiet Willow"
+  ],
+  [
+   "journals/journal-0082.md",
+   "RAG 24"
+  ],
+  [
+   "journals/journal-0082.md",
+   "Silver Garden"
+  ],
+  [
+   "journals/journal-0083.md",
+   "Ancient Labyrinth"
+  ],
+  [
+   "journals/journal-0083.md",
+   "Einstein XIV"
+  ],
+  [
+   "journals/journal-0083.md",
+   "Feynman X"
+  ],
+  [
+   "journals/journal-0083.md",
+   "Lunar Cipher"
+  ],
+  [
+   "journals/journal-0083.md",
+   "Plato VII"
+  ],
+  [
+   "journals/journal-0083.md",
+   "Rustic Computing"
+  ],
+  [
+   "journals/journal-0083.md",
+   "Tesla II"
+  ],
+  [
+   "journals/journal-0083.md",
+   "Tesla XVI"
+  ],
+  [
+   "journals/journal-0084.md",
+   "Cedar Foundry"
+  ],
+  [
+   "journals/journal-0084.md",
+   "Ivory Atlas"
+  ],
+  [
+   "journals/journal-0084.md",
+   "KPI 23"
+  ],
+  [
+   "journals/journal-0084.md",
+   "Lunar Beacon"
+  ],
+  [
+   "journals/journal-0084.md",
+   "Quantum Harbor Foundry"
+  ],
+  [
+   "journals/journal-0084.md",
+   "Quantum Quarry"
+  ],
+  [
+   "journals/journal-0085.md",
+   "ERP 10"
+  ],
+  [
+   "journals/journal-0085.md",
+   "Feynman 24"
+  ],
+  [
+   "journals/journal-0085.md",
+   "LLM 2"
+  ],
+  [
+   "journals/journal-0085.md",
+   "Newton IV"
+  ],
+  [
+   "journals/journal-0086.md",
+   "Amber Computing"
+  ],
+  [
+   "journals/journal-0086.md",
+   "Galileo 22"
+  ],
+  [
+   "journals/journal-0086.md",
+   "Maxwell II"
+  ],
+  [
+   "journals/journal-0087.md",
+   "Bohr IV"
+  ],
+  [
+   "journals/journal-0087.md",
+   "Drift Orchard"
+  ],
+  [
+   "journals/journal-0087.md",
+   "Quantum Cathedral Quarry"
+  ],
+  [
+   "journals/journal-0087.md",
+   "Quantum Lantern River"
+  ],
+  [
+   "journals/journal-0087.md",
+   "Quantum Meadow Forest"
+  ],
+  [
+   "journals/journal-0087.md",
+   "Silver Orchard"
+  ],
+  [
+   "journals/journal-0088.md",
+   "AI 8"
+  ],
+  [
+   "journals/journal-0088.md",
+   "Fermi XIII"
+  ],
+  [
+   "journals/journal-0088.md",
+   "ROI 20"
+  ],
+  [
+   "journals/journal-0088.md",
+   "Velvet Cathedral"
+  ],
+  [
+   "journals/journal-0089.md",
+   "AI 8"
+  ],
+  [
+   "journals/journal-0089.md",
+   "Heisenberg 22"
+  ],
+  [
+   "journals/journal-0089.md",
+   "Lovelace 21"
+  ],
+  [
+   "journals/journal-0089.md",
+   "Quantum Meadow Summit"
+  ],
+  [
+   "journals/journal-0089.md",
+   "Silent Tundra"
+  ],
+  [
+   "journals/journal-0090.md",
+   "AI 27"
+  ],
+  [
+   "journals/journal-0090.md",
+   "Boreal Prism"
+  ],
+  [
+   "journals/journal-0090.md",
+   "Ember Forest"
+  ],
+  [
+   "journals/journal-0090.md",
+   "Faraday 22"
+  ],
+  [
+   "journals/journal-0090.md",
+   "Feynman V"
+  ],
+  [
+   "journals/journal-0090.md",
+   "Golden Computing"
+  ],
+  [
+   "journals/journal-0090.md",
+   "Neural Orchard"
+  ],
+  [
+   "journals/journal-0090.md",
+   "Purple Foundry"
+  ],
+  [
+   "journals/journal-0091.md",
+   "Faraday XVIII"
+  ],
+  [
+   "journals/journal-0091.md",
+   "Heisenberg VIII"
+  ],
+  [
+   "journals/journal-0091.md",
+   "Quantum Computing Beacon"
+  ],
+  [
+   "journals/journal-0091.md",
+   "RAG 8"
+  ],
+  [
+   "journals/journal-0091.md",
+   "Tesla 23"
+  ],
+  [
+   "journals/journal-0091.md",
+   "Tesla IX"
+  ],
+  [
+   "journals/journal-0091.md",
+   "Woven Mirage"
+  ],
+  [
+   "journals/journal-0092.md",
+   "Aristotle IX"
+  ],
+  [
+   "journals/journal-0092.md",
+   "Boreal Harbor"
+  ],
+  [
+   "journals/journal-0092.md",
+   "CRM 21"
+  ],
+  [
+   "journals/journal-0092.md",
+   "Hidden Tundra"
+  ],
+  [
+   "journals/journal-0092.md",
+   "Ivory River"
+  ],
+  [
+   "journals/journal-0092.md",
+   "LLM 21"
+  ],
+  [
+   "journals/journal-0092.md",
+   "Lovelace V"
+  ],
+  [
+   "journals/journal-0092.md",
+   "Lunar Prism"
+  ],
+  [
+   "journals/journal-0092.md",
+   "OCR 23"
+  ],
+  [
+   "journals/journal-0093.md",
+   "Cantor XX"
+  ],
+  [
+   "journals/journal-0093.md",
+   "Cedar Cathedral"
+  ],
+  [
+   "journals/journal-0093.md",
+   "Drift River"
+  ],
+  [
+   "journals/journal-0094.md",
+   "IPO 17"
+  ],
+  [
+   "journals/journal-0094.md",
+   "KPI 3"
+  ],
+  [
+   "journals/journal-0094.md",
+   "Noether II"
+  ],
+  [
+   "journals/journal-0094.md",
+   "Quantum Cathedral Orchard"
+  ],
+  [
+   "journals/journal-0094.md",
+   "Quantum Meadow Engine"
+  ],
+  [
+   "journals/journal-0095.md",
+   "Archimedes XIII"
+  ],
+  [
+   "journals/journal-0095.md",
+   "Euler XX"
+  ],
+  [
+   "journals/journal-0095.md",
+   "Golden Cipher"
+  ],
+  [
+   "journals/journal-0095.md",
+   "Lunar Domain"
+  ],
+  [
+   "journals/journal-0095.md",
+   "Newton XIV"
+  ],
+  [
+   "journals/journal-0095.md",
+   "Northern Cipher"
+  ],
+  [
+   "journals/journal-0095.md",
+   "OCR 16"
+  ],
+  [
+   "journals/journal-0095.md",
+   "Velvet Tundra"
+  ],
+  [
+   "journals/journal-0096.md",
+   "Archimedes IV"
+  ],
+  [
+   "journals/journal-0096.md",
+   "Aristotle 21"
+  ],
+  [
+   "journals/journal-0096.md",
+   "Cantor IX"
+  ],
+  [
+   "journals/journal-0096.md",
+   "Fermi IV"
+  ],
+  [
+   "journals/journal-0096.md",
+   "LLM 16"
+  ],
+  [
+   "journals/journal-0096.md",
+   "Woven Engine"
+  ],
+  [
+   "journals/journal-0097.md",
+   "Ancient Lantern"
+  ],
+  [
+   "journals/journal-0097.md",
+   "Bohr V"
+  ],
+  [
+   "journals/journal-0097.md",
+   "Curie XI"
+  ],
+  [
+   "journals/journal-0097.md",
+   "Drift Mirage"
+  ],
+  [
+   "journals/journal-0097.md",
+   "IPO 27"
+  ],
+  [
+   "journals/journal-0097.md",
+   "ROI 13"
+  ],
+  [
+   "journals/journal-0097.md",
+   "Woven Harbor"
+  ],
+  [
+   "journals/journal-0098.md",
+   "Bohr 24"
+  ],
+  [
+   "journals/journal-0098.md",
+   "Darwin IX"
+  ],
+  [
+   "journals/journal-0098.md",
+   "Hidden Archive"
+  ],
+  [
+   "journals/journal-0098.md",
+   "KPI 2"
+  ],
+  [
+   "journals/journal-0098.md",
+   "Maxwell XV"
+  ],
+  [
+   "journals/journal-0098.md",
+   "Opal Labyrinth"
+  ],
+  [
+   "journals/journal-0098.md",
+   "Plato III"
+  ],
+  [
+   "journals/journal-0098.md",
+   "Quantum Cathedral Willow"
+  ],
+  [
+   "journals/journal-0098.md",
+   "Quiet Cipher"
+  ],
+  [
+   "journals/journal-0098.md",
+   "ROI 20"
+  ],
+  [
+   "journals/journal-0099.md",
+   "Ancient Harbor"
+  ],
+  [
+   "journals/journal-0099.md",
+   "Galileo XVI"
+  ],
+  [
+   "journals/journal-0099.md",
+   "Kepler 21"
+  ],
+  [
+   "journals/journal-0099.md",
+   "Lunar Meadow"
+  ],
+  [
+   "journals/journal-0099.md",
+   "Noether IV"
+  ],
+  [
+   "journals/journal-0099.md",
+   "Plato XIII"
+  ],
+  [
+   "journals/journal-0099.md",
+   "Quiet Archive"
+  ],
+  [
+   "journals/journal-0100.md",
+   "Cantor V"
+  ],
+  [
+   "journals/journal-0100.md",
+   "Newton XIII"
+  ],
+  [
+   "journals/journal-0100.md",
+   "Silver Computing"
+  ],
+  [
+   "journals/journal-0101.md",
+   "AI 24"
+  ],
+  [
+   "journals/journal-0101.md",
+   "Ancient Glacier"
+  ],
+  [
+   "journals/journal-0101.md",
+   "Cosmic Cipher"
+  ],
+  [
+   "journals/journal-0101.md",
+   "Crimson Summit"
+  ],
+  [
+   "journals/journal-0101.md",
+   "Lunar Archive"
+  ],
+  [
+   "journals/journal-0101.md",
+   "Quantum Lantern Cathedral"
+  ],
+  [
+   "journals/journal-0101.md",
+   "Ramanujan"
+  ],
+  [
+   "journals/journal-0102.md",
+   "Amber Foundry"
+  ],
+  [
+   "journals/journal-0102.md",
+   "Ember Lantern"
+  ],
+  [
+   "journals/journal-0102.md",
+   "Faraday XIV"
+  ],
+  [
+   "journals/journal-0102.md",
+   "Ivory Cipher"
+  ],
+  [
+   "journals/journal-0102.md",
+   "Tesla"
+  ],
+  [
+   "journals/journal-0102.md",
+   "Thunder Cathedral"
+  ],
+  [
+   "journals/journal-0103.md",
+   "Archimedes VIII"
+  ],
+  [
+   "journals/journal-0103.md",
+   "Lovelace V"
+  ],
+  [
+   "journals/journal-0103.md",
+   "RAG 20"
+  ],
+  [
+   "journals/journal-0103.md",
+   "Tesla 24"
+  ],
+  [
+   "journals/journal-0104.md",
+   "Cantor VIII"
+  ],
+  [
+   "journals/journal-0104.md",
+   "Curie 21"
+  ],
+  [
+   "journals/journal-0104.md",
+   "Heisenberg XVI"
+  ],
+  [
+   "journals/journal-0104.md",
+   "IPO 28"
+  ],
+  [
+   "journals/journal-0104.md",
+   "Neural Cipher"
+  ],
+  [
+   "journals/journal-0104.md",
+   "Plato IV"
+  ],
+  [
+   "journals/journal-0104.md",
+   "Quantum Beacon"
+  ],
+  [
+   "journals/journal-0105.md",
+   "Drift Prism"
+  ],
+  [
+   "journals/journal-0105.md",
+   "Faraday XV"
+  ],
+  [
+   "journals/journal-0105.md",
+   "LLM 21"
+  ],
+  [
+   "journals/journal-0105.md",
+   "Quantum Computing Garden"
+  ],
+  [
+   "journals/journal-0106.md",
+   "Euler XX"
+  ],
+  [
+   "journals/journal-0106.md",
+   "Noether 24"
+  ],
+  [
+   "journals/journal-0106.md",
+   "Silver Valley"
+  ],
+  [
+   "journals/journal-0106.md",
+   "Turing 21"
+  ],
+  [
+   "journals/journal-0106.md",
+   "Zephyr Willow"
+  ],
+  [
+   "journals/journal-0107.md",
+   "Darwin 23"
+  ],
+  [
+   "journals/journal-0107.md",
+   "Purple Archive"
+  ],
+  [
+   "journals/journal-0107.md",
+   "Quantum Meadow"
+  ],
+  [
+   "journals/journal-0108.md",
+   "Galileo 22"
+  ],
+  [
+   "journals/journal-0108.md",
+   "OCR 29"
+  ],
+  [
+   "journals/journal-0108.md",
+   "Quantum Harbor River"
+  ],
+  [
+   "journals/journal-0108.md",
+   "Quantum Labyrinth"
+  ],
+  [
+   "journals/journal-0108.md",
+   "Thunder Computing"
+  ],
+  [
+   "journals/journal-0108.md",
+   "Umbral Meadow"
+  ],
+  [
+   "journals/journal-0108.md",
+   "Woven River"
+  ],
+  [
+   "journals/journal-0109.md",
+   "CRM 21"
+  ],
+  [
+   "journals/journal-0109.md",
+   "Quantum Cathedral Quarry"
+  ],
+  [
+   "journals/journal-0109.md",
+   "Thunder Lantern"
+  ],
+  [
+   "journals/journal-0109.md",
+   "Turing III"
+  ],
+  [
+   "journals/journal-0109.md",
+   "Turing XVIII"
+  ],
+  [
+   "journals/journal-0109.md",
+   "Woven Harbor"
+  ],
+  [
+   "journals/journal-0109.md",
+   "Zephyr Foundry"
+  ],
+  [
+   "journals/journal-0110.md",
+   "Kepler XII"
+  ],
+  [
+   "journals/journal-0110.md",
+   "Mystic Tundra"
+  ],
+  [
+   "journals/journal-0110.md",
+   "Opal Forest"
+  ],
+  [
+   "journals/journal-0110.md",
+   "Quantum Meadow Cathedral"
+  ],
+  [
+   "journals/journal-0110.md",
+   "Silver Engine"
+  ],
+  [
+   "journals/journal-0111.md",
+   "Aristotle 24"
+  ],
+  [
+   "journals/journal-0111.md",
+   "Aristotle VII"
+  ],
+  [
+   "journals/journal-0111.md",
+   "Bohr II"
+  ],
+  [
+   "journals/journal-0111.md",
+   "Digital Labyrinth"
+  ],
+  [
+   "journals/journal-0111.md",
+   "Hopper XIX"
+  ],
+  [
+   "journals/journal-0111.md",
+   "Umbral Atlas"
+  ],
+  [
+   "journals/journal-0112.md",
+   "Archimedes VI"
+  ],
+  [
+   "journals/journal-0112.md",
+   "Cosmic Harbor"
+  ],
+  [
+   "journals/journal-0112.md",
+   "Fermi XVIII"
+  ],
+  [
+   "journals/journal-0112.md",
+   "Purple Cipher"
+  ],
+  [
+   "journals/journal-0112.md",
+   "Quantum Orchard Willow"
+  ],
+  [
+   "journals/journal-0112.md",
+   "Quiet Atlas"
+  ],
+  [
+   "journals/journal-0113.md",
+   "AI 9"
+  ],
+  [
+   "journals/journal-0113.md",
+   "Cantor"
+  ],
+  [
+   "journals/journal-0113.md",
+   "Drift River"
+  ],
+  [
+   "journals/journal-0113.md",
+   "Jade Prism"
+  ],
+  [
+   "journals/journal-0113.md",
+   "Lunar Summit"
+  ],
+  [
+   "journals/journal-0113.md",
+   "Quantum Cathedral Glacier"
+  ],
+  [
+   "journals/journal-0113.md",
+   "Quantum Harbor Willow"
+  ],
+  [
+   "journals/journal-0114.md",
+   "Ancient Mirage"
+  ],
+  [
+   "journals/journal-0114.md",
+   "Drift Labyrinth"
+  ],
+  [
+   "journals/journal-0114.md",
+   "Mystic Beacon"
+  ],
+  [
+   "journals/journal-0114.md",
+   "Neural Tundra"
+  ],
+  [
+   "journals/journal-0114.md",
+   "Quantum Tundra"
+  ],
+  [
+   "journals/journal-0114.md",
+   "RAG 9"
+  ],
+  [
+   "journals/journal-0114.md",
+   "Ramanujan XVI"
+  ],
+  [
+   "journals/journal-0114.md",
+   "Thunder River"
+  ],
+  [
+   "journals/journal-0115.md",
+   "Aristotle VII"
+  ],
+  [
+   "journals/journal-0115.md",
+   "Crimson Quarry"
+  ],
+  [
+   "journals/journal-0115.md",
+   "Frozen Orchard"
+  ],
+  [
+   "journals/journal-0115.md",
+   "Gauss IX"
+  ],
+  [
+   "journals/journal-0115.md",
+   "Jade Beacon"
+  ],
+  [
+   "journals/journal-0115.md",
+   "Maxwell XVIII"
+  ],
+  [
+   "journals/journal-0116.md",
+   "Einstein 24"
+  ],
+  [
+   "journals/journal-0116.md",
+   "Frozen Summit"
+  ],
+  [
+   "journals/journal-0116.md",
+   "Maxwell VII"
+  ],
+  [
+   "journals/journal-0116.md",
+   "Maxwell XII"
+  ],
+  [
+   "journals/journal-0116.md",
+   "Northern Tundra"
+  ],
+  [
+   "journals/journal-0116.md",
+   "Quantum Computing River"
+  ],
+  [
+   "journals/journal-0116.md",
+   "Quantum Harbor Quarry"
+  ],
+  [
+   "journals/journal-0116.md",
+   "Umbral Glacier"
+  ],
+  [
+   "journals/journal-0117.md",
+   "Euler II"
+  ],
+  [
+   "journals/journal-0117.md",
+   "Euler VI"
+  ],
+  [
+   "journals/journal-0117.md",
+   "Euler XII"
+  ],
+  [
+   "journals/journal-0117.md",
+   "Quantum Meadow Lantern"
+  ],
+  [
+   "journals/journal-0117.md",
+   "Quantum Meadow Valley"
+  ],
+  [
+   "journals/journal-0117.md",
+   "Silent Cipher"
+  ],
+  [
+   "journals/journal-0118.md",
+   "Ancient Tundra"
+  ],
+  [
+   "journals/journal-0118.md",
+   "CRM 11"
+  ],
+  [
+   "journals/journal-0118.md",
+   "Gauss XIII"
+  ],
+  [
+   "journals/journal-0118.md",
+   "Hopper 22"
+  ],
+  [
+   "journals/journal-0118.md",
+   "Ivory Glacier"
+  ],
+  [
+   "journals/journal-0118.md",
+   "Velvet Lantern"
+  ],
+  [
+   "journals/journal-0119.md",
+   "Amber Tundra"
+  ],
+  [
+   "journals/journal-0119.md",
+   "CRM 20"
+  ],
+  [
+   "journals/journal-0119.md",
+   "Cantor IX"
+  ],
+  [
+   "journals/journal-0119.md",
+   "Cosmic Garden"
+  ],
+  [
+   "journals/journal-0119.md",
+   "GPT 19"
+  ],
+  [
+   "journals/journal-0119.md",
+   "KPI 29"
+  ],
+  [
+   "journals/journal-0119.md",
+   "Lovelace 21"
+  ],
+  [
+   "journals/journal-0119.md",
+   "Quiet Tundra"
+  ],
+  [
+   "journals/journal-0119.md",
+   "Zephyr Domain"
+  ],
+  [
+   "journals/journal-0120.md",
+   "Drift Domain"
+  ],
+  [
+   "journals/journal-0120.md",
+   "Ember Glacier"
+  ],
+  [
+   "journals/journal-0120.md",
+   "Fermi VI"
+  ],
+  [
+   "journals/journal-0120.md",
+   "Golden Harbor"
+  ],
+  [
+   "journals/journal-0120.md",
+   "Jade Atlas"
+  ],
+  [
+   "journals/journal-0120.md",
+   "LLM 22"
+  ],
+  [
+   "journals/journal-0120.md",
+   "Neural Harbor"
+  ],
+  [
+   "journals/journal-0120.md",
+   "ROI 7"
+  ],
+  [
+   "journals/journal-0121.md",
+   "ERP 11"
+  ],
+  [
+   "journals/journal-0121.md",
+   "Ember Garden"
+  ],
+  [
+   "journals/journal-0121.md",
+   "Hopper XVI"
+  ],
+  [
+   "journals/journal-0121.md",
+   "Socrates"
+  ],
+  [
+   "journals/journal-0121.md",
+   "Socrates VII"
+  ],
+  [
+   "journals/journal-0122.md",
+   "ERP 20"
+  ],
+  [
+   "journals/journal-0122.md",
+   "Quantum Cathedral Summit"
+  ],
+  [
+   "journals/journal-0122.md",
+   "Quantum Lantern Mirage"
+  ],
+  [
+   "journals/journal-0122.md",
+   "Umbral Engine"
+  ],
+  [
+   "journals/journal-0122.md",
+   "Umbral Mirage"
+  ],
+  [
+   "journals/journal-0123.md",
+   "Einstein XI"
+  ],
+  [
+   "journals/journal-0123.md",
+   "Euler 21"
+  ],
+  [
+   "journals/journal-0123.md",
+   "Galileo VI"
+  ],
+  [
+   "journals/journal-0123.md",
+   "Quantum Cathedral Atlas"
+  ],
+  [
+   "journals/journal-0123.md",
+   "Quantum Harbor Mirage"
+  ],
+  [
+   "journals/journal-0123.md",
+   "Quantum Orchard Glacier"
+  ],
+  [
+   "journals/journal-0123.md",
+   "Thunder Archive"
+  ],
+  [
+   "journals/journal-0123.md",
+   "Velvet Cipher"
+  ],
+  [
+   "journals/journal-0124.md",
+   "Galileo XVI"
+  ],
+  [
+   "journals/journal-0124.md",
+   "Heisenberg II"
+  ],
+  [
+   "journals/journal-0124.md",
+   "Plato II"
+  ],
+  [
+   "journals/journal-0124.md",
+   "Quantum Harbor River"
+  ],
+  [
+   "journals/journal-0124.md",
+   "Silver Meadow"
+  ],
+  [
+   "journals/journal-0124.md",
+   "Socrates XI"
+  ],
+  [
+   "journals/journal-0125.md",
+   "GPT 10"
+  ],
+  [
+   "journals/journal-0125.md",
+   "Heisenberg"
+  ],
+  [
+   "journals/journal-0125.md",
+   "Hopper III"
+  ],
+  [
+   "journals/journal-0125.md",
+   "Kepler VIII"
+  ],
+  [
+   "journals/journal-0125.md",
+   "Quantum Meadow Garden"
+  ],
+  [
+   "journals/journal-0126.md",
+   "Euler XV"
+  ],
+  [
+   "journals/journal-0126.md",
+   "Frozen Quarry"
+  ],
+  [
+   "journals/journal-0126.md",
+   "Quantum Cathedral Mirage"
+  ],
+  [
+   "journals/journal-0126.md",
+   "Quantum Foundry"
+  ],
+  [
+   "journals/journal-0126.md",
+   "Quantum Orchard Computing"
+  ],
+  [
+   "journals/journal-0126.md",
+   "Rustic Meadow"
+  ],
+  [
+   "journals/journal-0127.md",
+   "Aristotle IX"
+  ],
+  [
+   "journals/journal-0127.md",
+   "CRM 14"
+  ],
+  [
+   "journals/journal-0127.md",
+   "CRM 20"
+  ],
+  [
+   "journals/journal-0127.md",
+   "Digital Labyrinth"
+  ],
+  [
+   "journals/journal-0127.md",
+   "Ember Cipher"
+  ],
+  [
+   "journals/journal-0127.md",
+   "Lunar Harbor"
+  ],
+  [
+   "journals/journal-0127.md",
+   "Plato XIII"
+  ],
+  [
+   "journals/journal-0128.md",
+   "Boreal Mirage"
+  ],
+  [
+   "journals/journal-0128.md",
+   "CRM 20"
+  ],
+  [
+   "journals/journal-0128.md",
+   "Faraday III"
+  ],
+  [
+   "journals/journal-0128.md",
+   "Frozen Tundra"
+  ],
+  [
+   "journals/journal-0128.md",
+   "Galileo X"
+  ],
+  [
+   "journals/journal-0128.md",
+   "Tesla II"
+  ],
+  [
+   "journals/journal-0129.md",
+   "Archimedes XIX"
+  ],
+  [
+   "journals/journal-0129.md",
+   "CRM 24"
+  ],
+  [
+   "journals/journal-0129.md",
+   "Feynman XI"
+  ],
+  [
+   "journals/journal-0129.md",
+   "GPT 23"
+  ],
+  [
+   "journals/journal-0129.md",
+   "Maxwell XVI"
+  ],
+  [
+   "journals/journal-0129.md",
+   "Quantum Computing Tundra"
+  ],
+  [
+   "journals/journal-0129.md",
+   "Quiet Domain"
+  ],
+  [
+   "journals/journal-0129.md",
+   "Silent Computing"
+  ],
+  [
+   "journals/journal-0129.md",
+   "Turing XV"
+  ],
+  [
+   "journals/journal-0130.md",
+   "Cantor III"
+  ],
+  [
+   "journals/journal-0130.md",
+   "Digital Labyrinth"
+  ],
+  [
+   "journals/journal-0130.md",
+   "GPT 26"
+  ],
+  [
+   "journals/journal-0130.md",
+   "Hidden Forest"
+  ],
+  [
+   "journals/journal-0130.md",
+   "ROI 9"
+  ],
+  [
+   "journals/journal-0131.md",
+   "Ancient Willow"
+  ],
+  [
+   "journals/journal-0131.md",
+   "CRM 3"
+  ],
+  [
+   "journals/journal-0131.md",
+   "Curie 22"
+  ],
+  [
+   "journals/journal-0131.md",
+   "Galileo XIX"
+  ],
+  [
+   "journals/journal-0131.md",
+   "Golden Beacon"
+  ],
+  [
+   "journals/journal-0131.md",
+   "Quantum Cathedral Lantern"
+  ],
+  [
+   "journals/journal-0131.md",
+   "Quantum Lantern Valley"
+  ],
+  [
+   "journals/journal-0131.md",
+   "Ramanujan IX"
+  ],
+  [
+   "journals/journal-0131.md",
+   "Ramanujan XVIII"
+  ],
+  [
+   "journals/journal-0131.md",
+   "Umbral Domain"
+  ],
+  [
+   "journals/journal-0132.md",
+   "Amber Lantern"
+  ],
+  [
+   "journals/journal-0132.md",
+   "Plato"
+  ],
+  [
+   "journals/journal-0132.md",
+   "Quantum Harbor Foundry"
+  ],
+  [
+   "journals/journal-0132.md",
+   "Tesla XVIII"
+  ],
+  [
+   "journals/journal-0132.md",
+   "Velvet Computing"
+  ],
+  [
+   "journals/journal-0133.md",
+   "Amber Atlas"
+  ],
+  [
+   "journals/journal-0133.md",
+   "CRM 4"
+  ],
+  [
+   "journals/journal-0133.md",
+   "ERP 20"
+  ],
+  [
+   "journals/journal-0133.md",
+   "Ember Harbor"
+  ],
+  [
+   "journals/journal-0133.md",
+   "Ember Labyrinth"
+  ],
+  [
+   "journals/journal-0133.md",
+   "Euler XI"
+  ],
+  [
+   "journals/journal-0133.md",
+   "Faraday XVI"
+  ],
+  [
+   "journals/journal-0133.md",
+   "GPT 4"
+  ],
+  [
+   "journals/journal-0133.md",
+   "Lovelace 23"
+  ],
+  [
+   "journals/journal-0134.md",
+   "Bohr XIV"
+  ],
+  [
+   "journals/journal-0134.md",
+   "Cantor XIII"
+  ],
+  [
+   "journals/journal-0134.md",
+   "Euler XV"
+  ],
+  [
+   "journals/journal-0134.md",
+   "Hidden Orchard"
+  ],
+  [
+   "journals/journal-0134.md",
+   "Silent Garden"
+  ],
+  [
+   "journals/journal-0135.md",
+   "Digital Tundra"
+  ],
+  [
+   "journals/journal-0135.md",
+   "Galileo XIII"
+  ],
+  [
+   "journals/journal-0135.md",
+   "Mystic Forest"
+  ],
+  [
+   "journals/journal-0135.md",
+   "Noether X"
+  ],
+  [
+   "journals/journal-0135.md",
+   "Noether XVIII"
+  ],
+  [
+   "journals/journal-0135.md",
+   "Quantum Orchard Archive"
+  ],
+  [
+   "journals/journal-0136.md",
+   "Archimedes IV"
+  ],
+  [
+   "journals/journal-0136.md",
+   "Drift Cipher"
+  ],
+  [
+   "journals/journal-0136.md",
+   "KPI 29"
+  ],
+  [
+   "journals/journal-0136.md",
+   "Lunar Labyrinth"
+  ],
+  [
+   "journals/journal-0136.md",
+   "Plato II"
+  ],
+  [
+   "journals/journal-0136.md",
+   "Quantum Beacon"
+  ],
+  [
+   "journals/journal-0136.md",
+   "Tesla IX"
+  ],
+  [
+   "journals/journal-0137.md",
+   "Crimson Glacier"
+  ],
+  [
+   "journals/journal-0137.md",
+   "ERP 25"
+  ],
+  [
+   "journals/journal-0137.md",
+   "Feynman XVIII"
+  ],
+  [
+   "journals/journal-0137.md",
+   "IPO 2"
+  ],
+  [
+   "journals/journal-0137.md",
+   "Newton XVI"
+  ],
+  [
+   "journals/journal-0138.md",
+   "Euler XVI"
+  ],
+  [
+   "journals/journal-0138.md",
+   "Lunar River"
+  ],
+  [
+   "journals/journal-0138.md",
+   "Quantum Glacier"
+  ],
+  [
+   "journals/journal-0138.md",
+   "Quantum Orchard"
+  ],
+  [
+   "journals/journal-0139.md",
+   "Euler V"
+  ],
+  [
+   "journals/journal-0139.md",
+   "Hidden Mirage"
+  ],
+  [
+   "journals/journal-0139.md",
+   "Northern Orchard"
+  ],
+  [
+   "journals/journal-0139.md",
+   "Quiet Foundry"
+  ],
+  [
+   "journals/journal-0139.md",
+   "Rustic Cathedral"
+  ],
+  [
+   "journals/journal-0140.md",
+   "Euler XX"
+  ],
+  [
+   "journals/journal-0140.md",
+   "Tesla"
+  ],
+  [
+   "journals/journal-0140.md",
+   "Umbral Garden"
+  ],
+  [
+   "journals/journal-0141.md",
+   "GPT 30"
+  ],
+  [
+   "journals/journal-0141.md",
+   "Gauss XIII"
+  ],
+  [
+   "journals/journal-0141.md",
+   "Heisenberg 24"
+  ],
+  [
+   "journals/journal-0141.md",
+   "Umbral Orchard"
+  ],
+  [
+   "journals/journal-0142.md",
+   "AI 25"
+  ],
+  [
+   "journals/journal-0142.md",
+   "Aristotle XIII"
+  ],
+  [
+   "journals/journal-0142.md",
+   "Drift Mirage"
+  ],
+  [
+   "journals/journal-0142.md",
+   "Einstein XII"
+  ],
+  [
+   "journals/journal-0142.md",
+   "Feynman 21"
+  ],
+  [
+   "journals/journal-0142.md",
+   "Golden Valley"
+  ],
+  [
+   "journals/journal-0142.md",
+   "KPI 19"
+  ],
+  [
+   "journals/journal-0142.md",
+   "Velvet Willow"
+  ],
+  [
+   "journals/journal-0143.md",
+   "Boreal Mirage"
+  ],
+  [
+   "journals/journal-0143.md",
+   "Cantor XVII"
+  ],
+  [
+   "journals/journal-0143.md",
+   "Euler XII"
+  ],
+  [
+   "journals/journal-0143.md",
+   "Quiet Lantern"
+  ],
+  [
+   "journals/journal-0143.md",
+   "ROI 17"
+  ],
+  [
+   "journals/journal-0143.md",
+   "Silent Prism"
+  ],
+  [
+   "journals/journal-0143.md",
+   "Silent Quarry"
+  ],
+  [
+   "journals/journal-0144.md",
+   "Ancient Orchard"
+  ],
+  [
+   "journals/journal-0144.md",
+   "Cantor IX"
+  ],
+  [
+   "journals/journal-0144.md",
+   "Hidden Labyrinth"
+  ],
+  [
+   "journals/journal-0144.md",
+   "Noether XIII"
+  ],
+  [
+   "journals/journal-0144.md",
+   "Quantum Computing Valley"
+  ],
+  [
+   "journals/journal-0144.md",
+   "Umbral Prism"
+  ],
+  [
+   "journals/journal-0145.md",
+   "Boreal Willow"
+  ],
+  [
+   "journals/journal-0145.md",
+   "Cantor IX"
+  ],
+  [
+   "journals/journal-0145.md",
+   "Fermi II"
+  ],
+  [
+   "journals/journal-0145.md",
+   "Quantum Cathedral"
+  ],
+  [
+   "journals/journal-0145.md",
+   "Quiet Meadow"
+  ],
+  [
+   "journals/journal-0146.md",
+   "Einstein III"
+  ],
+  [
+   "journals/journal-0146.md",
+   "Heisenberg V"
+  ],
+  [
+   "journals/journal-0146.md",
+   "OCR 21"
+  ],
+  [
+   "journals/journal-0146.md",
+   "Tesla VI"
+  ],
+  [
+   "journals/journal-0147.md",
+   "CRM 8"
+  ],
+  [
+   "journals/journal-0147.md",
+   "Fermi VIII"
+  ],
+  [
+   "journals/journal-0147.md",
+   "Lunar Computing"
+  ],
+  [
+   "journals/journal-0147.md",
+   "Newton VI"
+  ],
+  [
+   "journals/journal-0147.md",
+   "ROI 7"
+  ],
+  [
+   "journals/journal-0148.md",
+   "Cedar Glacier"
+  ],
+  [
+   "journals/journal-0148.md",
+   "Crimson Summit"
+  ],
+  [
+   "journals/journal-0148.md",
+   "Gauss XX"
+  ],
+  [
+   "journals/journal-0148.md",
+   "Quantum Orchard Computing"
+  ],
+  [
+   "journals/journal-0149.md",
+   "Neural Prism"
+  ],
+  [
+   "journals/journal-0149.md",
+   "Noether 21"
+  ],
+  [
+   "journals/journal-0149.md",
+   "Silver Summit"
+  ],
+  [
+   "journals/journal-0150.md",
+   "Aristotle XVII"
+  ],
+  [
+   "journals/journal-0150.md",
+   "Cantor IV"
+  ],
+  [
+   "journals/journal-0150.md",
+   "Heisenberg III"
+  ],
+  [
+   "journals/journal-0150.md",
+   "Maxwell XIX"
+  ],
+  [
+   "journals/journal-0150.md",
+   "Neural Beacon"
+  ],
+  [
+   "journals/journal-0151.md",
+   "Boreal Archive"
+  ],
+  [
+   "journals/journal-0151.md",
+   "Boreal River"
+  ],
+  [
+   "journals/journal-0151.md",
+   "Drift Harbor"
+  ],
+  [
+   "journals/journal-0151.md",
+   "Golden Summit"
+  ],
+  [
+   "journals/journal-0151.md",
+   "Mystic Mirage"
+  ],
+  [
+   "journals/journal-0152.md",
+   "Ancient Cathedral"
+  ],
+  [
+   "journals/journal-0152.md",
+   "Euler XV"
+  ],
+  [
+   "journals/journal-0152.md",
+   "Kepler XVIII"
+  ],
+  [
+   "journals/journal-0153.md",
+   "Amber Domain"
+  ],
+  [
+   "journals/journal-0153.md",
+   "Curie 22"
+  ],
+  [
+   "journals/journal-0153.md",
+   "Curie XIX"
+  ],
+  [
+   "journals/journal-0153.md",
+   "Einstein XII"
+  ],
+  [
+   "journals/journal-0153.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0153.md",
+   "Quantum Cathedral"
+  ],
+  [
+   "journals/journal-0153.md",
+   "RAG 12"
+  ],
+  [
+   "journals/journal-0153.md",
+   "Velvet Forest"
+  ],
+  [
+   "journals/journal-0154.md",
+   "CRM 15"
+  ],
+  [
+   "journals/journal-0154.md",
+   "IPO 26"
+  ],
+  [
+   "journals/journal-0154.md",
+   "Quantum Lantern Glacier"
+  ],
+  [
+   "journals/journal-0154.md",
+   "RAG 16"
+  ],
+  [
+   "journals/journal-0154.md",
+   "Rustic Domain"
+  ],
+  [
+   "journals/journal-0155.md",
+   "AI 11"
+  ],
+  [
+   "journals/journal-0155.md",
+   "Amber Valley"
+  ],
+  [
+   "journals/journal-0155.md",
+   "Cosmic Prism"
+  ],
+  [
+   "journals/journal-0155.md",
+   "Gauss 23"
+  ],
+  [
+   "journals/journal-0155.md",
+   "Hidden River"
+  ],
+  [
+   "journals/journal-0155.md",
+   "KPI 28"
+  ],
+  [
+   "journals/journal-0155.md",
+   "Velvet Willow"
+  ],
+  [
+   "journals/journal-0156.md",
+   "Galileo 24"
+  ],
+  [
+   "journals/journal-0156.md",
+   "Gauss XIX"
+  ],
+  [
+   "journals/journal-0156.md",
+   "OCR 8"
+  ],
+  [
+   "journals/journal-0156.md",
+   "Opal Forest"
+  ],
+  [
+   "journals/journal-0156.md",
+   "Quantum Orchard Orchard"
+  ],
+  [
+   "journals/journal-0157.md",
+   "AI 14"
+  ],
+  [
+   "journals/journal-0157.md",
+   "Quantum Forest"
+  ],
+  [
+   "journals/journal-0158.md",
+   "Curie 21"
+  ],
+  [
+   "journals/journal-0158.md",
+   "Fermi XVII"
+  ],
+  [
+   "journals/journal-0158.md",
+   "Gauss IX"
+  ],
+  [
+   "journals/journal-0158.md",
+   "Mystic Summit"
+  ],
+  [
+   "journals/journal-0159.md",
+   "Cosmic Quarry"
+  ],
+  [
+   "journals/journal-0159.md",
+   "Euler"
+  ],
+  [
+   "journals/journal-0159.md",
+   "Galileo XV"
+  ],
+  [
+   "journals/journal-0159.md",
+   "Gauss 23"
+  ],
+  [
+   "journals/journal-0159.md",
+   "LLM 21"
+  ],
+  [
+   "journals/journal-0159.md",
+   "Noether XVII"
+  ],
+  [
+   "journals/journal-0160.md",
+   "Darwin IX"
+  ],
+  [
+   "journals/journal-0160.md",
+   "Darwin XVIII"
+  ],
+  [
+   "journals/journal-0160.md",
+   "Digital Summit"
+  ],
+  [
+   "journals/journal-0160.md",
+   "Fermi X"
+  ],
+  [
+   "journals/journal-0160.md",
+   "Ivory Archive"
+  ],
+  [
+   "journals/journal-0160.md",
+   "RAG 4"
+  ],
+  [
+   "journals/journal-0160.md",
+   "Velvet Lantern"
+  ],
+  [
+   "journals/journal-0161.md",
+   "Crimson Garden"
+  ],
+  [
+   "journals/journal-0161.md",
+   "Einstein III"
+  ],
+  [
+   "journals/journal-0161.md",
+   "Lovelace III"
+  ],
+  [
+   "journals/journal-0161.md",
+   "Quantum Lantern Garden"
+  ],
+  [
+   "journals/journal-0161.md",
+   "Socrates 22"
+  ],
+  [
+   "journals/journal-0162.md",
+   "Amber Forest"
+  ],
+  [
+   "journals/journal-0162.md",
+   "Ancient Mirage"
+  ],
+  [
+   "journals/journal-0162.md",
+   "Fermi III"
+  ],
+  [
+   "journals/journal-0162.md",
+   "Ivory Engine"
+  ],
+  [
+   "journals/journal-0162.md",
+   "KPI 25"
+  ],
+  [
+   "journals/journal-0162.md",
+   "ROI 6"
+  ],
+  [
+   "journals/journal-0162.md",
+   "Ramanujan 21"
+  ],
+  [
+   "journals/journal-0163.md",
+   "Aristotle VIII"
+  ],
+  [
+   "journals/journal-0163.md",
+   "Galileo XX"
+  ],
+  [
+   "journals/journal-0163.md",
+   "Neural Atlas"
+  ],
+  [
+   "journals/journal-0163.md",
+   "Newton XIV"
+  ],
+  [
+   "journals/journal-0163.md",
+   "Quantum Lantern Prism"
+  ],
+  [
+   "journals/journal-0164.md",
+   "CRM 15"
+  ],
+  [
+   "journals/journal-0164.md",
+   "Drift Archive"
+  ],
+  [
+   "journals/journal-0164.md",
+   "Frozen Beacon"
+  ],
+  [
+   "journals/journal-0164.md",
+   "Golden Labyrinth"
+  ],
+  [
+   "journals/journal-0164.md",
+   "IPO 24"
+  ],
+  [
+   "journals/journal-0164.md",
+   "Lunar Glacier"
+  ],
+  [
+   "journals/journal-0164.md",
+   "Noether VIII"
+  ],
+  [
+   "journals/journal-0164.md",
+   "Quiet Computing"
+  ],
+  [
+   "journals/journal-0165.md",
+   "Archimedes XIX"
+  ],
+  [
+   "journals/journal-0165.md",
+   "Bohr IX"
+  ],
+  [
+   "journals/journal-0165.md",
+   "Darwin VIII"
+  ],
+  [
+   "journals/journal-0165.md",
+   "LLM 6"
+  ],
+  [
+   "journals/journal-0165.md",
+   "Quantum Computing Forest"
+  ],
+  [
+   "journals/journal-0165.md",
+   "Quantum Harbor Labyrinth"
+  ],
+  [
+   "journals/journal-0165.md",
+   "Turing XII"
+  ],
+  [
+   "journals/journal-0165.md",
+   "Umbral Lantern"
+  ],
+  [
+   "journals/journal-0166.md",
+   "Ancient Computing"
+  ],
+  [
+   "journals/journal-0166.md",
+   "Aristotle VIII"
+  ],
+  [
+   "journals/journal-0166.md",
+   "Bohr XIX"
+  ],
+  [
+   "journals/journal-0166.md",
+   "Quantum Harbor Prism"
+  ],
+  [
+   "journals/journal-0166.md",
+   "ROI"
+  ],
+  [
+   "journals/journal-0167.md",
+   "ERP 21"
+  ],
+  [
+   "journals/journal-0167.md",
+   "Einstein VII"
+  ],
+  [
+   "journals/journal-0167.md",
+   "Maxwell VIII"
+  ],
+  [
+   "journals/journal-0167.md",
+   "Quantum Meadow Tundra"
+  ],
+  [
+   "journals/journal-0167.md",
+   "Silent River"
+  ],
+  [
+   "journals/journal-0167.md",
+   "Woven Cathedral"
+  ],
+  [
+   "journals/journal-0167.md",
+   "Zephyr River"
+  ],
+  [
+   "journals/journal-0168.md",
+   "Hopper II"
+  ],
+  [
+   "journals/journal-0168.md",
+   "Mystic Archive"
+  ],
+  [
+   "journals/journal-0168.md",
+   "Opal Lantern"
+  ],
+  [
+   "journals/journal-0168.md",
+   "Quantum Harbor"
+  ],
+  [
+   "journals/journal-0168.md",
+   "Quantum Orchard Garden"
+  ],
+  [
+   "journals/journal-0168.md",
+   "RAG 4"
+  ],
+  [
+   "journals/journal-0168.md",
+   "Socrates XIII"
+  ],
+  [
+   "journals/journal-0168.md",
+   "Tesla 23"
+  ],
+  [
+   "journals/journal-0169.md",
+   "Bohr X"
+  ],
+  [
+   "journals/journal-0169.md",
+   "ERP 14"
+  ],
+  [
+   "journals/journal-0169.md",
+   "Newton XX"
+  ],
+  [
+   "journals/journal-0169.md",
+   "Quantum Harbor Meadow"
+  ],
+  [
+   "journals/journal-0169.md",
+   "Ramanujan 24"
+  ],
+  [
+   "journals/journal-0169.md",
+   "Socrates XVIII"
+  ],
+  [
+   "journals/journal-0170.md",
+   "Ancient Willow"
+  ],
+  [
+   "journals/journal-0170.md",
+   "Cedar River"
+  ],
+  [
+   "journals/journal-0170.md",
+   "Einstein VII"
+  ],
+  [
+   "journals/journal-0170.md",
+   "Plato VIII"
+  ],
+  [
+   "journals/journal-0170.md",
+   "ROI 12"
+  ],
+  [
+   "journals/journal-0170.md",
+   "Silver Quarry"
+  ],
+  [
+   "journals/journal-0171.md",
+   "Boreal Orchard"
+  ],
+  [
+   "journals/journal-0171.md",
+   "Curie XII"
+  ],
+  [
+   "journals/journal-0171.md",
+   "Kepler III"
+  ],
+  [
+   "journals/journal-0171.md",
+   "OCR 24"
+  ],
+  [
+   "journals/journal-0171.md",
+   "Thunder Engine"
+  ],
+  [
+   "journals/journal-0171.md",
+   "Umbral Foundry"
+  ],
+  [
+   "journals/journal-0172.md",
+   "Archimedes VII"
+  ],
+  [
+   "journals/journal-0172.md",
+   "Aristotle 24"
+  ],
+  [
+   "journals/journal-0172.md",
+   "Bohr XX"
+  ],
+  [
+   "journals/journal-0172.md",
+   "Lovelace XIII"
+  ],
+  [
+   "journals/journal-0172.md",
+   "Mystic Garden"
+  ],
+  [
+   "journals/journal-0172.md",
+   "Rustic Willow"
+  ],
+  [
+   "journals/journal-0172.md",
+   "Tesla X"
+  ],
+  [
+   "journals/journal-0172.md",
+   "Turing VII"
+  ],
+  [
+   "journals/journal-0173.md",
+   "Ancient Prism"
+  ],
+  [
+   "journals/journal-0173.md",
+   "GPT 22"
+  ],
+  [
+   "journals/journal-0173.md",
+   "Galileo II"
+  ],
+  [
+   "journals/journal-0173.md",
+   "Quiet Meadow"
+  ],
+  [
+   "journals/journal-0173.md",
+   "Silver Atlas"
+  ],
+  [
+   "journals/journal-0174.md",
+   "OCR 14"
+  ],
+  [
+   "journals/journal-0174.md",
+   "Silver Domain"
+  ],
+  [
+   "journals/journal-0175.md",
+   "Cantor XIII"
+  ],
+  [
+   "journals/journal-0175.md",
+   "Digital Willow"
+  ],
+  [
+   "journals/journal-0175.md",
+   "ERP 21"
+  ],
+  [
+   "journals/journal-0175.md",
+   "Faraday 23"
+  ],
+  [
+   "journals/journal-0175.md",
+   "Heisenberg XIII"
+  ],
+  [
+   "journals/journal-0175.md",
+   "IPO 24"
+  ],
+  [
+   "journals/journal-0175.md",
+   "RAG 29"
+  ],
+  [
+   "journals/journal-0176.md",
+   "CRM 12"
+  ],
+  [
+   "journals/journal-0176.md",
+   "Curie VI"
+  ],
+  [
+   "journals/journal-0176.md",
+   "IPO 19"
+  ],
+  [
+   "journals/journal-0176.md",
+   "Noether III"
+  ],
+  [
+   "journals/journal-0176.md",
+   "RAG 15"
+  ],
+  [
+   "journals/journal-0176.md",
+   "Rustic Engine"
+  ],
+  [
+   "journals/journal-0177.md",
+   "Quantum Computing Forest"
+  ],
+  [
+   "journals/journal-0177.md",
+   "Thunder Archive"
+  ],
+  [
+   "journals/journal-0177.md",
+   "Velvet Glacier"
+  ],
+  [
+   "journals/journal-0177.md",
+   "Zephyr Mirage"
+  ],
+  [
+   "journals/journal-0178.md",
+   "Curie X"
+  ],
+  [
+   "journals/journal-0178.md",
+   "Euler X"
+  ],
+  [
+   "journals/journal-0178.md",
+   "Jade Orchard"
+  ],
+  [
+   "journals/journal-0178.md",
+   "LLM 9"
+  ],
+  [
+   "journals/journal-0178.md",
+   "Neural Prism"
+  ],
+  [
+   "journals/journal-0179.md",
+   "Cosmic Forest"
+  ],
+  [
+   "journals/journal-0179.md",
+   "Drift Atlas"
+  ],
+  [
+   "journals/journal-0179.md",
+   "Euler XVI"
+  ],
+  [
+   "journals/journal-0179.md",
+   "Galileo IV"
+  ],
+  [
+   "journals/journal-0179.md",
+   "Golden Cipher"
+  ],
+  [
+   "journals/journal-0179.md",
+   "Noether X"
+  ],
+  [
+   "journals/journal-0179.md",
+   "Quiet Computing"
+  ],
+  [
+   "journals/journal-0179.md",
+   "ROI 10"
+  ],
+  [
+   "journals/journal-0180.md",
+   "Maxwell XIV"
+  ],
+  [
+   "journals/journal-0180.md",
+   "Maxwell XVI"
+  ],
+  [
+   "journals/journal-0180.md",
+   "Silver Quarry"
+  ],
+  [
+   "journals/journal-0181.md",
+   "Frozen Cipher"
+  ],
+  [
+   "journals/journal-0181.md",
+   "Hopper XX"
+  ],
+  [
+   "journals/journal-0181.md",
+   "LLM 28"
+  ],
+  [
+   "journals/journal-0181.md",
+   "Quantum Meadow Glacier"
+  ],
+  [
+   "journals/journal-0181.md",
+   "Silver Quarry"
+  ],
+  [
+   "journals/journal-0181.md",
+   "Tesla XVI"
+  ],
+  [
+   "journals/journal-0181.md",
+   "Turing VIII"
+  ],
+  [
+   "journals/journal-0182.md",
+   "Euler VII"
+  ],
+  [
+   "journals/journal-0182.md",
+   "Faraday II"
+  ],
+  [
+   "journals/journal-0182.md",
+   "Quantum Orchard Domain"
+  ],
+  [
+   "journals/journal-0182.md",
+   "Ramanujan"
+  ],
+  [
+   "journals/journal-0183.md",
+   "Amber Meadow"
+  ],
+  [
+   "journals/journal-0183.md",
+   "Newton XI"
+  ],
+  [
+   "journals/journal-0183.md",
+   "Opal Atlas"
+  ],
+  [
+   "journals/journal-0183.md",
+   "Plato 21"
+  ],
+  [
+   "journals/journal-0183.md",
+   "Quiet Foundry"
+  ],
+  [
+   "journals/journal-0184.md",
+   "AI 26"
+  ],
+  [
+   "journals/journal-0184.md",
+   "Boreal Orchard"
+  ],
+  [
+   "journals/journal-0184.md",
+   "Cedar Cipher"
+  ],
+  [
+   "journals/journal-0184.md",
+   "Crimson Glacier"
+  ],
+  [
+   "journals/journal-0184.md",
+   "Einstein XVII"
+  ],
+  [
+   "journals/journal-0184.md",
+   "Lunar Beacon"
+  ],
+  [
+   "journals/journal-0184.md",
+   "Neural Archive"
+  ],
+  [
+   "journals/journal-0184.md",
+   "Opal Foundry"
+  ],
+  [
+   "journals/journal-0184.md",
+   "Quantum Lantern River"
+  ],
+  [
+   "journals/journal-0184.md",
+   "Umbral Mirage"
+  ],
+  [
+   "journals/journal-0185.md",
+   "Cantor XX"
+  ],
+  [
+   "journals/journal-0185.md",
+   "Digital Archive"
+  ],
+  [
+   "journals/journal-0185.md",
+   "Fermi XIII"
+  ],
+  [
+   "journals/journal-0185.md",
+   "LLM 13"
+  ],
+  [
+   "journals/journal-0185.md",
+   "Lovelace VII"
+  ],
+  [
+   "journals/journal-0185.md",
+   "Quiet River"
+  ],
+  [
+   "journals/journal-0186.md",
+   "Archimedes II"
+  ],
+  [
+   "journals/journal-0186.md",
+   "Feynman 24"
+  ],
+  [
+   "journals/journal-0186.md",
+   "Maxwell XVI"
+  ],
+  [
+   "journals/journal-0186.md",
+   "Maxwell XX"
+  ],
+  [
+   "journals/journal-0186.md",
+   "Purple Domain"
+  ],
+  [
+   "journals/journal-0186.md",
+   "RAG 18"
+  ],
+  [
+   "journals/journal-0187.md",
+   "Hopper XX"
+  ],
+  [
+   "journals/journal-0187.md",
+   "Lunar Cathedral"
+  ],
+  [
+   "journals/journal-0187.md",
+   "Lunar Labyrinth"
+  ],
+  [
+   "journals/journal-0187.md",
+   "OCR 15"
+  ],
+  [
+   "journals/journal-0187.md",
+   "Plato VIII"
+  ],
+  [
+   "journals/journal-0187.md",
+   "RAG 6"
+  ],
+  [
+   "journals/journal-0187.md",
+   "Ramanujan IV"
+  ],
+  [
+   "journals/journal-0188.md",
+   "AI 15"
+  ],
+  [
+   "journals/journal-0188.md",
+   "GPT 5"
+  ],
+  [
+   "journals/journal-0188.md",
+   "Gauss XX"
+  ],
+  [
+   "journals/journal-0188.md",
+   "Golden Orchard"
+  ],
+  [
+   "journals/journal-0188.md",
+   "IPO 4"
+  ],
+  [
+   "journals/journal-0188.md",
+   "Lunar Quarry"
+  ],
+  [
+   "journals/journal-0188.md",
+   "Umbral Beacon"
+  ],
+  [
+   "journals/journal-0188.md",
+   "Umbral Summit"
+  ],
+  [
+   "journals/journal-0189.md",
+   "Drift Lantern"
+  ],
+  [
+   "journals/journal-0189.md",
+   "Kepler XVII"
+  ],
+  [
+   "journals/journal-0189.md",
+   "Purple Forest"
+  ],
+  [
+   "journals/journal-0189.md",
+   "Purple Foundry"
+  ],
+  [
+   "journals/journal-0189.md",
+   "Quantum Meadow Quarry"
+  ],
+  [
+   "journals/journal-0190.md",
+   "Bohr V"
+  ],
+  [
+   "journals/journal-0190.md",
+   "Cosmic Cipher"
+  ],
+  [
+   "journals/journal-0190.md",
+   "Curie XIX"
+  ],
+  [
+   "journals/journal-0190.md",
+   "Drift Lantern"
+  ],
+  [
+   "journals/journal-0190.md",
+   "Quantum Cathedral Domain"
+  ],
+  [
+   "journals/journal-0190.md",
+   "Quiet Computing"
+  ],
+  [
+   "journals/journal-0190.md",
+   "ROI 15"
+  ],
+  [
+   "journals/journal-0190.md",
+   "Turing XVIII"
+  ],
+  [
+   "journals/journal-0191.md",
+   "Fermi XI"
+  ],
+  [
+   "journals/journal-0191.md",
+   "KPI 9"
+  ],
+  [
+   "journals/journal-0192.md",
+   "Aristotle XII"
+  ],
+  [
+   "journals/journal-0192.md",
+   "Cedar Labyrinth"
+  ],
+  [
+   "journals/journal-0192.md",
+   "Euler VI"
+  ],
+  [
+   "journals/journal-0192.md",
+   "Mystic Valley"
+  ],
+  [
+   "journals/journal-0192.md",
+   "Quantum Lantern Mirage"
+  ],
+  [
+   "journals/journal-0193.md",
+   "Aristotle XVI"
+  ],
+  [
+   "journals/journal-0193.md",
+   "Cantor VIII"
+  ],
+  [
+   "journals/journal-0193.md",
+   "Einstein 21"
+  ],
+  [
+   "journals/journal-0193.md",
+   "Quiet Meadow"
+  ],
+  [
+   "journals/journal-0193.md",
+   "Silent Mirage"
+  ],
+  [
+   "journals/journal-0193.md",
+   "Zephyr Computing"
+  ],
+  [
+   "journals/journal-0194.md",
+   "Ancient Garden"
+  ],
+  [
+   "journals/journal-0194.md",
+   "Cedar Foundry"
+  ],
+  [
+   "journals/journal-0194.md",
+   "Curie XX"
+  ],
+  [
+   "journals/journal-0194.md",
+   "IPO 17"
+  ],
+  [
+   "journals/journal-0194.md",
+   "Rustic Foundry"
+  ],
+  [
+   "journals/journal-0194.md",
+   "Silver Engine"
+  ],
+  [
+   "journals/journal-0195.md",
+   "Feynman XV"
+  ],
+  [
+   "journals/journal-0195.md",
+   "Galileo"
+  ],
+  [
+   "journals/journal-0195.md",
+   "Tesla VI"
+  ],
+  [
+   "journals/journal-0196.md",
+   "Aristotle XIV"
+  ],
+  [
+   "journals/journal-0196.md",
+   "Cedar Glacier"
+  ],
+  [
+   "journals/journal-0196.md",
+   "Cedar Prism"
+  ],
+  [
+   "journals/journal-0196.md",
+   "Galileo 22"
+  ],
+  [
+   "journals/journal-0197.md",
+   "Archimedes XV"
+  ],
+  [
+   "journals/journal-0197.md",
+   "Cantor 24"
+  ],
+  [
+   "journals/journal-0197.md",
+   "Heisenberg IV"
+  ],
+  [
+   "journals/journal-0197.md",
+   "Opal Atlas"
+  ],
+  [
+   "journals/journal-0197.md",
+   "Quantum Meadow Harbor"
+  ],
+  [
+   "journals/journal-0197.md",
+   "Silent Forest"
+  ],
+  [
+   "journals/journal-0198.md",
+   "Boreal Mirage"
+  ],
+  [
+   "journals/journal-0198.md",
+   "Cantor 21"
+  ],
+  [
+   "journals/journal-0198.md",
+   "ERP 9"
+  ],
+  [
+   "journals/journal-0198.md",
+   "Gauss XVIII"
+  ],
+  [
+   "journals/journal-0198.md",
+   "Hopper VIII"
+  ],
+  [
+   "journals/journal-0198.md",
+   "Maxwell XII"
+  ],
+  [
+   "journals/journal-0199.md",
+   "Boreal Prism"
+  ],
+  [
+   "journals/journal-0199.md",
+   "Ivory Tundra"
+  ],
+  [
+   "journals/journal-0199.md",
+   "Mystic Meadow"
+  ],
+  [
+   "journals/journal-0199.md",
+   "Quantum Cathedral Labyrinth"
+  ],
+  [
+   "journals/journal-0200.md",
+   "CRM 6"
+  ],
+  [
+   "journals/journal-0200.md",
+   "Cedar Cipher"
+  ],
+  [
+   "journals/journal-0200.md",
+   "Crimson Foundry"
+  ],
+  [
+   "journals/journal-0200.md",
+   "Einstein IX"
+  ],
+  [
+   "journals/journal-0200.md",
+   "Einstein XII"
+  ],
+  [
+   "journals/journal-0200.md",
+   "Faraday XVI"
+  ],
+  [
+   "journals/journal-0200.md",
+   "OCR 21"
+  ],
+  [
+   "journals/journal-0200.md",
+   "Turing XVIII"
+  ],
+  [
+   "journals/journal-0201.md",
+   "AI 16"
+  ],
+  [
+   "journals/journal-0201.md",
+   "Faraday XX"
+  ],
+  [
+   "journals/journal-0201.md",
+   "Feynman XIX"
+  ],
+  [
+   "journals/journal-0201.md",
+   "Mystic Beacon"
+  ],
+  [
+   "journals/journal-0201.md",
+   "Socrates V"
+  ],
+  [
+   "journals/journal-0202.md",
+   "Galileo 24"
+  ],
+  [
+   "journals/journal-0202.md",
+   "Ivory Labyrinth"
+  ],
+  [
+   "journals/journal-0202.md",
+   "Quantum Cathedral Garden"
+  ],
+  [
+   "journals/journal-0202.md",
+   "Socrates XV"
+  ],
+  [
+   "journals/journal-0203.md",
+   "Aristotle 23"
+  ],
+  [
+   "journals/journal-0203.md",
+   "Darwin XI"
+  ],
+  [
+   "journals/journal-0203.md",
+   "Hopper XIII"
+  ],
+  [
+   "journals/journal-0203.md",
+   "Quantum Cathedral Cipher"
+  ],
+  [
+   "journals/journal-0203.md",
+   "Quiet River"
+  ],
+  [
+   "journals/journal-0203.md",
+   "Woven Lantern"
+  ],
+  [
+   "journals/journal-0204.md",
+   "Ancient Lantern"
+  ],
+  [
+   "journals/journal-0204.md",
+   "Quantum Cathedral Garden"
+  ],
+  [
+   "journals/journal-0204.md",
+   "Quantum Cathedral Mirage"
+  ],
+  [
+   "journals/journal-0204.md",
+   "Quantum Meadow Atlas"
+  ],
+  [
+   "journals/journal-0204.md",
+   "Socrates XVIII"
+  ],
+  [
+   "journals/journal-0205.md",
+   "Cantor 24"
+  ],
+  [
+   "journals/journal-0205.md",
+   "Crimson Garden"
+  ],
+  [
+   "journals/journal-0205.md",
+   "Ember Glacier"
+  ],
+  [
+   "journals/journal-0205.md",
+   "Fermi 23"
+  ],
+  [
+   "journals/journal-0205.md",
+   "Neural River"
+  ],
+  [
+   "journals/journal-0205.md",
+   "Silver Garden"
+  ],
+  [
+   "journals/journal-0205.md",
+   "Velvet Lantern"
+  ],
+  [
+   "journals/journal-0206.md",
+   "Amber Computing"
+  ],
+  [
+   "journals/journal-0206.md",
+   "Crimson Orchard"
+  ],
+  [
+   "journals/journal-0206.md",
+   "Curie X"
+  ],
+  [
+   "journals/journal-0206.md",
+   "ERP 6"
+  ],
+  [
+   "journals/journal-0206.md",
+   "Mystic Engine"
+  ],
+  [
+   "journals/journal-0206.md",
+   "Quantum Harbor Garden"
+  ],
+  [
+   "journals/journal-0206.md",
+   "Umbral Quarry"
+  ],
+  [
+   "journals/journal-0206.md",
+   "Woven Valley"
+  ],
+  [
+   "journals/journal-0207.md",
+   "Galileo XII"
+  ],
+  [
+   "journals/journal-0207.md",
+   "Golden Orchard"
+  ],
+  [
+   "journals/journal-0207.md",
+   "Heisenberg XV"
+  ],
+  [
+   "journals/journal-0207.md",
+   "Jade Glacier"
+  ],
+  [
+   "journals/journal-0207.md",
+   "Lunar Cathedral"
+  ],
+  [
+   "journals/journal-0207.md",
+   "Maxwell 22"
+  ],
+  [
+   "journals/journal-0207.md",
+   "Rustic Summit"
+  ],
+  [
+   "journals/journal-0207.md",
+   "Turing X"
+  ],
+  [
+   "journals/journal-0207.md",
+   "Zephyr Meadow"
+  ],
+  [
+   "journals/journal-0208.md",
+   "Einstein XIV"
+  ],
+  [
+   "journals/journal-0208.md",
+   "Galileo XIV"
+  ],
+  [
+   "journals/journal-0208.md",
+   "Lovelace II"
+  ],
+  [
+   "journals/journal-0208.md",
+   "Quantum Cathedral Labyrinth"
+  ],
+  [
+   "journals/journal-0208.md",
+   "Silver Lantern"
+  ],
+  [
+   "journals/journal-0208.md",
+   "Turing 23"
+  ],
+  [
+   "journals/journal-0208.md",
+   "Umbral Meadow"
+  ],
+  [
+   "journals/journal-0209.md",
+   "Boreal Meadow"
+  ],
+  [
+   "journals/journal-0209.md",
+   "Cantor 22"
+  ],
+  [
+   "journals/journal-0209.md",
+   "Digital Cipher"
+  ],
+  [
+   "journals/journal-0209.md",
+   "Frozen Glacier"
+  ],
+  [
+   "journals/journal-0209.md",
+   "Gauss 24"
+  ],
+  [
+   "journals/journal-0209.md",
+   "Hopper XI"
+  ],
+  [
+   "journals/journal-0209.md",
+   "Quantum Cathedral Prism"
+  ],
+  [
+   "journals/journal-0209.md",
+   "Turing XII"
+  ],
+  [
+   "journals/journal-0210.md",
+   "Darwin V"
+  ],
+  [
+   "journals/journal-0210.md",
+   "Darwin XIII"
+  ],
+  [
+   "journals/journal-0210.md",
+   "Feynman II"
+  ],
+  [
+   "journals/journal-0210.md",
+   "GPT 17"
+  ],
+  [
+   "journals/journal-0210.md",
+   "Golden River"
+  ],
+  [
+   "journals/journal-0210.md",
+   "Neural River"
+  ],
+  [
+   "journals/journal-0210.md",
+   "Quantum Computing Harbor"
+  ],
+  [
+   "journals/journal-0210.md",
+   "Tesla 21"
+  ],
+  [
+   "journals/journal-0210.md",
+   "Tesla 22"
+  ],
+  [
+   "journals/journal-0211.md",
+   "Galileo 21"
+  ],
+  [
+   "journals/journal-0211.md",
+   "Gauss XI"
+  ],
+  [
+   "journals/journal-0211.md",
+   "KPI 3"
+  ],
+  [
+   "journals/journal-0211.md",
+   "OCR 18"
+  ],
+  [
+   "journals/journal-0211.md",
+   "ROI 16"
+  ],
+  [
+   "journals/journal-0211.md",
+   "Rustic Garden"
+  ],
+  [
+   "journals/journal-0212.md",
+   "Amber Prism"
+  ],
+  [
+   "journals/journal-0212.md",
+   "Einstein XIV"
+  ],
+  [
+   "journals/journal-0212.md",
+   "Feynman XIII"
+  ],
+  [
+   "journals/journal-0212.md",
+   "Lovelace 24"
+  ],
+  [
+   "journals/journal-0212.md",
+   "Opal Domain"
+  ],
+  [
+   "journals/journal-0212.md",
+   "Woven Meadow"
+  ],
+  [
+   "journals/journal-0213.md",
+   "Curie XX"
+  ],
+  [
+   "journals/journal-0213.md",
+   "GPT 24"
+  ],
+  [
+   "journals/journal-0213.md",
+   "Quantum Cathedral Tundra"
+  ],
+  [
+   "journals/journal-0213.md",
+   "Quantum Lantern Mirage"
+  ],
+  [
+   "journals/journal-0213.md",
+   "RAG 16"
+  ],
+  [
+   "journals/journal-0213.md",
+   "Tesla 21"
+  ],
+  [
+   "journals/journal-0213.md",
+   "Zephyr Summit"
+  ],
+  [
+   "journals/journal-0214.md",
+   "AI 8"
+  ],
+  [
+   "journals/journal-0214.md",
+   "Darwin XVIII"
+  ],
+  [
+   "journals/journal-0214.md",
+   "Euler VI"
+  ],
+  [
+   "journals/journal-0214.md",
+   "Euler XV"
+  ],
+  [
+   "journals/journal-0214.md",
+   "Feynman VIII"
+  ],
+  [
+   "journals/journal-0214.md",
+   "Frozen Meadow"
+  ],
+  [
+   "journals/journal-0214.md",
+   "Quantum Lantern Garden"
+  ],
+  [
+   "journals/journal-0214.md",
+   "Woven Mirage"
+  ],
+  [
+   "journals/journal-0215.md",
+   "Boreal Meadow"
+  ],
+  [
+   "journals/journal-0215.md",
+   "Frozen Garden"
+  ],
+  [
+   "journals/journal-0215.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0215.md",
+   "Plato X"
+  ],
+  [
+   "journals/journal-0215.md",
+   "Quantum Computing Domain"
+  ],
+  [
+   "journals/journal-0215.md",
+   "Rustic Beacon"
+  ],
+  [
+   "journals/journal-0216.md",
+   "Cantor 23"
+  ],
+  [
+   "journals/journal-0216.md",
+   "Darwin XVII"
+  ],
+  [
+   "journals/journal-0216.md",
+   "Frozen Prism"
+  ],
+  [
+   "journals/journal-0216.md",
+   "Maxwell III"
+  ],
+  [
+   "journals/journal-0216.md",
+   "OCR 21"
+  ],
+  [
+   "journals/journal-0216.md",
+   "Purple Lantern"
+  ],
+  [
+   "journals/journal-0216.md",
+   "Quantum Quarry"
+  ],
+  [
+   "journals/journal-0216.md",
+   "Tesla V"
+  ],
+  [
+   "journals/journal-0217.md",
+   "Curie V"
+  ],
+  [
+   "journals/journal-0217.md",
+   "Feynman VIII"
+  ],
+  [
+   "journals/journal-0217.md",
+   "Newton IX"
+  ],
+  [
+   "journals/journal-0217.md",
+   "Quiet Archive"
+  ],
+  [
+   "journals/journal-0217.md",
+   "Ramanujan IX"
+  ],
+  [
+   "journals/journal-0218.md",
+   "Aristotle XI"
+  ],
+  [
+   "journals/journal-0218.md",
+   "Darwin V"
+  ],
+  [
+   "journals/journal-0218.md",
+   "Darwin VII"
+  ],
+  [
+   "journals/journal-0218.md",
+   "Golden Computing"
+  ],
+  [
+   "journals/journal-0218.md",
+   "Neural Tundra"
+  ],
+  [
+   "journals/journal-0218.md",
+   "Quantum Orchard Atlas"
+  ],
+  [
+   "journals/journal-0218.md",
+   "Velvet Quarry"
+  ],
+  [
+   "journals/journal-0219.md",
+   "Gauss VII"
+  ],
+  [
+   "journals/journal-0219.md",
+   "Lunar Forest"
+  ],
+  [
+   "journals/journal-0219.md",
+   "Newton VIII"
+  ],
+  [
+   "journals/journal-0219.md",
+   "Quantum Meadow Forest"
+  ],
+  [
+   "journals/journal-0219.md",
+   "RAG 23"
+  ],
+  [
+   "journals/journal-0219.md",
+   "Tesla XVIII"
+  ],
+  [
+   "journals/journal-0219.md",
+   "Turing XX"
+  ],
+  [
+   "journals/journal-0220.md",
+   "Cedar Mirage"
+  ],
+  [
+   "journals/journal-0220.md",
+   "ERP 22"
+  ],
+  [
+   "journals/journal-0220.md",
+   "Ember Prism"
+  ],
+  [
+   "journals/journal-0220.md",
+   "Galileo X"
+  ],
+  [
+   "journals/journal-0220.md",
+   "Gauss VII"
+  ],
+  [
+   "journals/journal-0220.md",
+   "Lovelace XVII"
+  ],
+  [
+   "journals/journal-0220.md",
+   "ROI 22"
+  ],
+  [
+   "journals/journal-0221.md",
+   "Archimedes VI"
+  ],
+  [
+   "journals/journal-0221.md",
+   "Fermi XIII"
+  ],
+  [
+   "journals/journal-0221.md",
+   "Jade River"
+  ],
+  [
+   "journals/journal-0221.md",
+   "Quantum Cathedral Labyrinth"
+  ],
+  [
+   "journals/journal-0221.md",
+   "Quiet Mirage"
+  ],
+  [
+   "journals/journal-0222.md",
+   "Cantor IX"
+  ],
+  [
+   "journals/journal-0222.md",
+   "Golden Meadow"
+  ],
+  [
+   "journals/journal-0222.md",
+   "Kepler X"
+  ],
+  [
+   "journals/journal-0222.md",
+   "Mystic Cathedral"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Boreal Willow"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Cedar Cathedral"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Crimson Quarry"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Ivory Foundry"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Opal Meadow"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Plato"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Quantum Cathedral Orchard"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Quantum Cathedral Tundra"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Rustic Foundry"
+  ],
+  [
+   "journals/journal-0223.md",
+   "Socrates X"
+  ],
+  [
+   "journals/journal-0224.md",
+   "Gauss VI"
+  ],
+  [
+   "journals/journal-0224.md",
+   "IPO 8"
+  ],
+  [
+   "journals/journal-0225.md",
+   "Archimedes IX"
+  ],
+  [
+   "journals/journal-0225.md",
+   "Darwin 22"
+  ],
+  [
+   "journals/journal-0225.md",
+   "Feynman 23"
+  ],
+  [
+   "journals/journal-0225.md",
+   "Golden Cathedral"
+  ],
+  [
+   "journals/journal-0225.md",
+   "Golden Harbor"
+  ],
+  [
+   "journals/journal-0225.md",
+   "Noether XVII"
+  ],
+  [
+   "journals/journal-0225.md",
+   "Quantum Orchard Prism"
+  ],
+  [
+   "journals/journal-0226.md",
+   "Ancient Cathedral"
+  ],
+  [
+   "journals/journal-0226.md",
+   "Mystic Prism"
+  ],
+  [
+   "journals/journal-0226.md",
+   "Ramanujan XI"
+  ],
+  [
+   "journals/journal-0226.md",
+   "Silver Orchard"
+  ],
+  [
+   "journals/journal-0227.md",
+   "Boreal Glacier"
+  ],
+  [
+   "journals/journal-0227.md",
+   "CRM 9"
+  ],
+  [
+   "journals/journal-0227.md",
+   "Crimson Orchard"
+  ],
+  [
+   "journals/journal-0227.md",
+   "Heisenberg 21"
+  ],
+  [
+   "journals/journal-0227.md",
+   "Jade Atlas"
+  ],
+  [
+   "journals/journal-0227.md",
+   "Jade Beacon"
+  ],
+  [
+   "journals/journal-0227.md",
+   "Quantum Lantern Archive"
+  ],
+  [
+   "journals/journal-0227.md",
+   "Turing 21"
+  ],
+  [
+   "journals/journal-0228.md",
+   "Cantor XVI"
+  ],
+  [
+   "journals/journal-0228.md",
+   "Darwin V"
+  ],
+  [
+   "journals/journal-0228.md",
+   "Lovelace VI"
+  ],
+  [
+   "journals/journal-0228.md",
+   "Ramanujan XX"
+  ],
+  [
+   "journals/journal-0229.md",
+   "Archimedes 21"
+  ],
+  [
+   "journals/journal-0229.md",
+   "Cedar Lantern"
+  ],
+  [
+   "journals/journal-0229.md",
+   "GPT 16"
+  ],
+  [
+   "journals/journal-0229.md",
+   "Golden Computing"
+  ],
+  [
+   "journals/journal-0229.md",
+   "Heisenberg XII"
+  ],
+  [
+   "journals/journal-0229.md",
+   "Neural Prism"
+  ],
+  [
+   "journals/journal-0229.md",
+   "Quiet Atlas"
+  ],
+  [
+   "journals/journal-0229.md",
+   "Ramanujan X"
+  ],
+  [
+   "journals/journal-0229.md",
+   "Umbral Summit"
+  ],
+  [
+   "journals/journal-0230.md",
+   "Archimedes 24"
+  ],
+  [
+   "journals/journal-0230.md",
+   "CRM 24"
+  ],
+  [
+   "journals/journal-0230.md",
+   "ERP 30"
+  ],
+  [
+   "journals/journal-0230.md",
+   "Hidden Harbor"
+  ],
+  [
+   "journals/journal-0230.md",
+   "IPO 4"
+  ],
+  [
+   "journals/journal-0231.md",
+   "Ancient Cipher"
+  ],
+  [
+   "journals/journal-0231.md",
+   "Ancient Engine"
+  ],
+  [
+   "journals/journal-0231.md",
+   "Jade Willow"
+  ],
+  [
+   "journals/journal-0231.md",
+   "Northern Beacon"
+  ],
+  [
+   "journals/journal-0231.md",
+   "Northern Foundry"
+  ],
+  [
+   "journals/journal-0231.md",
+   "Opal Beacon"
+  ],
+  [
+   "journals/journal-0231.md",
+   "Plato XIII"
+  ],
+  [
+   "journals/journal-0231.md",
+   "Quantum Cathedral Mirage"
+  ],
+  [
+   "journals/journal-0231.md",
+   "RAG 21"
+  ],
+  [
+   "journals/journal-0232.md",
+   "Cantor XVII"
+  ],
+  [
+   "journals/journal-0232.md",
+   "Cedar Engine"
+  ],
+  [
+   "journals/journal-0232.md",
+   "Darwin 21"
+  ],
+  [
+   "journals/journal-0232.md",
+   "Ember Labyrinth"
+  ],
+  [
+   "journals/journal-0232.md",
+   "Golden Meadow"
+  ],
+  [
+   "journals/journal-0232.md",
+   "Hidden Garden"
+  ],
+  [
+   "journals/journal-0233.md",
+   "Ancient Cipher"
+  ],
+  [
+   "journals/journal-0233.md",
+   "Heisenberg XVIII"
+  ],
+  [
+   "journals/journal-0234.md",
+   "Ancient Computing"
+  ],
+  [
+   "journals/journal-0234.md",
+   "Rustic River"
+  ],
+  [
+   "journals/journal-0234.md",
+   "Velvet Tundra"
+  ],
+  [
+   "journals/journal-0235.md",
+   "Cantor 23"
+  ],
+  [
+   "journals/journal-0235.md",
+   "Cosmic Meadow"
+  ],
+  [
+   "journals/journal-0235.md",
+   "Digital Garden"
+  ],
+  [
+   "journals/journal-0235.md",
+   "Ember Forest"
+  ],
+  [
+   "journals/journal-0235.md",
+   "Golden Garden"
+  ],
+  [
+   "journals/journal-0235.md",
+   "Plato 22"
+  ],
+  [
+   "journals/journal-0236.md",
+   "Digital Cathedral"
+  ],
+  [
+   "journals/journal-0236.md",
+   "Feynman V"
+  ],
+  [
+   "journals/journal-0236.md",
+   "Heisenberg XVI"
+  ],
+  [
+   "journals/journal-0236.md",
+   "Quantum Orchard Meadow"
+  ],
+  [
+   "journals/journal-0236.md",
+   "Rustic Cathedral"
+  ],
+  [
+   "journals/journal-0236.md",
+   "Tesla 21"
+  ],
+  [
+   "journals/journal-0236.md",
+   "Woven Willow"
+  ],
+  [
+   "journals/journal-0237.md",
+   "Boreal Orchard"
+  ],
+  [
+   "journals/journal-0237.md",
+   "Ember Glacier"
+  ],
+  [
+   "journals/journal-0237.md",
+   "Hopper V"
+  ],
+  [
+   "journals/journal-0237.md",
+   "KPI 30"
+  ],
+  [
+   "journals/journal-0237.md",
+   "Quantum Orchard Quarry"
+  ],
+  [
+   "journals/journal-0237.md",
+   "Thunder Domain"
+  ],
+  [
+   "journals/journal-0237.md",
+   "Umbral Engine"
+  ],
+  [
+   "journals/journal-0237.md",
+   "Umbral Glacier"
+  ],
+  [
+   "journals/journal-0238.md",
+   "Amber Mirage"
+  ],
+  [
+   "journals/journal-0238.md",
+   "Jade Atlas"
+  ],
+  [
+   "journals/journal-0238.md",
+   "Kepler V"
+  ],
+  [
+   "journals/journal-0238.md",
+   "Lovelace X"
+  ],
+  [
+   "journals/journal-0238.md",
+   "Umbral Summit"
+  ],
+  [
+   "journals/journal-0239.md",
+   "Euler XIII"
+  ],
+  [
+   "journals/journal-0239.md",
+   "Galileo XVIII"
+  ],
+  [
+   "journals/journal-0239.md",
+   "Heisenberg IV"
+  ],
+  [
+   "journals/journal-0239.md",
+   "Maxwell XX"
+  ],
+  [
+   "journals/journal-0239.md",
+   "Socrates 22"
+  ],
+  [
+   "journals/journal-0240.md",
+   "Ancient Beacon"
+  ],
+  [
+   "journals/journal-0240.md",
+   "Cosmic River"
+  ],
+  [
+   "journals/journal-0240.md",
+   "Crimson Valley"
+  ],
+  [
+   "journals/journal-0240.md",
+   "Einstein XIII"
+  ],
+  [
+   "journals/journal-0240.md",
+   "Fermi XI"
+  ],
+  [
+   "journals/journal-0240.md",
+   "Galileo XX"
+  ],
+  [
+   "journals/journal-0240.md",
+   "Plato II"
+  ],
+  [
+   "journals/journal-0240.md",
+   "Quantum Harbor Archive"
+  ],
+  [
+   "journals/journal-0240.md",
+   "Tesla XIII"
+  ],
+  [
+   "journals/journal-0241.md",
+   "Cantor III"
+  ],
+  [
+   "journals/journal-0241.md",
+   "Cantor XIII"
+  ],
+  [
+   "journals/journal-0241.md",
+   "Lovelace III"
+  ],
+  [
+   "journals/journal-0241.md",
+   "Quantum Orchard"
+  ],
+  [
+   "journals/journal-0241.md",
+   "Ramanujan X"
+  ],
+  [
+   "journals/journal-0242.md",
+   "Archimedes 21"
+  ],
+  [
+   "journals/journal-0242.md",
+   "Curie XVI"
+  ],
+  [
+   "journals/journal-0242.md",
+   "Ember Meadow"
+  ],
+  [
+   "journals/journal-0242.md",
+   "Frozen Lantern"
+  ],
+  [
+   "journals/journal-0242.md",
+   "Plato XIII"
+  ],
+  [
+   "journals/journal-0243.md",
+   "Boreal Summit"
+  ],
+  [
+   "journals/journal-0243.md",
+   "Einstein X"
+  ],
+  [
+   "journals/journal-0243.md",
+   "Feynman II"
+  ],
+  [
+   "journals/journal-0243.md",
+   "Hopper XIV"
+  ],
+  [
+   "journals/journal-0243.md",
+   "LLM 7"
+  ],
+  [
+   "journals/journal-0243.md",
+   "Quiet Harbor"
+  ],
+  [
+   "journals/journal-0244.md",
+   "Aristotle XI"
+  ],
+  [
+   "journals/journal-0244.md",
+   "Fermi VI"
+  ],
+  [
+   "journals/journal-0244.md",
+   "Purple Domain"
+  ],
+  [
+   "journals/journal-0244.md",
+   "Quantum Harbor Forest"
+  ],
+  [
+   "journals/journal-0244.md",
+   "Umbral Meadow"
+  ],
+  [
+   "journals/journal-0245.md",
+   "Boreal Garden"
+  ],
+  [
+   "journals/journal-0245.md",
+   "Curie VIII"
+  ],
+  [
+   "journals/journal-0245.md",
+   "Quantum Harbor Engine"
+  ],
+  [
+   "journals/journal-0246.md",
+   "Ancient Engine"
+  ],
+  [
+   "journals/journal-0246.md",
+   "IPO 13"
+  ],
+  [
+   "journals/journal-0246.md",
+   "OCR 26"
+  ],
+  [
+   "journals/journal-0246.md",
+   "Tesla XIII"
+  ],
+  [
+   "journals/journal-0246.md",
+   "Umbral Quarry"
+  ],
+  [
+   "journals/journal-0247.md",
+   "Bohr III"
+  ],
+  [
+   "journals/journal-0247.md",
+   "Neural River"
+  ],
+  [
+   "journals/journal-0247.md",
+   "Silent Harbor"
+  ],
+  [
+   "journals/journal-0247.md",
+   "Thunder Atlas"
+  ],
+  [
+   "journals/journal-0248.md",
+   "AI 15"
+  ],
+  [
+   "journals/journal-0248.md",
+   "Bohr III"
+  ],
+  [
+   "journals/journal-0248.md",
+   "Feynman V"
+  ],
+  [
+   "journals/journal-0248.md",
+   "Hopper XVIII"
+  ],
+  [
+   "journals/journal-0248.md",
+   "KPI 5"
+  ],
+  [
+   "journals/journal-0248.md",
+   "Newton XI"
+  ],
+  [
+   "journals/journal-0249.md",
+   "Cantor 23"
+  ],
+  [
+   "journals/journal-0249.md",
+   "Darwin 21"
+  ],
+  [
+   "journals/journal-0249.md",
+   "Feynman XI"
+  ],
+  [
+   "journals/journal-0249.md",
+   "Gauss XII"
+  ],
+  [
+   "journals/journal-0249.md",
+   "Newton V"
+  ],
+  [
+   "journals/journal-0249.md",
+   "Plato 24"
+  ],
+  [
+   "journals/journal-0249.md",
+   "Quantum Harbor Willow"
+  ],
+  [
+   "journals/journal-0249.md",
+   "Quiet Summit"
+  ],
+  [
+   "journals/journal-0249.md",
+   "Woven Tundra"
+  ],
+  [
+   "journals/journal-0250.md",
+   "Cantor XIX"
+  ],
+  [
+   "journals/journal-0250.md",
+   "Lovelace III"
+  ],
+  [
+   "journals/journal-0250.md",
+   "Silver Cipher"
+  ],
+  [
+   "journals/journal-0250.md",
+   "Silver Garden"
+  ],
+  [
+   "journals/journal-0250.md",
+   "Turing V"
+  ],
+  [
+   "journals/journal-0251.md",
+   "Feynman XV"
+  ],
+  [
+   "journals/journal-0251.md",
+   "Galileo"
+  ],
+  [
+   "journals/journal-0251.md",
+   "Lovelace 21"
+  ],
+  [
+   "journals/journal-0251.md",
+   "Neural Engine"
+  ],
+  [
+   "journals/journal-0251.md",
+   "Newton IV"
+  ],
+  [
+   "journals/journal-0251.md",
+   "Purple Prism"
+  ],
+  [
+   "journals/journal-0251.md",
+   "Ramanujan XIV"
+  ],
+  [
+   "journals/journal-0251.md",
+   "Turing"
+  ],
+  [
+   "journals/journal-0252.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0252.md",
+   "Hopper 23"
+  ],
+  [
+   "journals/journal-0252.md",
+   "Neural Tundra"
+  ],
+  [
+   "journals/journal-0252.md",
+   "Opal Willow"
+  ],
+  [
+   "journals/journal-0253.md",
+   "Amber Foundry"
+  ],
+  [
+   "journals/journal-0253.md",
+   "Archimedes 22"
+  ],
+  [
+   "journals/journal-0253.md",
+   "Crimson Willow"
+  ],
+  [
+   "journals/journal-0253.md",
+   "Galileo II"
+  ],
+  [
+   "journals/journal-0253.md",
+   "Quantum Meadow Lantern"
+  ],
+  [
+   "journals/journal-0254.md",
+   "Cantor XVII"
+  ],
+  [
+   "journals/journal-0254.md",
+   "Feynman X"
+  ],
+  [
+   "journals/journal-0254.md",
+   "Galileo VI"
+  ],
+  [
+   "journals/journal-0254.md",
+   "Hopper XIII"
+  ],
+  [
+   "journals/journal-0254.md",
+   "Quantum Lantern Foundry"
+  ],
+  [
+   "journals/journal-0254.md",
+   "Tesla 22"
+  ],
+  [
+   "journals/journal-0255.md",
+   "Boreal Tundra"
+  ],
+  [
+   "journals/journal-0255.md",
+   "Curie XIX"
+  ],
+  [
+   "journals/journal-0255.md",
+   "Digital Atlas"
+  ],
+  [
+   "journals/journal-0255.md",
+   "Fermi X"
+  ],
+  [
+   "journals/journal-0255.md",
+   "Plato XII"
+  ],
+  [
+   "journals/journal-0255.md",
+   "Quantum Orchard Quarry"
+  ],
+  [
+   "journals/journal-0255.md",
+   "Tesla XVI"
+  ],
+  [
+   "journals/journal-0256.md",
+   "AI 4"
+  ],
+  [
+   "journals/journal-0256.md",
+   "Lovelace XIII"
+  ],
+  [
+   "journals/journal-0256.md",
+   "Noether II"
+  ],
+  [
+   "journals/journal-0256.md",
+   "Opal Engine"
+  ],
+  [
+   "journals/journal-0256.md",
+   "Rustic Foundry"
+  ],
+  [
+   "journals/journal-0256.md",
+   "Silver Lantern"
+  ],
+  [
+   "journals/journal-0257.md",
+   "Cosmic Mirage"
+  ],
+  [
+   "journals/journal-0257.md",
+   "GPT 9"
+  ],
+  [
+   "journals/journal-0257.md",
+   "Heisenberg XII"
+  ],
+  [
+   "journals/journal-0257.md",
+   "LLM 6"
+  ],
+  [
+   "journals/journal-0257.md",
+   "Mystic Domain"
+  ],
+  [
+   "journals/journal-0257.md",
+   "Neural Quarry"
+  ],
+  [
+   "journals/journal-0257.md",
+   "Noether 23"
+  ],
+  [
+   "journals/journal-0257.md",
+   "Quantum Lantern Mirage"
+  ],
+  [
+   "journals/journal-0257.md",
+   "Quantum Orchard River"
+  ],
+  [
+   "journals/journal-0257.md",
+   "Silver Meadow"
+  ],
+  [
+   "journals/journal-0258.md",
+   "Crimson Beacon"
+  ],
+  [
+   "journals/journal-0258.md",
+   "Curie II"
+  ],
+  [
+   "journals/journal-0258.md",
+   "Lovelace XVII"
+  ],
+  [
+   "journals/journal-0258.md",
+   "Quantum Computing River"
+  ],
+  [
+   "journals/journal-0258.md",
+   "Socrates 24"
+  ],
+  [
+   "journals/journal-0259.md",
+   "Archimedes XVIII"
+  ],
+  [
+   "journals/journal-0259.md",
+   "Aristotle"
+  ],
+  [
+   "journals/journal-0259.md",
+   "Cedar Atlas"
+  ],
+  [
+   "journals/journal-0259.md",
+   "Darwin V"
+  ],
+  [
+   "journals/journal-0259.md",
+   "Ivory Engine"
+  ],
+  [
+   "journals/journal-0259.md",
+   "Quiet Domain"
+  ],
+  [
+   "journals/journal-0259.md",
+   "Quiet Prism"
+  ],
+  [
+   "journals/journal-0259.md",
+   "RAG 20"
+  ],
+  [
+   "journals/journal-0260.md",
+   "Amber Glacier"
+  ],
+  [
+   "journals/journal-0260.md",
+   "Aristotle IV"
+  ],
+  [
+   "journals/journal-0260.md",
+   "Quantum Cipher"
+  ],
+  [
+   "journals/journal-0260.md",
+   "Socrates 21"
+  ],
+  [
+   "journals/journal-0261.md",
+   "Ancient Glacier"
+  ],
+  [
+   "journals/journal-0261.md",
+   "Ancient Prism"
+  ],
+  [
+   "journals/journal-0261.md",
+   "Aristotle IX"
+  ],
+  [
+   "journals/journal-0261.md",
+   "Crimson Atlas"
+  ],
+  [
+   "journals/journal-0261.md",
+   "Euler VI"
+  ],
+  [
+   "journals/journal-0261.md",
+   "Hopper III"
+  ],
+  [
+   "journals/journal-0261.md",
+   "Quantum Forest"
+  ],
+  [
+   "journals/journal-0262.md",
+   "Aristotle VIII"
+  ],
+  [
+   "journals/journal-0262.md",
+   "LLM 9"
+  ],
+  [
+   "journals/journal-0262.md",
+   "Plato XII"
+  ],
+  [
+   "journals/journal-0262.md",
+   "Thunder Mirage"
+  ],
+  [
+   "journals/journal-0263.md",
+   "Cosmic Domain"
+  ],
+  [
+   "journals/journal-0263.md",
+   "Darwin"
+  ],
+  [
+   "journals/journal-0263.md",
+   "Darwin VII"
+  ],
+  [
+   "journals/journal-0263.md",
+   "Neural Foundry"
+  ],
+  [
+   "journals/journal-0263.md",
+   "Northern Domain"
+  ],
+  [
+   "journals/journal-0263.md",
+   "OCR 24"
+  ],
+  [
+   "journals/journal-0263.md",
+   "Ramanujan XIII"
+  ],
+  [
+   "journals/journal-0264.md",
+   "Bohr XX"
+  ],
+  [
+   "journals/journal-0264.md",
+   "Cantor 22"
+  ],
+  [
+   "journals/journal-0264.md",
+   "Cosmic Engine"
+  ],
+  [
+   "journals/journal-0264.md",
+   "Jade Beacon"
+  ],
+  [
+   "journals/journal-0264.md",
+   "KPI 26"
+  ],
+  [
+   "journals/journal-0264.md",
+   "Lunar River"
+  ],
+  [
+   "journals/journal-0264.md",
+   "Plato XIV"
+  ],
+  [
+   "journals/journal-0264.md",
+   "Tesla XVIII"
+  ],
+  [
+   "journals/journal-0265.md",
+   "Ancient Domain"
+  ],
+  [
+   "journals/journal-0265.md",
+   "Fermi XVI"
+  ],
+  [
+   "journals/journal-0265.md",
+   "Golden Cathedral"
+  ],
+  [
+   "journals/journal-0265.md",
+   "LLM"
+  ],
+  [
+   "journals/journal-0265.md",
+   "Quantum Lantern Beacon"
+  ],
+  [
+   "journals/journal-0266.md",
+   "Bohr XIX"
+  ],
+  [
+   "journals/journal-0266.md",
+   "Crimson Harbor"
+  ],
+  [
+   "journals/journal-0266.md",
+   "Digital Domain"
+  ],
+  [
+   "journals/journal-0266.md",
+   "Einstein IV"
+  ],
+  [
+   "journals/journal-0266.md",
+   "Hopper XVII"
+  ],
+  [
+   "journals/journal-0266.md",
+   "Lunar Cipher"
+  ],
+  [
+   "journals/journal-0266.md",
+   "Lunar Foundry"
+  ],
+  [
+   "journals/journal-0267.md",
+   "Ember Beacon"
+  ],
+  [
+   "journals/journal-0267.md",
+   "IPO 25"
+  ],
+  [
+   "journals/journal-0267.md",
+   "LLM"
+  ],
+  [
+   "journals/journal-0267.md",
+   "Tesla XIII"
+  ],
+  [
+   "journals/journal-0268.md",
+   "Einstein VI"
+  ],
+  [
+   "journals/journal-0268.md",
+   "Faraday XI"
+  ],
+  [
+   "journals/journal-0268.md",
+   "Galileo IX"
+  ],
+  [
+   "journals/journal-0268.md",
+   "Ivory Computing"
+  ],
+  [
+   "journals/journal-0268.md",
+   "Quantum Meadow"
+  ],
+  [
+   "journals/journal-0268.md",
+   "Silver Foundry"
+  ],
+  [
+   "journals/journal-0268.md",
+   "Tesla 22"
+  ],
+  [
+   "journals/journal-0268.md",
+   "Tesla XI"
+  ],
+  [
+   "journals/journal-0268.md",
+   "Umbral Atlas"
+  ],
+  [
+   "journals/journal-0269.md",
+   "Cosmic Glacier"
+  ],
+  [
+   "journals/journal-0269.md",
+   "Ember Glacier"
+  ],
+  [
+   "journals/journal-0269.md",
+   "Ember Orchard"
+  ],
+  [
+   "journals/journal-0269.md",
+   "Golden Foundry"
+  ],
+  [
+   "journals/journal-0269.md",
+   "Lovelace IX"
+  ],
+  [
+   "journals/journal-0270.md",
+   "Archimedes 21"
+  ],
+  [
+   "journals/journal-0270.md",
+   "Archimedes XII"
+  ],
+  [
+   "journals/journal-0270.md",
+   "Faraday XI"
+  ],
+  [
+   "journals/journal-0270.md",
+   "Hopper VI"
+  ],
+  [
+   "journals/journal-0270.md",
+   "KPI 28"
+  ],
+  [
+   "journals/journal-0270.md",
+   "Newton XVI"
+  ],
+  [
+   "journals/journal-0270.md",
+   "Quantum Lantern Willow"
+  ],
+  [
+   "journals/journal-0270.md",
+   "Velvet Labyrinth"
+  ],
+  [
+   "journals/journal-0271.md",
+   "Bohr XII"
+  ],
+  [
+   "journals/journal-0271.md",
+   "Cedar Foundry"
+  ],
+  [
+   "journals/journal-0271.md",
+   "Feynman VII"
+  ],
+  [
+   "journals/journal-0271.md",
+   "Kepler XII"
+  ],
+  [
+   "journals/journal-0271.md",
+   "Lovelace XI"
+  ],
+  [
+   "journals/journal-0271.md",
+   "Noether II"
+  ],
+  [
+   "journals/journal-0271.md",
+   "Opal Cipher"
+  ],
+  [
+   "journals/journal-0271.md",
+   "Plato III"
+  ],
+  [
+   "journals/journal-0271.md",
+   "Velvet Computing"
+  ],
+  [
+   "journals/journal-0272.md",
+   "Cantor 22"
+  ],
+  [
+   "journals/journal-0272.md",
+   "Einstein X"
+  ],
+  [
+   "journals/journal-0272.md",
+   "Euler XIII"
+  ],
+  [
+   "journals/journal-0272.md",
+   "Feynman XV"
+  ],
+  [
+   "journals/journal-0272.md",
+   "Hopper IV"
+  ],
+  [
+   "journals/journal-0272.md",
+   "Jade Forest"
+  ],
+  [
+   "journals/journal-0272.md",
+   "Zephyr Quarry"
+  ],
+  [
+   "journals/journal-0273.md",
+   "GPT 15"
+  ],
+  [
+   "journals/journal-0273.md",
+   "LLM 20"
+  ],
+  [
+   "journals/journal-0273.md",
+   "LLM 3"
+  ],
+  [
+   "journals/journal-0273.md",
+   "Lunar Computing"
+  ],
+  [
+   "journals/journal-0273.md",
+   "OCR 15"
+  ],
+  [
+   "journals/journal-0273.md",
+   "Quantum Orchard Summit"
+  ],
+  [
+   "journals/journal-0273.md",
+   "Silent Cathedral"
+  ],
+  [
+   "journals/journal-0273.md",
+   "Thunder Glacier"
+  ],
+  [
+   "journals/journal-0274.md",
+   "Crimson Prism"
+  ],
+  [
+   "journals/journal-0274.md",
+   "Drift Computing"
+  ],
+  [
+   "journals/journal-0274.md",
+   "ERP 26"
+  ],
+  [
+   "journals/journal-0274.md",
+   "Feynman XIII"
+  ],
+  [
+   "journals/journal-0274.md",
+   "GPT"
+  ],
+  [
+   "journals/journal-0274.md",
+   "Lovelace 22"
+  ],
+  [
+   "journals/journal-0274.md",
+   "Purple Lantern"
+  ],
+  [
+   "journals/journal-0274.md",
+   "Quantum Cathedral Meadow"
+  ],
+  [
+   "journals/journal-0275.md",
+   "Drift Quarry"
+  ],
+  [
+   "journals/journal-0275.md",
+   "Frozen Garden"
+  ],
+  [
+   "journals/journal-0275.md",
+   "Ivory Tundra"
+  ],
+  [
+   "journals/journal-0275.md",
+   "Jade Foundry"
+  ],
+  [
+   "journals/journal-0275.md",
+   "Quantum Computing Meadow"
+  ],
+  [
+   "journals/journal-0275.md",
+   "Silent Prism"
+  ],
+  [
+   "journals/journal-0276.md",
+   "Drift Garden"
+  ],
+  [
+   "journals/journal-0276.md",
+   "Euler XIV"
+  ],
+  [
+   "journals/journal-0276.md",
+   "Fermi 24"
+  ],
+  [
+   "journals/journal-0276.md",
+   "Gauss XIII"
+  ],
+  [
+   "journals/journal-0276.md",
+   "Hopper 23"
+  ],
+  [
+   "journals/journal-0276.md",
+   "Umbral Atlas"
+  ],
+  [
+   "journals/journal-0277.md",
+   "Boreal Harbor"
+  ],
+  [
+   "journals/journal-0277.md",
+   "Kepler V"
+  ],
+  [
+   "journals/journal-0277.md",
+   "Kepler XIV"
+  ],
+  [
+   "journals/journal-0277.md",
+   "Maxwell IX"
+  ],
+  [
+   "journals/journal-0278.md",
+   "Cantor 24"
+  ],
+  [
+   "journals/journal-0278.md",
+   "Drift Computing"
+  ],
+  [
+   "journals/journal-0278.md",
+   "ERP 26"
+  ],
+  [
+   "journals/journal-0278.md",
+   "Lovelace IX"
+  ],
+  [
+   "journals/journal-0279.md",
+   "Aristotle III"
+  ],
+  [
+   "journals/journal-0279.md",
+   "Euler III"
+  ],
+  [
+   "journals/journal-0279.md",
+   "Feynman X"
+  ],
+  [
+   "journals/journal-0279.md",
+   "Hopper VI"
+  ],
+  [
+   "journals/journal-0279.md",
+   "Ivory Cipher"
+  ],
+  [
+   "journals/journal-0279.md",
+   "Quantum Harbor Cathedral"
+  ],
+  [
+   "journals/journal-0280.md",
+   "Cantor III"
+  ],
+  [
+   "journals/journal-0280.md",
+   "Neural Meadow"
+  ],
+  [
+   "journals/journal-0280.md",
+   "Quantum Meadow Archive"
+  ],
+  [
+   "journals/journal-0280.md",
+   "Ramanujan 23"
+  ],
+  [
+   "journals/journal-0280.md",
+   "Ramanujan VI"
+  ],
+  [
+   "journals/journal-0281.md",
+   "CRM 23"
+  ],
+  [
+   "journals/journal-0281.md",
+   "Fermi XIX"
+  ],
+  [
+   "journals/journal-0281.md",
+   "Gauss VIII"
+  ],
+  [
+   "journals/journal-0281.md",
+   "LLM 29"
+  ],
+  [
+   "journals/journal-0281.md",
+   "Quiet Domain"
+  ],
+  [
+   "journals/journal-0281.md",
+   "Tesla XVII"
+  ],
+  [
+   "journals/journal-0282.md",
+   "Cedar Meadow"
+  ],
+  [
+   "journals/journal-0282.md",
+   "Euler 23"
+  ],
+  [
+   "journals/journal-0282.md",
+   "Gauss IX"
+  ],
+  [
+   "journals/journal-0282.md",
+   "Noether 22"
+  ],
+  [
+   "journals/journal-0282.md",
+   "RAG 14"
+  ],
+  [
+   "journals/journal-0282.md",
+   "Tesla 22"
+  ],
+  [
+   "journals/journal-0282.md",
+   "Umbral Prism"
+  ],
+  [
+   "journals/journal-0283.md",
+   "Ancient Lantern"
+  ],
+  [
+   "journals/journal-0283.md",
+   "Galileo VII"
+  ],
+  [
+   "journals/journal-0283.md",
+   "Jade Labyrinth"
+  ],
+  [
+   "journals/journal-0283.md",
+   "Maxwell V"
+  ],
+  [
+   "journals/journal-0283.md",
+   "Plato II"
+  ],
+  [
+   "journals/journal-0283.md",
+   "Quantum Computing Domain"
+  ],
+  [
+   "journals/journal-0284.md",
+   "Drift River"
+  ],
+  [
+   "journals/journal-0284.md",
+   "Euler III"
+  ],
+  [
+   "journals/journal-0284.md",
+   "Heisenberg IV"
+  ],
+  [
+   "journals/journal-0284.md",
+   "Neural Meadow"
+  ],
+  [
+   "journals/journal-0284.md",
+   "Newton XV"
+  ],
+  [
+   "journals/journal-0284.md",
+   "Quantum Computing Mirage"
+  ],
+  [
+   "journals/journal-0284.md",
+   "Silent Archive"
+  ],
+  [
+   "journals/journal-0284.md",
+   "Silent Orchard"
+  ],
+  [
+   "journals/journal-0285.md",
+   "Ember Cathedral"
+  ],
+  [
+   "journals/journal-0285.md",
+   "KPI 15"
+  ],
+  [
+   "journals/journal-0285.md",
+   "Quantum Cathedral Mirage"
+  ],
+  [
+   "journals/journal-0285.md",
+   "Quantum Computing Cathedral"
+  ],
+  [
+   "journals/journal-0285.md",
+   "Silver Valley"
+  ],
+  [
+   "journals/journal-0285.md",
+   "Turing VI"
+  ],
+  [
+   "journals/journal-0286.md",
+   "Crimson River"
+  ],
+  [
+   "journals/journal-0286.md",
+   "Einstein III"
+  ],
+  [
+   "journals/journal-0286.md",
+   "Feynman"
+  ],
+  [
+   "journals/journal-0286.md",
+   "Heisenberg VIII"
+  ],
+  [
+   "journals/journal-0286.md",
+   "Purple Harbor"
+  ],
+  [
+   "journals/journal-0287.md",
+   "Euler 22"
+  ],
+  [
+   "journals/journal-0287.md",
+   "Purple Domain"
+  ],
+  [
+   "journals/journal-0287.md",
+   "Quantum Meadow Orchard"
+  ],
+  [
+   "journals/journal-0287.md",
+   "Umbral Willow"
+  ],
+  [
+   "journals/journal-0288.md",
+   "Amber Meadow"
+  ],
+  [
+   "journals/journal-0288.md",
+   "Crimson Archive"
+  ],
+  [
+   "journals/journal-0288.md",
+   "Curie 21"
+  ],
+  [
+   "journals/journal-0288.md",
+   "Purple Valley"
+  ],
+  [
+   "journals/journal-0288.md",
+   "ROI 30"
+  ],
+  [
+   "journals/journal-0288.md",
+   "Ramanujan IV"
+  ],
+  [
+   "journals/journal-0289.md",
+   "Curie 21"
+  ],
+  [
+   "journals/journal-0289.md",
+   "Digital Computing"
+  ],
+  [
+   "journals/journal-0289.md",
+   "Fermi XVIII"
+  ],
+  [
+   "journals/journal-0289.md",
+   "Jade Cipher"
+  ],
+  [
+   "journals/journal-0289.md",
+   "Jade Domain"
+  ],
+  [
+   "journals/journal-0289.md",
+   "LLM 20"
+  ],
+  [
+   "journals/journal-0289.md",
+   "Neural Archive"
+  ],
+  [
+   "journals/journal-0290.md",
+   "CRM 23"
+  ],
+  [
+   "journals/journal-0290.md",
+   "Faraday XVI"
+  ],
+  [
+   "journals/journal-0290.md",
+   "Fermi II"
+  ],
+  [
+   "journals/journal-0290.md",
+   "Silver Mirage"
+  ],
+  [
+   "journals/journal-0291.md",
+   "Crimson Garden"
+  ],
+  [
+   "journals/journal-0291.md",
+   "Drift Summit"
+  ],
+  [
+   "journals/journal-0291.md",
+   "Hopper 24"
+  ],
+  [
+   "journals/journal-0291.md",
+   "KPI 16"
+  ],
+  [
+   "journals/journal-0291.md",
+   "Maxwell XV"
+  ],
+  [
+   "journals/journal-0291.md",
+   "Mystic Meadow"
+  ],
+  [
+   "journals/journal-0291.md",
+   "Ramanujan XIV"
+  ],
+  [
+   "journals/journal-0291.md",
+   "Socrates II"
+  ],
+  [
+   "journals/journal-0291.md",
+   "Turing XIV"
+  ],
+  [
+   "journals/journal-0292.md",
+   "Kepler VII"
+  ],
+  [
+   "journals/journal-0292.md",
+   "LLM 9"
+  ],
+  [
+   "journals/journal-0292.md",
+   "OCR 8"
+  ],
+  [
+   "journals/journal-0292.md",
+   "Quantum Computing Forest"
+  ],
+  [
+   "journals/journal-0292.md",
+   "Rustic Atlas"
+  ],
+  [
+   "journals/journal-0293.md",
+   "Archimedes VIII"
+  ],
+  [
+   "journals/journal-0293.md",
+   "Frozen Labyrinth"
+  ],
+  [
+   "journals/journal-0293.md",
+   "Lovelace V"
+  ],
+  [
+   "journals/journal-0293.md",
+   "Maxwell XII"
+  ],
+  [
+   "journals/journal-0294.md",
+   "AI 7"
+  ],
+  [
+   "journals/journal-0294.md",
+   "Ancient Computing"
+  ],
+  [
+   "journals/journal-0294.md",
+   "Archimedes V"
+  ],
+  [
+   "journals/journal-0294.md",
+   "Fermi II"
+  ],
+  [
+   "journals/journal-0294.md",
+   "Maxwell X"
+  ],
+  [
+   "journals/journal-0294.md",
+   "Thunder Labyrinth"
+  ],
+  [
+   "journals/journal-0295.md",
+   "CRM 28"
+  ],
+  [
+   "journals/journal-0295.md",
+   "Curie XV"
+  ],
+  [
+   "journals/journal-0295.md",
+   "Frozen Valley"
+  ],
+  [
+   "journals/journal-0295.md",
+   "Newton XIII"
+  ],
+  [
+   "journals/journal-0295.md",
+   "Plato XII"
+  ],
+  [
+   "journals/journal-0296.md",
+   "Archimedes XVI"
+  ],
+  [
+   "journals/journal-0296.md",
+   "Aristotle IX"
+  ],
+  [
+   "journals/journal-0296.md",
+   "Feynman VIII"
+  ],
+  [
+   "journals/journal-0296.md",
+   "IPO 6"
+  ],
+  [
+   "journals/journal-0296.md",
+   "OCR 12"
+  ],
+  [
+   "journals/journal-0296.md",
+   "RAG 4"
+  ],
+  [
+   "journals/journal-0297.md",
+   "Archimedes VIII"
+  ],
+  [
+   "journals/journal-0297.md",
+   "Archimedes XVII"
+  ],
+  [
+   "journals/journal-0297.md",
+   "CRM 9"
+  ],
+  [
+   "journals/journal-0297.md",
+   "Heisenberg IV"
+  ],
+  [
+   "journals/journal-0297.md",
+   "Hopper XVI"
+  ],
+  [
+   "journals/journal-0297.md",
+   "Silver Lantern"
+  ],
+  [
+   "journals/journal-0297.md",
+   "Velvet Glacier"
+  ],
+  [
+   "journals/journal-0298.md",
+   "Aristotle 21"
+  ],
+  [
+   "journals/journal-0298.md",
+   "Aristotle XVIII"
+  ],
+  [
+   "journals/journal-0298.md",
+   "Darwin XX"
+  ],
+  [
+   "journals/journal-0298.md",
+   "Faraday VII"
+  ],
+  [
+   "journals/journal-0298.md",
+   "Feynman XVIII"
+  ],
+  [
+   "journals/journal-0298.md",
+   "Kepler VI"
+  ],
+  [
+   "journals/journal-0299.md",
+   "Cedar Computing"
+  ],
+  [
+   "journals/journal-0299.md",
+   "Cedar Labyrinth"
+  ],
+  [
+   "journals/journal-0299.md",
+   "Faraday VIII"
+  ],
+  [
+   "journals/journal-0299.md",
+   "Faraday XX"
+  ],
+  [
+   "journals/journal-0299.md",
+   "Fermi XIX"
+  ],
+  [
+   "journals/journal-0299.md",
+   "Hidden Computing"
+  ],
+  [
+   "journals/journal-0299.md",
+   "Silver River"
+  ],
+  [
+   "journals/journal-0299.md",
+   "Tesla XVII"
+  ],
+  [
+   "journals/journal-0300.md",
+   "Ivory Labyrinth"
+  ],
+  [
+   "journals/journal-0300.md",
+   "Newton V"
+  ],
+  [
+   "journals/journal-0300.md",
+   "Rustic Valley"
+  ],
+  [
+   "journals/journal-0301.md",
+   "AI 18"
+  ],
+  [
+   "journals/journal-0301.md",
+   "Archimedes IV"
+  ],
+  [
+   "journals/journal-0301.md",
+   "Faraday 21"
+  ],
+  [
+   "journals/journal-0301.md",
+   "Heisenberg VI"
+  ],
+  [
+   "journals/journal-0301.md",
+   "Heisenberg XII"
+  ],
+  [
+   "journals/journal-0301.md",
+   "Kepler 22"
+  ],
+  [
+   "journals/journal-0301.md",
+   "Quantum Domain"
+  ],
+  [
+   "journals/journal-0301.md",
+   "Quiet Prism"
+  ],
+  [
+   "journals/journal-0301.md",
+   "Tesla III"
+  ],
+  [
+   "journals/journal-0302.md",
+   "Fermi XVIII"
+  ],
+  [
+   "journals/journal-0302.md",
+   "Feynman VI"
+  ],
+  [
+   "journals/journal-0302.md",
+   "Golden Meadow"
+  ],
+  [
+   "journals/journal-0302.md",
+   "Mystic Garden"
+  ],
+  [
+   "journals/journal-0302.md",
+   "Northern Prism"
+  ],
+  [
+   "journals/journal-0302.md",
+   "Quantum Computing Meadow"
+  ],
+  [
+   "journals/journal-0302.md",
+   "Quantum Harbor Garden"
+  ],
+  [
+   "journals/journal-0302.md",
+   "RAG 5"
+  ],
+  [
+   "journals/journal-0302.md",
+   "Ramanujan XVIII"
+  ],
+  [
+   "journals/journal-0302.md",
+   "Rustic Valley"
+  ],
+  [
+   "journals/journal-0303.md",
+   "Cantor XI"
+  ],
+  [
+   "journals/journal-0303.md",
+   "Hidden Willow"
+  ],
+  [
+   "journals/journal-0303.md",
+   "Hopper VIII"
+  ],
+  [
+   "journals/journal-0303.md",
+   "Jade Lantern"
+  ],
+  [
+   "journals/journal-0303.md",
+   "Quantum Lantern Orchard"
+  ],
+  [
+   "journals/journal-0303.md",
+   "ROI 28"
+  ],
+  [
+   "journals/journal-0303.md",
+   "Ramanujan 22"
+  ],
+  [
+   "journals/journal-0304.md",
+   "CRM 29"
+  ],
+  [
+   "journals/journal-0304.md",
+   "Cantor X"
+  ],
+  [
+   "journals/journal-0304.md",
+   "Rustic Quarry"
+  ],
+  [
+   "journals/journal-0304.md",
+   "Socrates XIV"
+  ],
+  [
+   "journals/journal-0304.md",
+   "Zephyr Garden"
+  ],
+  [
+   "journals/journal-0305.md",
+   "Ancient Cipher"
+  ],
+  [
+   "journals/journal-0305.md",
+   "Bohr 24"
+  ],
+  [
+   "journals/journal-0305.md",
+   "Curie"
+  ],
+  [
+   "journals/journal-0305.md",
+   "Curie XI"
+  ],
+  [
+   "journals/journal-0305.md",
+   "Plato V"
+  ],
+  [
+   "journals/journal-0305.md",
+   "Ramanujan IX"
+  ],
+  [
+   "journals/journal-0305.md",
+   "Turing IX"
+  ],
+  [
+   "journals/journal-0306.md",
+   "Drift Valley"
+  ],
+  [
+   "journals/journal-0306.md",
+   "Euler XIV"
+  ],
+  [
+   "journals/journal-0306.md",
+   "Fermi 23"
+  ],
+  [
+   "journals/journal-0306.md",
+   "Hopper XX"
+  ],
+  [
+   "journals/journal-0307.md",
+   "Einstein II"
+  ],
+  [
+   "journals/journal-0307.md",
+   "Jade Domain"
+  ],
+  [
+   "journals/journal-0307.md",
+   "Maxwell 22"
+  ],
+  [
+   "journals/journal-0307.md",
+   "Quantum Harbor Foundry"
+  ],
+  [
+   "journals/journal-0307.md",
+   "Socrates IV"
+  ],
+  [
+   "journals/journal-0308.md",
+   "Crimson Willow"
+  ],
+  [
+   "journals/journal-0308.md",
+   "GPT"
+  ],
+  [
+   "journals/journal-0308.md",
+   "Tesla XX"
+  ],
+  [
+   "journals/journal-0309.md",
+   "Amber Quarry"
+  ],
+  [
+   "journals/journal-0309.md",
+   "Drift Valley"
+  ],
+  [
+   "journals/journal-0309.md",
+   "GPT 14"
+  ],
+  [
+   "journals/journal-0309.md",
+   "Kepler 21"
+  ],
+  [
+   "journals/journal-0309.md",
+   "ROI 20"
+  ],
+  [
+   "journals/journal-0309.md",
+   "Tesla 23"
+  ],
+  [
+   "journals/journal-0310.md",
+   "Amber Willow"
+  ],
+  [
+   "journals/journal-0310.md",
+   "Bohr XI"
+  ],
+  [
+   "journals/journal-0310.md",
+   "Ember Summit"
+  ],
+  [
+   "journals/journal-0310.md",
+   "Euler XI"
+  ],
+  [
+   "journals/journal-0310.md",
+   "Quantum Tundra"
+  ],
+  [
+   "journals/journal-0310.md",
+   "ROI 21"
+  ],
+  [
+   "journals/journal-0310.md",
+   "Rustic Domain"
+  ],
+  [
+   "journals/journal-0311.md",
+   "Gauss XIII"
+  ],
+  [
+   "journals/journal-0311.md",
+   "Mystic Computing"
+  ],
+  [
+   "journals/journal-0311.md",
+   "Plato 24"
+  ],
+  [
+   "journals/journal-0311.md",
+   "Quantum Orchard Lantern"
+  ],
+  [
+   "journals/journal-0311.md",
+   "RAG 21"
+  ],
+  [
+   "journals/journal-0312.md",
+   "Boreal Valley"
+  ],
+  [
+   "journals/journal-0312.md",
+   "Einstein IV"
+  ],
+  [
+   "journals/journal-0312.md",
+   "Noether XIII"
+  ],
+  [
+   "journals/journal-0312.md",
+   "Umbral Meadow"
+  ],
+  [
+   "journals/journal-0313.md",
+   "Bohr XX"
+  ],
+  [
+   "journals/journal-0313.md",
+   "KPI 26"
+  ],
+  [
+   "journals/journal-0313.md",
+   "Quantum Computing Willow"
+  ],
+  [
+   "journals/journal-0313.md",
+   "Quantum Harbor Labyrinth"
+  ],
+  [
+   "journals/journal-0313.md",
+   "Quantum Meadow Willow"
+  ],
+  [
+   "journals/journal-0313.md",
+   "Quantum Orchard Quarry"
+  ],
+  [
+   "journals/journal-0314.md",
+   "Cantor X"
+  ],
+  [
+   "journals/journal-0314.md",
+   "Lovelace XIV"
+  ],
+  [
+   "journals/journal-0314.md",
+   "Plato 21"
+  ],
+  [
+   "journals/journal-0314.md",
+   "RAG 16"
+  ],
+  [
+   "journals/journal-0314.md",
+   "Tesla XIV"
+  ],
+  [
+   "journals/journal-0315.md",
+   "Boreal Valley"
+  ],
+  [
+   "journals/journal-0315.md",
+   "CRM 18"
+  ],
+  [
+   "journals/journal-0315.md",
+   "CRM 3"
+  ],
+  [
+   "journals/journal-0315.md",
+   "Euler XVII"
+  ],
+  [
+   "journals/journal-0315.md",
+   "IPO 14"
+  ],
+  [
+   "journals/journal-0315.md",
+   "Kepler XIV"
+  ],
+  [
+   "journals/journal-0315.md",
+   "Quiet Garden"
+  ],
+  [
+   "journals/journal-0316.md",
+   "Amber Forest"
+  ],
+  [
+   "journals/journal-0317.md",
+   "Archimedes XV"
+  ],
+  [
+   "journals/journal-0317.md",
+   "Cantor"
+  ],
+  [
+   "journals/journal-0317.md",
+   "Curie XVI"
+  ],
+  [
+   "journals/journal-0317.md",
+   "OCR 16"
+  ],
+  [
+   "journals/journal-0317.md",
+   "Thunder Summit"
+  ],
+  [
+   "journals/journal-0318.md",
+   "AI 12"
+  ],
+  [
+   "journals/journal-0318.md",
+   "Cedar Orchard"
+  ],
+  [
+   "journals/journal-0318.md",
+   "Quantum Forest"
+  ],
+  [
+   "journals/journal-0318.md",
+   "Turing"
+  ],
+  [
+   "journals/journal-0319.md",
+   "Cantor 22"
+  ],
+  [
+   "journals/journal-0319.md",
+   "Euler XV"
+  ],
+  [
+   "journals/journal-0319.md",
+   "Hopper 21"
+  ],
+  [
+   "journals/journal-0319.md",
+   "OCR 6"
+  ],
+  [
+   "journals/journal-0319.md",
+   "RAG 30"
+  ],
+  [
+   "journals/journal-0319.md",
+   "Silver Computing"
+  ],
+  [
+   "journals/journal-0319.md",
+   "Turing XVIII"
+  ],
+  [
+   "journals/journal-0320.md",
+   "Archimedes 22"
+  ],
+  [
+   "journals/journal-0320.md",
+   "Drift River"
+  ],
+  [
+   "journals/journal-0320.md",
+   "Euler XVI"
+  ],
+  [
+   "journals/journal-0320.md",
+   "Hidden Summit"
+  ],
+  [
+   "journals/journal-0320.md",
+   "Quantum Computing Engine"
+  ],
+  [
+   "journals/journal-0320.md",
+   "Quantum Computing Lantern"
+  ],
+  [
+   "journals/journal-0320.md",
+   "Quantum Glacier"
+  ],
+  [
+   "journals/journal-0321.md",
+   "ERP 9"
+  ],
+  [
+   "journals/journal-0321.md",
+   "Gauss XVI"
+  ],
+  [
+   "journals/journal-0321.md",
+   "Turing XVI"
+  ],
+  [
+   "journals/journal-0322.md",
+   "Cantor XVI"
+  ],
+  [
+   "journals/journal-0322.md",
+   "Digital Atlas"
+  ],
+  [
+   "journals/journal-0322.md",
+   "Northern Prism"
+  ],
+  [
+   "journals/journal-0322.md",
+   "Opal Foundry"
+  ],
+  [
+   "journals/journal-0322.md",
+   "Quantum Lantern Labyrinth"
+  ],
+  [
+   "journals/journal-0322.md",
+   "Silent Harbor"
+  ],
+  [
+   "journals/journal-0322.md",
+   "Socrates 23"
+  ],
+  [
+   "journals/journal-0322.md",
+   "Zephyr Quarry"
+  ],
+  [
+   "journals/journal-0323.md",
+   "CRM 18"
+  ],
+  [
+   "journals/journal-0323.md",
+   "Ember Orchard"
+  ],
+  [
+   "journals/journal-0323.md",
+   "Fermi XIII"
+  ],
+  [
+   "journals/journal-0323.md",
+   "Feynman III"
+  ],
+  [
+   "journals/journal-0323.md",
+   "GPT 23"
+  ],
+  [
+   "journals/journal-0323.md",
+   "Neural Cathedral"
+  ],
+  [
+   "journals/journal-0323.md",
+   "Noether 22"
+  ],
+  [
+   "journals/journal-0324.md",
+   "Amber River"
+  ],
+  [
+   "journals/journal-0324.md",
+   "CRM 14"
+  ],
+  [
+   "journals/journal-0324.md",
+   "Quantum Orchard Prism"
+  ],
+  [
+   "journals/journal-0324.md",
+   "Umbral Valley"
+  ],
+  [
+   "journals/journal-0325.md",
+   "Amber Engine"
+  ],
+  [
+   "journals/journal-0325.md",
+   "Einstein 23"
+  ],
+  [
+   "journals/journal-0325.md",
+   "Euler 22"
+  ],
+  [
+   "journals/journal-0325.md",
+   "Euler V"
+  ],
+  [
+   "journals/journal-0325.md",
+   "IPO 10"
+  ],
+  [
+   "journals/journal-0325.md",
+   "Kepler III"
+  ],
+  [
+   "journals/journal-0325.md",
+   "Purple Domain"
+  ],
+  [
+   "journals/journal-0326.md",
+   "CRM 8"
+  ],
+  [
+   "journals/journal-0326.md",
+   "Cedar Foundry"
+  ],
+  [
+   "journals/journal-0326.md",
+   "Crimson Orchard"
+  ],
+  [
+   "journals/journal-0326.md",
+   "Faraday XIII"
+  ],
+  [
+   "journals/journal-0326.md",
+   "Fermi XVI"
+  ],
+  [
+   "journals/journal-0326.md",
+   "Maxwell 23"
+  ],
+  [
+   "journals/journal-0326.md",
+   "Ramanujan 23"
+  ],
+  [
+   "journals/journal-0326.md",
+   "Silent Beacon"
+  ],
+  [
+   "journals/journal-0327.md",
+   "Faraday II"
+  ],
+  [
+   "journals/journal-0327.md",
+   "KPI 2"
+  ],
+  [
+   "journals/journal-0327.md",
+   "Turing 21"
+  ],
+  [
+   "journals/journal-0327.md",
+   "Velvet Mirage"
+  ],
+  [
+   "journals/journal-0328.md",
+   "AI 23"
+  ],
+  [
+   "journals/journal-0328.md",
+   "Cosmic Computing"
+  ],
+  [
+   "journals/journal-0328.md",
+   "LLM 26"
+  ],
+  [
+   "journals/journal-0328.md",
+   "Lunar Meadow"
+  ],
+  [
+   "journals/journal-0328.md",
+   "Neural Quarry"
+  ],
+  [
+   "journals/journal-0328.md",
+   "Purple Summit"
+  ],
+  [
+   "journals/journal-0328.md",
+   "Turing"
+  ],
+  [
+   "journals/journal-0329.md",
+   "Archimedes XX"
+  ],
+  [
+   "journals/journal-0329.md",
+   "Ivory Beacon"
+  ],
+  [
+   "journals/journal-0329.md",
+   "Mystic Engine"
+  ],
+  [
+   "journals/journal-0329.md",
+   "Quiet Glacier"
+  ],
+  [
+   "journals/journal-0329.md",
+   "Ramanujan 21"
+  ],
+  [
+   "journals/journal-0329.md",
+   "Socrates IV"
+  ],
+  [
+   "journals/journal-0329.md",
+   "Socrates XVIII"
+  ],
+  [
+   "journals/journal-0329.md",
+   "Tesla VII"
+  ],
+  [
+   "journals/journal-0330.md",
+   "Einstein XVII"
+  ],
+  [
+   "journals/journal-0330.md",
+   "Heisenberg X"
+  ],
+  [
+   "journals/journal-0330.md",
+   "Neural Tundra"
+  ],
+  [
+   "journals/journal-0330.md",
+   "Northern Mirage"
+  ],
+  [
+   "journals/journal-0331.md",
+   "Bohr VIII"
+  ],
+  [
+   "journals/journal-0331.md",
+   "Hidden Cathedral"
+  ],
+  [
+   "journals/journal-0331.md",
+   "Newton XVII"
+  ],
+  [
+   "journals/journal-0331.md",
+   "Rustic Cipher"
+  ],
+  [
+   "journals/journal-0331.md",
+   "Socrates XVIII"
+  ],
+  [
+   "journals/journal-0332.md",
+   "Jade Valley"
+  ],
+  [
+   "journals/journal-0332.md",
+   "Quantum Lantern Computing"
+  ],
+  [
+   "journals/journal-0333.md",
+   "Cedar Forest"
+  ],
+  [
+   "journals/journal-0333.md",
+   "Ramanujan XX"
+  ],
+  [
+   "journals/journal-0334.md",
+   "Archimedes VI"
+  ],
+  [
+   "journals/journal-0334.md",
+   "Digital Mirage"
+  ],
+  [
+   "journals/journal-0334.md",
+   "Ember Glacier"
+  ],
+  [
+   "journals/journal-0334.md",
+   "GPT"
+  ],
+  [
+   "journals/journal-0334.md",
+   "Ramanujan V"
+  ],
+  [
+   "journals/journal-0335.md",
+   "Cedar Quarry"
+  ],
+  [
+   "journals/journal-0335.md",
+   "GPT 14"
+  ],
+  [
+   "journals/journal-0335.md",
+   "Hopper 24"
+  ],
+  [
+   "journals/journal-0335.md",
+   "Mystic Quarry"
+  ],
+  [
+   "journals/journal-0335.md",
+   "Mystic Tundra"
+  ],
+  [
+   "journals/journal-0335.md",
+   "Tesla 24"
+  ],
+  [
+   "journals/journal-0335.md",
+   "Woven Valley"
+  ],
+  [
+   "journals/journal-0336.md",
+   "Archimedes XVII"
+  ],
+  [
+   "journals/journal-0336.md",
+   "Einstein 23"
+  ],
+  [
+   "journals/journal-0336.md",
+   "Galileo VIII"
+  ],
+  [
+   "journals/journal-0336.md",
+   "OCR 26"
+  ],
+  [
+   "journals/journal-0337.md",
+   "Aristotle IX"
+  ],
+  [
+   "journals/journal-0337.md",
+   "Cantor 24"
+  ],
+  [
+   "journals/journal-0337.md",
+   "Drift River"
+  ],
+  [
+   "journals/journal-0337.md",
+   "Galileo XIV"
+  ],
+  [
+   "journals/journal-0337.md",
+   "IPO 15"
+  ],
+  [
+   "journals/journal-0337.md",
+   "Northern Harbor"
+  ],
+  [
+   "journals/journal-0338.md",
+   "CRM 21"
+  ],
+  [
+   "journals/journal-0338.md",
+   "ERP 15"
+  ],
+  [
+   "journals/journal-0338.md",
+   "Fermi IX"
+  ],
+  [
+   "journals/journal-0338.md",
+   "Hidden Willow"
+  ],
+  [
+   "journals/journal-0338.md",
+   "Hopper VII"
+  ],
+  [
+   "journals/journal-0338.md",
+   "IPO 10"
+  ],
+  [
+   "journals/journal-0338.md",
+   "Ivory Cipher"
+  ],
+  [
+   "journals/journal-0338.md",
+   "OCR 16"
+  ],
+  [
+   "journals/journal-0338.md",
+   "Umbral Cipher"
+  ],
+  [
+   "journals/journal-0338.md",
+   "Woven Cipher"
+  ],
+  [
+   "journals/journal-0339.md",
+   "Cosmic River"
+  ],
+  [
+   "journals/journal-0339.md",
+   "Curie 24"
+  ],
+  [
+   "journals/journal-0339.md",
+   "Curie IV"
+  ],
+  [
+   "journals/journal-0339.md",
+   "Faraday 21"
+  ],
+  [
+   "journals/journal-0339.md",
+   "Fermi VII"
+  ],
+  [
+   "journals/journal-0339.md",
+   "Kepler 24"
+  ],
+  [
+   "journals/journal-0339.md",
+   "Kepler VIII"
+  ],
+  [
+   "journals/journal-0339.md",
+   "Silent Engine"
+  ],
+  [
+   "journals/journal-0339.md",
+   "Silver Mirage"
+  ],
+  [
+   "journals/journal-0340.md",
+   "CRM 13"
+  ],
+  [
+   "journals/journal-0340.md",
+   "Darwin XI"
+  ],
+  [
+   "journals/journal-0340.md",
+   "Digital Foundry"
+  ],
+  [
+   "journals/journal-0340.md",
+   "Hidden Meadow"
+  ],
+  [
+   "journals/journal-0340.md",
+   "Lunar Garden"
+  ],
+  [
+   "journals/journal-0340.md",
+   "Maxwell XVII"
+  ],
+  [
+   "journals/journal-0340.md",
+   "Purple Mirage"
+  ],
+  [
+   "journals/journal-0340.md",
+   "Silent Garden"
+  ],
+  [
+   "journals/journal-0340.md",
+   "Velvet Beacon"
+  ],
+  [
+   "journals/journal-0341.md",
+   "Einstein 23"
+  ],
+  [
+   "journals/journal-0341.md",
+   "Galileo VIII"
+  ],
+  [
+   "journals/journal-0341.md",
+   "IPO 2"
+  ],
+  [
+   "journals/journal-0341.md",
+   "Quantum Meadow Engine"
+  ],
+  [
+   "journals/journal-0341.md",
+   "Quantum Orchard Willow"
+  ],
+  [
+   "journals/journal-0341.md",
+   "Velvet Atlas"
+  ],
+  [
+   "journals/journal-0342.md",
+   "Amber Glacier"
+  ],
+  [
+   "journals/journal-0342.md",
+   "Cedar Atlas"
+  ],
+  [
+   "journals/journal-0342.md",
+   "Ivory River"
+  ],
+  [
+   "journals/journal-0342.md",
+   "LLM 26"
+  ],
+  [
+   "journals/journal-0343.md",
+   "Digital Tundra"
+  ],
+  [
+   "journals/journal-0343.md",
+   "Fermi VI"
+  ],
+  [
+   "journals/journal-0343.md",
+   "Galileo VIII"
+  ],
+  [
+   "journals/journal-0343.md",
+   "Gauss IX"
+  ],
+  [
+   "journals/journal-0343.md",
+   "Quantum Orchard Tundra"
+  ],
+  [
+   "journals/journal-0343.md",
+   "Ramanujan V"
+  ],
+  [
+   "journals/journal-0344.md",
+   "Cosmic Garden"
+  ],
+  [
+   "journals/journal-0344.md",
+   "Einstein IV"
+  ],
+  [
+   "journals/journal-0344.md",
+   "Heisenberg XI"
+  ],
+  [
+   "journals/journal-0344.md",
+   "Quantum Harbor Meadow"
+  ],
+  [
+   "journals/journal-0344.md",
+   "Socrates XX"
+  ],
+  [
+   "journals/journal-0344.md",
+   "Woven Orchard"
+  ],
+  [
+   "journals/journal-0345.md",
+   "Heisenberg VIII"
+  ],
+  [
+   "journals/journal-0345.md",
+   "LLM 4"
+  ],
+  [
+   "journals/journal-0345.md",
+   "Neural Lantern"
+  ],
+  [
+   "journals/journal-0345.md",
+   "Ramanujan VI"
+  ],
+  [
+   "journals/journal-0345.md",
+   "Zephyr Willow"
+  ],
+  [
+   "journals/journal-0346.md",
+   "Opal Quarry"
+  ],
+  [
+   "journals/journal-0346.md",
+   "Socrates II"
+  ],
+  [
+   "journals/journal-0347.md",
+   "Ancient Orchard"
+  ],
+  [
+   "journals/journal-0347.md",
+   "Crimson Engine"
+  ],
+  [
+   "journals/journal-0347.md",
+   "Heisenberg XIII"
+  ],
+  [
+   "journals/journal-0347.md",
+   "Noether XVII"
+  ],
+  [
+   "journals/journal-0347.md",
+   "Velvet Forest"
+  ],
+  [
+   "journals/journal-0348.md",
+   "Gauss II"
+  ],
+  [
+   "journals/journal-0348.md",
+   "Opal Summit"
+  ],
+  [
+   "journals/journal-0348.md",
+   "Silent Domain"
+  ],
+  [
+   "journals/journal-0349.md",
+   "Aristotle"
+  ],
+  [
+   "journals/journal-0349.md",
+   "Aristotle IV"
+  ],
+  [
+   "journals/journal-0349.md",
+   "Galileo XIX"
+  ],
+  [
+   "journals/journal-0350.md",
+   "Digital Garden"
+  ],
+  [
+   "journals/journal-0350.md",
+   "Feynman XX"
+  ],
+  [
+   "journals/journal-0350.md",
+   "Gauss IV"
+  ],
+  [
+   "journals/journal-0350.md",
+   "Lovelace V"
+  ],
+  [
+   "journals/journal-0350.md",
+   "Quantum Cathedral Valley"
+  ],
+  [
+   "journals/journal-0351.md",
+   "ERP 27"
+  ],
+  [
+   "journals/journal-0351.md",
+   "Hidden Tundra"
+  ],
+  [
+   "journals/journal-0351.md",
+   "Lunar Willow"
+  ],
+  [
+   "journals/journal-0351.md",
+   "Opal Beacon"
+  ],
+  [
+   "journals/journal-0351.md",
+   "Rustic Glacier"
+  ],
+  [
+   "journals/journal-0351.md",
+   "Turing XV"
+  ],
+  [
+   "journals/journal-0352.md",
+   "Darwin 24"
+  ],
+  [
+   "journals/journal-0352.md",
+   "ERP 9"
+  ],
+  [
+   "journals/journal-0352.md",
+   "OCR 18"
+  ],
+  [
+   "journals/journal-0352.md",
+   "Plato XX"
+  ],
+  [
+   "journals/journal-0352.md",
+   "Purple Tundra"
+  ],
+  [
+   "journals/journal-0352.md",
+   "Tesla 22"
+  ],
+  [
+   "journals/journal-0352.md",
+   "Turing XIII"
+  ],
+  [
+   "journals/journal-0352.md",
+   "Woven Meadow"
+  ],
+  [
+   "journals/journal-0353.md",
+   "Archimedes VIII"
+  ],
+  [
+   "journals/journal-0353.md",
+   "Galileo VI"
+  ],
+  [
+   "journals/journal-0353.md",
+   "Galileo VIII"
+  ],
+  [
+   "journals/journal-0353.md",
+   "Northern Valley"
+  ],
+  [
+   "journals/journal-0353.md",
+   "Quantum Cathedral Engine"
+  ],
+  [
+   "journals/journal-0353.md",
+   "Quantum Meadow Computing"
+  ],
+  [
+   "journals/journal-0353.md",
+   "Silver Atlas"
+  ],
+  [
+   "journals/journal-0354.md",
+   "Cantor II"
+  ],
+  [
+   "journals/journal-0354.md",
+   "Lunar Valley"
+  ],
+  [
+   "journals/journal-0354.md",
+   "OCR 28"
+  ],
+  [
+   "journals/journal-0354.md",
+   "Plato 23"
+  ],
+  [
+   "journals/journal-0354.md",
+   "Quantum Cathedral Foundry"
+  ],
+  [
+   "journals/journal-0354.md",
+   "Quantum Harbor Computing"
+  ],
+  [
+   "journals/journal-0354.md",
+   "Silver Foundry"
+  ],
+  [
+   "journals/journal-0355.md",
+   "Cantor VIII"
+  ],
+  [
+   "journals/journal-0355.md",
+   "GPT 12"
+  ],
+  [
+   "journals/journal-0355.md",
+   "KPI 17"
+  ],
+  [
+   "journals/journal-0355.md",
+   "Mystic River"
+  ],
+  [
+   "journals/journal-0355.md",
+   "Quantum Orchard"
+  ],
+  [
+   "journals/journal-0355.md",
+   "Umbral Lantern"
+  ],
+  [
+   "journals/journal-0356.md",
+   "Darwin 24"
+  ],
+  [
+   "journals/journal-0356.md",
+   "Lovelace VIII"
+  ],
+  [
+   "journals/journal-0356.md",
+   "Mystic Cathedral"
+  ],
+  [
+   "journals/journal-0356.md",
+   "Quantum Harbor Tundra"
+  ],
+  [
+   "journals/journal-0356.md",
+   "Quantum Meadow River"
+  ],
+  [
+   "journals/journal-0356.md",
+   "Silver Cipher"
+  ],
+  [
+   "journals/journal-0357.md",
+   "Darwin III"
+  ],
+  [
+   "journals/journal-0357.md",
+   "Einstein XV"
+  ],
+  [
+   "journals/journal-0357.md",
+   "LLM 28"
+  ],
+  [
+   "journals/journal-0357.md",
+   "Neural Engine"
+  ],
+  [
+   "journals/journal-0357.md",
+   "Quiet Cathedral"
+  ],
+  [
+   "journals/journal-0357.md",
+   "Quiet River"
+  ],
+  [
+   "journals/journal-0357.md",
+   "Zephyr Tundra"
+  ],
+  [
+   "journals/journal-0358.md",
+   "Einstein XII"
+  ],
+  [
+   "journals/journal-0358.md",
+   "Feynman IX"
+  ],
+  [
+   "journals/journal-0358.md",
+   "Ivory Meadow"
+  ],
+  [
+   "journals/journal-0358.md",
+   "Maxwell 22"
+  ],
+  [
+   "journals/journal-0358.md",
+   "Quantum Lantern Orchard"
+  ],
+  [
+   "journals/journal-0358.md",
+   "Quiet Lantern"
+  ],
+  [
+   "journals/journal-0358.md",
+   "Velvet Orchard"
+  ],
+  [
+   "journals/journal-0359.md",
+   "Amber Cathedral"
+  ],
+  [
+   "journals/journal-0359.md",
+   "Amber Harbor"
+  ],
+  [
+   "journals/journal-0359.md",
+   "Ember Lantern"
+  ],
+  [
+   "journals/journal-0359.md",
+   "RAG 10"
+  ],
+  [
+   "journals/journal-0359.md",
+   "RAG 17"
+  ],
+  [
+   "journals/journal-0359.md",
+   "Rustic Forest"
+  ],
+  [
+   "journals/journal-0360.md",
+   "Bohr V"
+  ],
+  [
+   "journals/journal-0360.md",
+   "Boreal Prism"
+  ],
+  [
+   "journals/journal-0360.md",
+   "Quantum Lantern Meadow"
+  ],
+  [
+   "journals/journal-0360.md",
+   "Tesla XVIII"
+  ],
+  [
+   "journals/journal-0361.md",
+   "Crimson River"
+  ],
+  [
+   "journals/journal-0361.md",
+   "Newton X"
+  ],
+  [
+   "journals/journal-0361.md",
+   "Plato XVI"
+  ],
+  [
+   "journals/journal-0361.md",
+   "Purple Beacon"
+  ],
+  [
+   "journals/journal-0361.md",
+   "Quantum Lantern River"
+  ],
+  [
+   "journals/journal-0361.md",
+   "Velvet Garden"
+  ],
+  [
+   "journals/journal-0362.md",
+   "Euler 21"
+  ],
+  [
+   "journals/journal-0362.md",
+   "IPO 21"
+  ],
+  [
+   "journals/journal-0362.md",
+   "Mystic Quarry"
+  ],
+  [
+   "journals/journal-0362.md",
+   "Quantum Lantern Quarry"
+  ],
+  [
+   "journals/journal-0363.md",
+   "Crimson Garden"
+  ],
+  [
+   "journals/journal-0363.md",
+   "Golden Atlas"
+  ],
+  [
+   "journals/journal-0363.md",
+   "Velvet Computing"
+  ],
+  [
+   "journals/journal-0363.md",
+   "Velvet Garden"
+  ],
+  [
+   "journals/journal-0364.md",
+   "Cantor XVIII"
+  ],
+  [
+   "journals/journal-0364.md",
+   "Digital Summit"
+  ],
+  [
+   "journals/journal-0364.md",
+   "ERP 3"
+  ],
+  [
+   "journals/journal-0364.md",
+   "Faraday VI"
+  ],
+  [
+   "journals/journal-0364.md",
+   "Heisenberg IX"
+  ],
+  [
+   "journals/journal-0364.md",
+   "Lunar Quarry"
+  ],
+  [
+   "journals/journal-0364.md",
+   "Neural Valley"
+  ],
+  [
+   "journals/journal-0364.md",
+   "ROI 25"
+  ],
+  [
+   "journals/journal-0364.md",
+   "ROI 7"
+  ],
+  [
+   "journals/journal-0365.md",
+   "Boreal Atlas"
+  ],
+  [
+   "journals/journal-0365.md",
+   "Faraday 24"
+  ],
+  [
+   "journals/journal-0365.md",
+   "Maxwell VI"
+  ],
+  [
+   "journals/journal-0365.md",
+   "Opal Cipher"
+  ],
+  [
+   "journals/journal-0365.md",
+   "Quantum Meadow Harbor"
+  ],
+  [
+   "journals/journal-0365.md",
+   "RAG 4"
+  ],
+  [
+   "journals/journal-0365.md",
+   "Silver Atlas"
+  ],
+  [
+   "journals/journal-0366.md",
+   "Crimson Valley"
+  ],
+  [
+   "journals/journal-0366.md",
+   "Curie 23"
+  ],
+  [
+   "journals/journal-0366.md",
+   "Lovelace X"
+  ],
+  [
+   "journals/journal-0366.md",
+   "Noether X"
+  ],
+  [
+   "journals/journal-0366.md",
+   "Tesla XX"
+  ],
+  [
+   "journals/journal-0367.md",
+   "Ancient Tundra"
+  ],
+  [
+   "journals/journal-0367.md",
+   "Crimson Garden"
+  ],
+  [
+   "journals/journal-0367.md",
+   "ERP 6"
+  ],
+  [
+   "journals/journal-0367.md",
+   "Fermi III"
+  ],
+  [
+   "journals/journal-0367.md",
+   "Mystic Computing"
+  ],
+  [
+   "journals/journal-0367.md",
+   "Noether IV"
+  ],
+  [
+   "journals/journal-0367.md",
+   "Quantum Meadow Lantern"
+  ],
+  [
+   "journals/journal-0368.md",
+   "Bohr IV"
+  ],
+  [
+   "journals/journal-0368.md",
+   "Drift River"
+  ],
+  [
+   "journals/journal-0368.md",
+   "Gauss XVIII"
+  ],
+  [
+   "journals/journal-0368.md",
+   "Heisenberg 24"
+  ],
+  [
+   "journals/journal-0368.md",
+   "Hidden Cipher"
+  ],
+  [
+   "journals/journal-0368.md",
+   "RAG 26"
+  ],
+  [
+   "journals/journal-0368.md",
+   "Socrates VIII"
+  ],
+  [
+   "journals/journal-0369.md",
+   "KPI 14"
+  ],
+  [
+   "journals/journal-0369.md",
+   "Quantum Lantern Orchard"
+  ],
+  [
+   "journals/journal-0369.md",
+   "Silver Tundra"
+  ],
+  [
+   "journals/journal-0370.md",
+   "Digital Foundry"
+  ],
+  [
+   "journals/journal-0370.md",
+   "Euler XX"
+  ],
+  [
+   "journals/journal-0370.md",
+   "Mystic Meadow"
+  ],
+  [
+   "journals/journal-0370.md",
+   "ROI 5"
+  ],
+  [
+   "journals/journal-0370.md",
+   "Turing VII"
+  ],
+  [
+   "journals/journal-0371.md",
+   "Bohr XIV"
+  ],
+  [
+   "journals/journal-0371.md",
+   "Euler VII"
+  ],
+  [
+   "journals/journal-0371.md",
+   "Lovelace XVI"
+  ],
+  [
+   "journals/journal-0371.md",
+   "OCR 11"
+  ],
+  [
+   "journals/journal-0371.md",
+   "Quantum Meadow Orchard"
+  ],
+  [
+   "journals/journal-0371.md",
+   "Quiet Harbor"
+  ],
+  [
+   "journals/journal-0372.md",
+   "Amber Harbor"
+  ],
+  [
+   "journals/journal-0372.md",
+   "Crimson Engine"
+  ],
+  [
+   "journals/journal-0372.md",
+   "ERP 7"
+  ],
+  [
+   "journals/journal-0372.md",
+   "Euler XI"
+  ],
+  [
+   "journals/journal-0372.md",
+   "Noether X"
+  ],
+  [
+   "journals/journal-0372.md",
+   "Quantum Computing Valley"
+  ],
+  [
+   "journals/journal-0372.md",
+   "Quantum Lantern Domain"
+  ],
+  [
+   "journals/journal-0372.md",
+   "Socrates X"
+  ],
+  [
+   "journals/journal-0373.md",
+   "Crimson Harbor"
+  ],
+  [
+   "journals/journal-0373.md",
+   "Digital Glacier"
+  ],
+  [
+   "journals/journal-0373.md",
+   "Ember Labyrinth"
+  ],
+  [
+   "journals/journal-0373.md",
+   "Kepler XV"
+  ],
+  [
+   "journals/journal-0373.md",
+   "Quantum Harbor Glacier"
+  ],
+  [
+   "journals/journal-0373.md",
+   "Velvet Willow"
+  ],
+  [
+   "journals/journal-0374.md",
+   "Digital Cipher"
+  ],
+  [
+   "journals/journal-0374.md",
+   "ERP 19"
+  ],
+  [
+   "journals/journal-0374.md",
+   "Faraday 24"
+  ],
+  [
+   "journals/journal-0374.md",
+   "Quantum Lantern Willow"
+  ],
+  [
+   "journals/journal-0374.md",
+   "Socrates XX"
+  ],
+  [
+   "journals/journal-0375.md",
+   "Jade Cipher"
+  ],
+  [
+   "journals/journal-0375.md",
+   "Quantum Orchard Valley"
+  ],
+  [
+   "journals/journal-0375.md",
+   "Socrates XII"
+  ],
+  [
+   "journals/journal-0375.md",
+   "Tesla XIV"
+  ],
+  [
+   "journals/journal-0375.md",
+   "Velvet Harbor"
+  ],
+  [
+   "journals/journal-0376.md",
+   "Aristotle 23"
+  ],
+  [
+   "journals/journal-0376.md",
+   "Boreal Prism"
+  ],
+  [
+   "journals/journal-0376.md",
+   "Heisenberg XIX"
+  ],
+  [
+   "journals/journal-0376.md",
+   "Noether XI"
+  ],
+  [
+   "journals/journal-0376.md",
+   "Quantum Cathedral Cathedral"
+  ],
+  [
+   "journals/journal-0376.md",
+   "Quantum Computing Willow"
+  ],
+  [
+   "journals/journal-0377.md",
+   "Archimedes XVI"
+  ],
+  [
+   "journals/journal-0377.md",
+   "Aristotle XII"
+  ],
+  [
+   "journals/journal-0377.md",
+   "Cantor XIII"
+  ],
+  [
+   "journals/journal-0377.md",
+   "Opal Computing"
+  ],
+  [
+   "journals/journal-0377.md",
+   "Silent Valley"
+  ],
+  [
+   "journals/journal-0377.md",
+   "Socrates XIII"
+  ],
+  [
+   "journals/journal-0378.md",
+   "Archimedes"
+  ],
+  [
+   "journals/journal-0378.md",
+   "Drift Willow"
+  ],
+  [
+   "journals/journal-0378.md",
+   "Fermi V"
+  ],
+  [
+   "journals/journal-0378.md",
+   "Frozen Willow"
+  ],
+  [
+   "journals/journal-0378.md",
+   "Galileo XV"
+  ],
+  [
+   "journals/journal-0378.md",
+   "Kepler IV"
+  ],
+  [
+   "journals/journal-0378.md",
+   "Quantum Harbor Computing"
+  ],
+  [
+   "journals/journal-0378.md",
+   "Silent Orchard"
+  ],
+  [
+   "journals/journal-0379.md",
+   "CRM 3"
+  ],
+  [
+   "journals/journal-0379.md",
+   "Drift Cipher"
+  ],
+  [
+   "journals/journal-0379.md",
+   "Einstein V"
+  ],
+  [
+   "journals/journal-0379.md",
+   "Kepler XVII"
+  ],
+  [
+   "journals/journal-0379.md",
+   "Lovelace XVI"
+  ],
+  [
+   "journals/journal-0379.md",
+   "Mystic Forest"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Aristotle X"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Bohr VIII"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Boreal Valley"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Gauss III"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Gauss XVII"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Mystic Tundra"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Rustic Atlas"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Turing XIX"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Velvet Engine"
+  ],
+  [
+   "journals/journal-0380.md",
+   "Velvet Orchard"
+  ],
+  [
+   "journals/journal-0381.md",
+   "Darwin XX"
+  ],
+  [
+   "journals/journal-0381.md",
+   "Heisenberg 24"
+  ],
+  [
+   "journals/journal-0381.md",
+   "Plato XI"
+  ],
+  [
+   "journals/journal-0381.md",
+   "Quantum Meadow Meadow"
+  ],
+  [
+   "journals/journal-0381.md",
+   "Quantum Mirage"
+  ],
+  [
+   "journals/journal-0381.md",
+   "Quantum Tundra"
+  ],
+  [
+   "journals/journal-0381.md",
+   "Tesla IX"
+  ],
+  [
+   "journals/journal-0382.md",
+   "Feynman XV"
+  ],
+  [
+   "journals/journal-0382.md",
+   "KPI 18"
+  ],
+  [
+   "journals/journal-0382.md",
+   "LLM 30"
+  ],
+  [
+   "journals/journal-0382.md",
+   "Quantum Lantern Foundry"
+  ],
+  [
+   "journals/journal-0382.md",
+   "Silent Foundry"
+  ],
+  [
+   "journals/journal-0383.md",
+   "GPT 18"
+  ],
+  [
+   "journals/journal-0383.md",
+   "KPI 6"
+  ],
+  [
+   "journals/journal-0383.md",
+   "Quiet Forest"
+  ],
+  [
+   "journals/journal-0383.md",
+   "Socrates 23"
+  ],
+  [
+   "journals/journal-0383.md",
+   "Velvet Archive"
+  ],
+  [
+   "journals/journal-0384.md",
+   "Crimson Engine"
+  ],
+  [
+   "journals/journal-0384.md",
+   "Curie 21"
+  ],
+  [
+   "journals/journal-0384.md",
+   "Curie VII"
+  ],
+  [
+   "journals/journal-0384.md",
+   "Einstein XVII"
+  ],
+  [
+   "journals/journal-0384.md",
+   "Feynman VI"
+  ],
+  [
+   "journals/journal-0384.md",
+   "Newton XVI"
+  ],
+  [
+   "journals/journal-0384.md",
+   "OCR 30"
+  ],
+  [
+   "journals/journal-0384.md",
+   "Quiet Atlas"
+  ],
+  [
+   "journals/journal-0384.md",
+   "Socrates VI"
+  ],
+  [
+   "journals/journal-0385.md",
+   "Archimedes XVI"
+  ],
+  [
+   "journals/journal-0385.md",
+   "Cosmic Harbor"
+  ],
+  [
+   "journals/journal-0385.md",
+   "Faraday XV"
+  ],
+  [
+   "journals/journal-0385.md",
+   "Heisenberg VI"
+  ],
+  [
+   "journals/journal-0385.md",
+   "Neural River"
+  ],
+  [
+   "journals/journal-0385.md",
+   "OCR 6"
+  ],
+  [
+   "journals/journal-0385.md",
+   "Quantum Orchard Forest"
+  ],
+  [
+   "journals/journal-0386.md",
+   "AI 16"
+  ],
+  [
+   "journals/journal-0386.md",
+   "Cantor V"
+  ],
+  [
+   "journals/journal-0386.md",
+   "Curie III"
+  ],
+  [
+   "journals/journal-0386.md",
+   "Fermi VII"
+  ],
+  [
+   "journals/journal-0386.md",
+   "Maxwell XVI"
+  ],
+  [
+   "journals/journal-0386.md",
+   "Purple Garden"
+  ],
+  [
+   "journals/journal-0386.md",
+   "Tesla XVII"
+  ],
+  [
+   "journals/journal-0386.md",
+   "Umbral Garden"
+  ],
+  [
+   "journals/journal-0387.md",
+   "AI 5"
+  ],
+  [
+   "journals/journal-0387.md",
+   "Golden Quarry"
+  ],
+  [
+   "journals/journal-0387.md",
+   "Kepler IV"
+  ],
+  [
+   "journals/journal-0387.md",
+   "Quantum Orchard River"
+  ],
+  [
+   "journals/journal-0387.md",
+   "RAG 17"
+  ],
+  [
+   "journals/journal-0387.md",
+   "Ramanujan XVIII"
+  ],
+  [
+   "journals/journal-0387.md",
+   "Zephyr River"
+  ],
+  [
+   "journals/journal-0388.md",
+   "Cosmic Beacon"
+  ],
+  [
+   "journals/journal-0388.md",
+   "Digital Summit"
+  ],
+  [
+   "journals/journal-0388.md",
+   "Quantum Orchard Valley"
+  ],
+  [
+   "journals/journal-0388.md",
+   "Tesla III"
+  ],
+  [
+   "journals/journal-0388.md",
+   "Turing XI"
+  ],
+  [
+   "journals/journal-0389.md",
+   "Cantor 22"
+  ],
+  [
+   "journals/journal-0389.md",
+   "ERP 18"
+  ],
+  [
+   "journals/journal-0389.md",
+   "Feynman 24"
+  ],
+  [
+   "journals/journal-0389.md",
+   "Golden Labyrinth"
+  ],
+  [
+   "journals/journal-0389.md",
+   "IPO 22"
+  ],
+  [
+   "journals/journal-0389.md",
+   "Kepler XVII"
+  ],
+  [
+   "journals/journal-0389.md",
+   "Plato XI"
+  ],
+  [
+   "journals/journal-0389.md",
+   "Quiet Mirage"
+  ],
+  [
+   "journals/journal-0390.md",
+   "Aristotle"
+  ],
+  [
+   "journals/journal-0390.md",
+   "Aristotle IX"
+  ],
+  [
+   "journals/journal-0390.md",
+   "Bohr III"
+  ],
+  [
+   "journals/journal-0390.md",
+   "Heisenberg XV"
+  ],
+  [
+   "journals/journal-0390.md",
+   "Noether XI"
+  ],
+  [
+   "journals/journal-0390.md",
+   "RAG 3"
+  ],
+  [
+   "journals/journal-0390.md",
+   "Velvet Tundra"
+  ],
+  [
+   "journals/journal-0391.md",
+   "Cedar Beacon"
+  ],
+  [
+   "journals/journal-0391.md",
+   "Newton 23"
+  ],
+  [
+   "journals/journal-0391.md",
+   "RAG 28"
+  ],
+  [
+   "journals/journal-0392.md",
+   "CRM 18"
+  ],
+  [
+   "journals/journal-0392.md",
+   "Drift Quarry"
+  ],
+  [
+   "journals/journal-0392.md",
+   "Faraday XVI"
+  ],
+  [
+   "journals/journal-0392.md",
+   "Mystic Tundra"
+  ],
+  [
+   "journals/journal-0392.md",
+   "Quantum Meadow Domain"
+  ],
+  [
+   "journals/journal-0392.md",
+   "Socrates IV"
+  ],
+  [
+   "journals/journal-0392.md",
+   "Socrates XIV"
+  ],
+  [
+   "journals/journal-0392.md",
+   "Woven Foundry"
+  ],
+  [
+   "journals/journal-0393.md",
+   "CRM 25"
+  ],
+  [
+   "journals/journal-0393.md",
+   "Darwin 22"
+  ],
+  [
+   "journals/journal-0393.md",
+   "Galileo IV"
+  ],
+  [
+   "journals/journal-0393.md",
+   "Quantum Lantern Harbor"
+  ],
+  [
+   "journals/journal-0393.md",
+   "Quiet Labyrinth"
+  ],
+  [
+   "journals/journal-0394.md",
+   "Curie XI"
+  ],
+  [
+   "journals/journal-0394.md",
+   "Darwin VII"
+  ],
+  [
+   "journals/journal-0394.md",
+   "RAG 26"
+  ],
+  [
+   "journals/journal-0394.md",
+   "Rustic Tundra"
+  ],
+  [
+   "journals/journal-0395.md",
+   "Einstein IV"
+  ],
+  [
+   "journals/journal-0395.md",
+   "Heisenberg II"
+  ],
+  [
+   "journals/journal-0395.md",
+   "Ivory Glacier"
+  ],
+  [
+   "journals/journal-0395.md",
+   "Northern Labyrinth"
+  ],
+  [
+   "journals/journal-0395.md",
+   "Plato X"
+  ],
+  [
+   "journals/journal-0396.md",
+   "Archimedes XV"
+  ],
+  [
+   "journals/journal-0396.md",
+   "CRM 17"
+  ],
+  [
+   "journals/journal-0396.md",
+   "Galileo VIII"
+  ],
+  [
+   "journals/journal-0396.md",
+   "KPI 24"
+  ],
+  [
+   "journals/journal-0396.md",
+   "Newton VIII"
+  ],
+  [
+   "journals/journal-0397.md",
+   "Darwin 23"
+  ],
+  [
+   "journals/journal-0397.md",
+   "Faraday XIV"
+  ],
+  [
+   "journals/journal-0397.md",
+   "Galileo XI"
+  ],
+  [
+   "journals/journal-0397.md",
+   "Heisenberg XVIII"
+  ],
+  [
+   "journals/journal-0397.md",
+   "Ivory Cathedral"
+  ],
+  [
+   "journals/journal-0397.md",
+   "Newton XVII"
+  ],
+  [
+   "journals/journal-0397.md",
+   "Tesla XVII"
+  ],
+  [
+   "journals/journal-0398.md",
+   "Amber Orchard"
+  ],
+  [
+   "journals/journal-0398.md",
+   "Boreal Foundry"
+  ],
+  [
+   "journals/journal-0398.md",
+   "Galileo XIX"
+  ],
+  [
+   "journals/journal-0398.md",
+   "Kepler XVI"
+  ],
+  [
+   "journals/journal-0398.md",
+   "Neural Valley"
+  ],
+  [
+   "journals/journal-0398.md",
+   "Newton IX"
+  ],
+  [
+   "journals/journal-0398.md",
+   "Noether XX"
+  ],
+  [
+   "journals/journal-0398.md",
+   "Quantum Orchard Labyrinth"
+  ],
+  [
+   "journals/journal-0399.md",
+   "AI 15"
+  ],
+  [
+   "journals/journal-0399.md",
+   "Archimedes IV"
+  ],
+  [
+   "journals/journal-0399.md",
+   "Newton XVIII"
+  ],
+  [
+   "journals/journal-0399.md",
+   "Opal Orchard"
+  ],
+  [
+   "journals/journal-0399.md",
+   "Turing IV"
+  ]
+ ]
+}
