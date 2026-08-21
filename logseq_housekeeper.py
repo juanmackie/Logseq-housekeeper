@@ -12,6 +12,10 @@ Usage:
     python logseq_housekeeper.py --graph-path <path> --plain
 """
 
+# Lazy annotations: TUI/PlainTUI reference rich classes in signatures that may
+# not be importable (rich is optional); annotations must not evaluate eagerly.
+from __future__ import annotations
+
 import argparse
 import json
 import os
@@ -257,6 +261,7 @@ class Scanner:
         self.graph_path = graph_path
         self.config = config
         self.max_per_file = config.get("max_links_per_file", DEFAULT_MAX_LINKS_PER_FILE)
+        self.errors: list[str] = []
 
     def scan_all(self) -> list[tuple[Path, list[Suggestion]]]:
         """Scan all source files and return (filepath, suggestions) pairs."""
@@ -500,9 +505,6 @@ class Scanner:
                 elif wc == 1 and matched[0].isupper():
                     confidence = "MEDIUM"
                     reason = "proper noun"
-                    if is_wiki_page:
-                        confidence = "HIGH"
-                        reason = "wiki concept"
                 else:
                     confidence = "LOW"
                     reason = "ambiguous"
@@ -613,6 +615,9 @@ class Applier:
                             newline="",
                         ) as f:
                             f.writelines(lines)
+                        # mkstemp creates the temp file 0600; keep the
+                        # original file's permissions across the replace.
+                        shutil.copymode(fpath, tmp_path)
                         os.replace(tmp_path, fpath)
                     except Exception as e:
                         Path(tmp_path).unlink(missing_ok=True)
