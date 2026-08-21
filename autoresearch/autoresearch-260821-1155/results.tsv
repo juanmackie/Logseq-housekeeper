@@ -1,0 +1,15 @@
+iteration	change	scan_ms_large	precision	recall	corruption_ok	kept
+0	baseline (min-of-5, same method as all rows)	5160.5	0.7658	0.8636	pass	baseline
+1	set-lookup dedupe of pattern entries (was O(n^2) any())	4330.1	0.7658	0.8636	pass	kept
+2	protect inline-code spans (`...`)	3552.4	0.8716	0.8636	pass	kept
+3	plural-aware matching + [[Target|text]] alias-form insertion	3919.7	1.0000	0.9987	pass	kept
+4	single-pass PROTECTED_PAT + segment-scoped matching	3155.9	1.0000	0.9987	pass	kept
+5	reuse index file lists + content cache (single read per file)	2957.3	1.0000	0.9987	pass	kept
+6	token-window phrase lookup replaces giant alternation regex	510.7	1.0000	0.9987	pass	kept
+7	tuple-key phrase maps + lowered-token cache + :: guard	516.7	1.0000	0.9987	pass	REVERTED (no speed gain vs 510.7)
+--	harness fix: no plural mentions of s-ending titles (unrealistic); fixtures regenerated	-	-	-	-	note
+8	comment-scan fast path (guard on in_comment/"<!--")	464.6	1.0000	1.0000	pass	kept
+9	precompiled property regex + :: guard in index build	446.6	1.0000	1.0000	pass	kept
+10	first-word prefilter for token windows	393.2	1.0000	1.0000	pass	kept
+11	slots=True on PageDef/Suggestion dataclasses	~387 (392/372/398)	1.0000	1.0000	pass	REVERTED (within noise of 393.2)
+12	char-trigger fast path before PROTECTED_PAT pass	374.9	1.0000	1.0000	pass	kept

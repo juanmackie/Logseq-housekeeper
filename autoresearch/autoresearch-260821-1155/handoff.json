@@ -1,0 +1,41 @@
+{
+  "skill": "autoresearch",
+  "mode": "classic",
+  "goal": "Logseq-housekeeper: reduce scan time and improve suggestion precision/recall with zero corruption",
+  "iterations_planned": 12,
+  "iterations_done": 12,
+  "iterations_kept": 9,
+  "iterations_reverted": 2,
+  "harness_notes": 1,
+  "metrics": {
+    "scan_ms_large": {"baseline": 5160.5, "best": 374.9, "final_rerun": 381.8, "speedup_x": 13.8},
+    "precision": {"baseline": 0.7658, "best": 1.0},
+    "recall": {"baseline": 0.8636, "best": 1.0},
+    "corruption_ok": true
+  },
+  "harness": ["tests/gen_graph.py", "tests/harness.py"],
+  "fixtures": ["tests/fixtures/small", "tests/fixtures/medium", "tests/fixtures/large"],
+  "keep_rule": "keep iff corruption pass AND (scan_ms_large -2% OR P/R +0.002 without other regressing >0.002)",
+  "kept_changes": [
+    "iter 1: set-lookup dedupe of pattern entries",
+    "iter 2: inline-code spans protected",
+    "iter 3: plural-tolerant matching; applier writes [[Target|text]] for case/plural variants",
+    "iter 4: single-pass PROTECTED_PAT + segment-scoped matching",
+    "iter 5: index shares file lists + content cache with scanner",
+    "iter 6: token-window dict lookups replace giant alternation regex (irregular titles keep fallback regex)",
+    "iter 8: comment-scan fast path",
+    "iter 9: precompiled property regex + '::' guard in index build",
+    "iter 10: first-word prefilter for token windows",
+    "iter 12: char-trigger fast path before PROTECTED_PAT"
+  ],
+  "reverted_changes": [
+    "iter 7: tuple-key phrase maps (no gain over string keys)",
+    "iter 11: dataclass slots=True (within noise)"
+  ],
+  "safety": ["no git push performed", "only synthetic fixtures under tests/fixtures touched by harness", "bounded at 12 iterations"],
+  "next_ideas": [
+    "multiprocess scan across files if graphs grow >>10k pages",
+    "suffix variants beyond plural (ing/ed) behind config flag",
+    "index build is now ~45% of total time: consider mtime-based incremental index cache"
+  ]
+}

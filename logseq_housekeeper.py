@@ -80,6 +80,11 @@ SHORT_ALLOWLIST: set[str] = {
 DEFAULT_MAX_LINKS_PER_FILE = 20
 DEFAULT_MIN_LINK_LENGTH = 3
 
+PROPERTY_KEY_RE = re.compile(
+    r'^\s*(?:-\s+)?(title|type|alias|aliases)\s*::\s*(.+)$',
+    re.IGNORECASE
+)
+
 # ── Data Structures ───────────────────────────────────────────────────────────
 
 
@@ -127,22 +132,30 @@ class PageIndex:
         self.by_lower: dict[str, PageDef] = {}
         self.alias_targets: dict[str, list[str]] = {}
         self.errors: list[str] = []
+        # Shared with the Scanner to avoid a second directory walk / file read.
+        self.file_lists: dict[str, list[Path]] = {}
+        self.content_cache: dict[Path, str] = {}
 
     def build(self) -> int:
         self.by_lower.clear()
         self.alias_targets.clear()
         self.errors.clear()
+        self.file_lists.clear()
+        self.content_cache.clear()
 
         for source_dir in ("pages", "journals", "wiki"):
             root = self.graph_path / source_dir
             if not root.is_dir():
                 continue
+            files: list[Path] = []
             for md in sorted(root.rglob("*.md")):
                 rel = md.relative_to(self.graph_path)
                 parts = rel.parts
                 if any(p in EXCLUDE_DIRS or p.startswith(".") for p in parts):
                     continue
+                files.append(md)
                 self._index_file(md, source_dir)
+            self.file_lists[source_dir] = files
 
         return len(self.by_lower)
 
@@ -159,6 +172,7 @@ class PageIndex:
 
         try:
             content = path.read_text("utf-8-sig")
+            self.content_cache[path] = content
             self._extract_properties(content, page)
         except Exception:
             pass
@@ -187,11 +201,10 @@ class PageIndex:
 
     def _extract_properties(self, content: str, page: PageDef):
         for line in content.splitlines():
+            if "::" not in line:
+                continue
             s = line.strip()
-            m = re.match(
-                r'^\s*(?:-\s+)?(title|type|alias|aliases)\s*::\s*(.+)$',
-                s, re.IGNORECASE
-            )
+            m = PROPERTY_KEY_RE.match(s)
             if not m:
                 continue
             key = m.group(1).lower()
@@ -255,6 +268,18 @@ class Scanner:
     REF_PAT = re.compile(r'\(\(([^)]+)\)\)')
     URL_PAT = re.compile(r'https?://\S+')
     MD_LINK_PAT = re.compile(r'\[([^\]]*)\]\(([^)]*)\)')
+    INLINE_CODE_PAT = re.compile(r'`[^`\n]+`')
+    # Single-pass pattern covering every inline protected zone. Alternation
+    # order matters: wikilinks/refs first, then URLs before markdown links
+    # is unnecessary because the markdown-link '[' starts leftmost.
+    PROTECTED_PAT = re.compile(
+        r'\[\[[^\]]+\]\]'                       # wikilink
+        r'|\(\([^)]+\)\)'                       # block ref
+        r'|\[[^\]]*\]\([^)]*\)'                 # markdown link
+        r'|https?://\S+'                         # URL
+        r'|(?<!\w)#\w[\w-]*\b'                   # tag
+        r'|`[^`\n]+`'                            # inline code
+    )
 
     def __init__(self, index: PageIndex, graph_path: Path, config: dict):
         self.index = index
@@ -262,6 +287,10 @@ class Scanner:
         self.config = config
         self.max_per_file = config.get("max_links_per_file", DEFAULT_MAX_LINKS_PER_FILE)
         self.errors: list[str] = []
+        self._plural_map: dict[str, str] = {}
+        self._phrase_map: dict[str, str] = {}
+        self._max_phrase_words = 0
+        self._word_re = re.compile(r'\w+')
 
     def scan_all(self) -> list[tuple[Path, list[Suggestion]]]:
         """Scan all source files and return (filepath, suggestions) pairs."""
@@ -281,14 +310,19 @@ class Scanner:
             root = self.graph_path / sd
             if not root.is_dir():
                 continue
-            for md in sorted(root.rglob("*.md")):
-                rel = md.relative_to(self.graph_path)
-                if any(p in EXCLUDE_DIRS or p.startswith(".") for p in rel.parts):
-                    continue
+            files = self.index.file_lists.get(sd)
+            if files is None:
+                files = []
+                for md in sorted(root.rglob("*.md")):
+                    rel = md.relative_to(self.graph_path)
+                    if any(p in EXCLUDE_DIRS or p.startswith(".") for p in rel.parts):
+                        continue
+                    files.append(md)
+            for md in files:
                 try:
                     sug = self._scan_file(md, alt)
                 except Exception as e:
-                    self.errors.append(f"{rel}: {e}")
+                    self.errors.append(f"{md.relative_to(self.graph_path)}: {e}")
                     continue
                 if sug:
                     results.append((md, sug))
@@ -298,9 +332,13 @@ class Scanner:
         """Build the combined regex over all candidate titles and aliases."""
         candidates = self.index.candidates()
         entries: list[tuple[str, str, int, int]] = []  # (lower, original, word_count, length)
+        seen: set[str] = set()
         for p in candidates:
             wc = len(p.title.split())
-            entries.append((p.title.lower(), p.title, wc, len(p.title)))
+            lower = p.title.lower()
+            if lower not in seen:
+                seen.add(lower)
+                entries.append((lower, p.title, wc, len(p.title)))
 
         # Add aliases that resolve uniquely
         for alias_lower, titles in self.index.alias_targets.items():
@@ -309,32 +347,61 @@ class Scanner:
                 tgt_page = self.index.by_lower.get(tgt.lower())
                 if tgt_page and not tgt_page.contaminated:
                     # Check not already covered by a title match
-                    if not any(e[0] == alias_lower for e in entries):
-                        entries.append((alias_lower, tgt, len(alias_lower.split()), len(alias_lower)))
+                    if alias_lower not in seen:
+                        seen.add(alias_lower)
+                        entries.append((alias_lower, tgt,
+                                        len(alias_lower.split()), len(alias_lower)))
 
-        # Deduplicate by match string (e[0]) and sort by word count descending
-        # (longest match first) so e.g. "Apple Inc" wins over "Apple".
-        seen: set[str] = set()
-        deduped: list[tuple[str, str, int, int]] = []
-        for e in entries:
-            if e[0] not in seen:
-                seen.add(e[0])
-                deduped.append(e)
+        # Sort by word count descending (longest match first) so e.g.
+        # "Apple Inc" wins over "Apple".
+        deduped = entries
         deduped.sort(key=lambda x: -x[2])
 
         if not deduped:
             return None
 
-        pieces = [re.escape(lower) for lower, original, wc, ll in deduped]
+        # Split candidates into regular phrases (\w+ words separated by single
+        # spaces -> matched via dict lookups on word tokens) and irregular
+        # ones (contain other characters, e.g. "s&p" -> small fallback regex).
+        # Plural-tolerant matching: a title not already ending in 's' also
+        # resolves its plural form back to the singular target.
+        self._plural_map = {}
+        phrase_entries: list[tuple[str, str]] = []  # (lower phrase, target)
+        irregular: list[str] = []
+        full_word_re = re.compile(r'\w+(?: \w+)*')
+        for lower, original, wc, ll in deduped:
+            if full_word_re.fullmatch(lower):
+                phrase_entries.append((lower, original))
+                if not lower.endswith("s") and lower[-1].isalnum():
+                    self._plural_map[lower + "s"] = original
+            else:
+                irregular.append(lower)
+
+        self._phrase_map = dict(phrase_entries)
+        self._max_phrase_words = max(
+            (len(p.split()) for p, _ in phrase_entries), default=0)
+        # Tokens whose first word cannot begin any candidate phrase (incl.
+        # its plural form) are skipped without any window lookups.
+        self._first_words = set()
+        for p, _ in phrase_entries:
+            w1 = p.split()[0]
+            self._first_words.add(w1)
+            if len(p.split()) == 1 and not p.endswith("s") and p[-1].isalnum():
+                self._first_words.add(w1 + "s")
+
+        if not irregular:
+            return None
         return re.compile(
-            r'(?<!\w)(' + "|".join(pieces) + r')(?!\w)',
+            r'(?<!\w)(' + "|".join(re.escape(x) for x in irregular) + r')(?!\w)',
             re.IGNORECASE
         )
 
     def _scan_file(self, path: Path, alt_pattern: Optional[re.Pattern]) -> list[Suggestion]:
         if alt_pattern is None:
             return []
-        content = path.read_text("utf-8-sig")
+        content = self.index.content_cache.get(path)
+        if content is None:
+            content = path.read_text("utf-8-sig")
         lines = content.splitlines()
 
         file_suggestions: list[Suggestion] = []
@@ -380,53 +447,49 @@ class Scanner:
                     in_block = None
                 continue
             # Collect HTML comment ranges while leaving text outside comments
-            # on the same line available for matching.
+            # on the same line available for matching. Fast path: skip the
+            # scan entirely when the line cannot contain/continue a comment.
             comment_ranges: list[tuple[int, int]] = []
-            comment_pos = 0
-            while comment_pos < len(line):
-                if in_comment:
-                    end = self.COMMENT_END.search(line, comment_pos)
-                    if not end:
-                        comment_ranges.append((comment_pos, len(line)))
-                        break
-                    comment_ranges.append((comment_pos, end.end()))
-                    in_comment = False
-                    comment_pos = end.end()
-                    continue
+            if in_comment or "<!--" in line:
+                comment_pos = 0
+                while comment_pos < len(line):
+                    if in_comment:
+                        end = self.COMMENT_END.search(line, comment_pos)
+                        if not end:
+                            comment_ranges.append((comment_pos, len(line)))
+                            break
+                        comment_ranges.append((comment_pos, end.end()))
+                        in_comment = False
+                        comment_pos = end.end()
+                        continue
 
-                start = self.COMMENT_START.search(line, comment_pos)
-                if not start:
-                    break
-                end = self.COMMENT_END.search(line, start.end())
-                if not end:
-                    comment_ranges.append((start.start(), len(line)))
-                    in_comment = True
-                    break
-                comment_ranges.append((start.start(), end.end()))
-                comment_pos = end.end()
+                    start = self.COMMENT_START.search(line, comment_pos)
+                    if not start:
+                        break
+                    end = self.COMMENT_END.search(line, start.end())
+                    if not end:
+                        comment_ranges.append((start.start(), len(line)))
+                        in_comment = True
+                        break
+                    comment_ranges.append((start.start(), end.end()))
+                    comment_pos = end.end()
 
             # Skip property lines
             if self.PROPERTY_LINE.match(line):
                 continue
 
-            # ── Find unprotected text ranges ──
+            # ── Find unprotected text ranges (single pass) ──
+            # Fast path: lines containing none of the trigger characters/
+            # substrings cannot host a protected zone.
             text = line
-            protected: list[tuple[int, int]] = []
-
-            protected.extend(comment_ranges)
-
-            # Mark positions of existing wikilinks
-            for m in self.LINK_PAT.finditer(line):
-                protected.append((m.start(), m.end()))
-            for m in self.REF_PAT.finditer(line):
-                protected.append((m.start(), m.end()))
-            for m in self.URL_PAT.finditer(line):
-                protected.append((m.start(), m.end()))
-            for m in self.MD_LINK_PAT.finditer(line):
-                protected.append((m.start(), m.end()))
-            for m in self.TAG_PAT.finditer(line):
-                protected.append((m.start(), m.end()))
-            # Block ref markers ((uuid)) is already covered by REF_PAT
+            if ("[" in text or "(" in text or "`" in text
+                    or "#" in text or "http" in text):
+                protected: list[tuple[int, int]] = []
+                protected.extend(comment_ranges)
+                for m in self.PROTECTED_PAT.finditer(line):
+                    protected.append((m.start(), m.end()))
+            else:
+                protected = comment_ranges[:]
 
             # Merge protected ranges
             if protected:
@@ -438,99 +501,181 @@ class Scanner:
                     else:
                         merged.append((st, en))
                 protected = merged
+            else:
+                merged = []
 
-            def is_protected(pos: int) -> bool:
-                return any(st <= pos < en for st, en in protected)
+            # ── Find mentions in unprotected segments only ──
+            seg_start = 0
+            for pst, pen in merged:
+                if pst > seg_start:
+                    self._scan_segment(text, seg_start, pst, alt_pattern,
+                                       path, li, line, file_title_lower,
+                                       links_this_file, suggestions)
+                seg_start = max(seg_start, pen)
+            if seg_start < len(text):
+                self._scan_segment(text, seg_start, len(text), alt_pattern,
+                                   path, li, line, file_title_lower,
+                                   links_this_file, suggestions)
 
-            # ── Find mentions in unprotected segments ──
-            for m in alt_pattern.finditer(line):
-                matched = m.group(0)
-                start = m.start()
-                end = m.end()
+    def _scan_segment(self, text, seg_start, seg_end, alt_pattern,
+                      path, li, line, file_title_lower,
+                      links_this_file, suggestions):
+        """Find candidate mentions inside one unprotected text segment.
 
-                # Skip if in protected zone
-                if is_protected(start):
+        Regular titles are matched by sliding word-token windows over the
+        segment and looking them up in _phrase_map (longest window first);
+        irregular titles fall back to the compiled alternation regex.
+        """
+        last_end = seg_start
+
+        def emit(start: int, end: int, matched: str, target_hint):
+            nonlocal last_end
+            if start < last_end:
+                return
+            if self._consider_match(matched, start, end, target_hint,
+                                    path, li, line,
+                                    file_title_lower, links_this_file,
+                                    suggestions):
+                last_end = end
+
+        if self._phrase_map and self._max_phrase_words:
+            tokens = list(self._word_re.finditer(text, seg_start, seg_end))
+            ntok = len(tokens)
+            starts = [0] * ntok
+            ends = [0] * ntok
+            lows = [""] * ntok
+            for i, t in enumerate(tokens):
+                starts[i] = t.start()
+                ends[i] = t.end()
+                lows[i] = t.group().lower()
+            maxw = self._max_phrase_words
+            phrase_map = self._phrase_map
+            plural_map = self._plural_map
+            first_words = self._first_words
+            for i in range(ntok):
+                lw = lows[i]
+                if lw not in first_words:
                     continue
-
-                matched_lower = m.group(1).lower() if m.lastindex else matched.lower()
-
-                # Resolve the target title
-                target_title = ""
-                pg = self.index.by_lower.get(matched_lower)
-                if pg:
-                    target_title = pg.title
-                else:
-                    resolved = self.index.resolve_alias(matched_lower)
-                    if resolved:
-                        target_title = resolved
+                t_start = starts[i]
+                if t_start < last_end:
+                    continue
+                nmax = maxw if maxw <= ntok - i else ntok - i
+                for n in range(nmax, 0, -1):
+                    if n > 1:
+                        span = text[t_start:ends[i + n - 1]]
+                        target = phrase_map.get(span.lower())
+                        if target is None:
+                            target = plural_map.get(span.lower())
                     else:
-                        continue
+                        target = phrase_map.get(lw)
+                        if target is None:
+                            target = plural_map.get(lw + "s")
+                            if target is None:
+                                target = plural_map.get(lw)
+                        span = None
+                    if target is not None:
+                        t_end = ends[i + n - 1]
+                        emit(t_start, t_end,
+                             span if span is not None else text[t_start:t_end],
+                             target)
+                        break
 
-                if not target_title:
-                    continue
+        if alt_pattern is not None:
+            pos = max(seg_start, last_end)
+            while pos < seg_end:
+                m = alt_pattern.search(text, pos, seg_end)
+                if not m:
+                    break
+                emit(m.start(), m.end(), m.group(0), None)
+                pos = m.end()
 
-                # Skip self-links
-                if target_title.lower() == file_title_lower:
-                    continue
+    def _consider_match(self, matched, start, end, target_hint,
+                        path, li, line,
+                        file_title_lower, links_this_file, suggestions) -> bool:
+        """Resolve, filter and record one candidate mention. Returns True if
+        a suggestion was recorded."""
+        if target_hint is not None:
+            target_title = target_hint
+        else:
+            matched_lower = matched.lower()
 
-                # Check per-target-per-file limit
-                tgt_lower = target_title.lower()
-                if links_this_file.get(tgt_lower, 0) >= 1:
-                    continue
-
-                # Check total per-file limit
-                if len(links_this_file) >= self.max_per_file:
-                    continue
-
-                # ── Determine confidence ──
-                wc = len(target_title.split())
-                pg2 = self.index.by_lower.get(target_title.lower())
-                is_wiki_page = pg2 and pg2.source_dir == "wiki"
-                page_type = pg2.page_type if pg2 else ""
-
-                page_types = {
-                    part.strip().lower()
-                    for part in re.split(r"[|,]", page_type)
-                    if part.strip()
-                }
-                typed_page = bool(page_types & {"person", "company", "book"})
-                if wc >= 2 or is_wiki_page or typed_page:
-                    confidence = "HIGH"
-                    if typed_page:
-                        reason = f"page type: {page_type}"
-                    elif wc >= 2:
-                        reason = "multi-word title"
-                    else:
-                        reason = "wiki page"
-                elif wc == 1 and matched[0].isupper():
-                    confidence = "MEDIUM"
-                    reason = "proper noun"
+            # Resolve the target title
+            target_title = ""
+            pg = self.index.by_lower.get(matched_lower)
+            if pg:
+                target_title = pg.title
+            else:
+                resolved = self.index.resolve_alias(matched_lower)
+                if resolved:
+                    target_title = resolved
                 else:
-                    confidence = "LOW"
-                    reason = "ambiguous"
+                    target_title = self._plural_map.get(matched_lower, "")
+        if not target_title:
+            return False
 
-                links_this_file[tgt_lower] += 1
+        # Skip self-links
+        if target_title.lower() == file_title_lower:
+            return False
 
-                # Context
-                ctx_start = max(0, start - 40)
-                ctx_end = min(len(line), end + 40)
-                ctx_before = line[ctx_start:start].strip()
-                ctx_after = line[end:ctx_end].strip()
+        # Check per-target-per-file limit
+        tgt_lower = target_title.lower()
+        if links_this_file.get(tgt_lower, 0) >= 1:
+            return False
 
-                sug = Suggestion(
-                    filepath=path,
-                    line_index=li,
-                    column=start,
-                    end_column=end,
-                    target_title=target_title,
-                    matched_text=matched,
-                    confidence=confidence,
-                    reason=reason,
-                    context_before=ctx_before,
-                    context_after=ctx_after,
-                    unique_id=f"{path}:{li}:{start}",
-                )
-                suggestions.append(sug)
+        # Check total per-file limit
+        if len(links_this_file) >= self.max_per_file:
+            return False
+
+        # ── Determine confidence ──
+        wc = len(target_title.split())
+        pg2 = self.index.by_lower.get(target_title.lower())
+        is_wiki_page = pg2 and pg2.source_dir == "wiki"
+        page_type = pg2.page_type if pg2 else ""
+
+        page_types = {
+            part.strip().lower()
+            for part in re.split(r"[|,]", page_type)
+            if part.strip()
+        }
+        typed_page = bool(page_types & {"person", "company", "book"})
+        if wc >= 2 or is_wiki_page or typed_page:
+            confidence = "HIGH"
+            if typed_page:
+                reason = f"page type: {page_type}"
+            elif wc >= 2:
+                reason = "multi-word title"
+            else:
+                reason = "wiki page"
+        elif wc == 1 and matched[0].isupper():
+            confidence = "MEDIUM"
+            reason = "proper noun"
+        else:
+            confidence = "LOW"
+            reason = "ambiguous"
+
+        links_this_file[tgt_lower] += 1
+
+        # Context
+        ctx_start = max(0, start - 40)
+        ctx_end = min(len(line), end + 40)
+        ctx_before = line[ctx_start:start].strip()
+        ctx_after = line[end:ctx_end].strip()
+
+        sug = Suggestion(
+            filepath=path,
+            line_index=li,
+            column=start,
+            end_column=end,
+            target_title=target_title,
+            matched_text=matched,
+            confidence=confidence,
+            reason=reason,
+            context_before=ctx_before,
+            context_after=ctx_after,
+            unique_id=f"{path}:{li}:{start}",
+        )
+        suggestions.append(sug)
+        return True
 
 
 # ── Applier ───────────────────────────────────────────────────────────────────
@@ -579,14 +724,14 @@ class Applier:
                     # Verify the matched text is still there
                     if sug.matched_text not in line[sug.column:sug.end_column]:
                         continue
-                    # Insert [[ ]] around the match
-                    new_line = (
-                        line[:sug.column]
-                        + "[["
-                        + line[sug.column:sug.end_column]
-                        + "]]"
-                        + line[sug.end_column:]
-                    )
+                    seg = line[sug.column:sug.end_column]
+                    if seg.lower() == sug.target_title.lower():
+                        inserted = "[[" + seg + "]]"
+                    else:
+                        # Case/plural variant: keep the author's text as the
+                        # display part of a Logseq alias link.
+                        inserted = "[[" + sug.target_title + "|" + seg + "]]"
+                    new_line = line[:sug.column] + inserted + line[sug.end_column:]
                     lines[sug.line_index] = new_line
                     changes_made += 1
                     total_links += 1

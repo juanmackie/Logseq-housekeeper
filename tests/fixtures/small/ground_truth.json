@@ -1,0 +1,202 @@
+{
+ "size": "small",
+ "n_pages": 50,
+ "positives": [
+  [
+   "journals/journal-0000.md",
+   "Archimedes"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Darwin"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0000.md",
+   "Turing"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Faraday"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Kepler"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Newton"
+  ],
+  [
+   "journals/journal-0001.md",
+   "Quantum Tundra"
+  ],
+  [
+   "journals/journal-0001.md",
+   "RAG"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Aristotle"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Lovelace"
+  ],
+  [
+   "journals/journal-0002.md",
+   "Newton"
+  ],
+  [
+   "journals/journal-0003.md",
+   "AI"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Faraday"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Socrates"
+  ],
+  [
+   "journals/journal-0003.md",
+   "Turing"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Aristotle"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Darwin"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Kepler"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Plato"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Quantum Atlas"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Quantum Beacon"
+  ],
+  [
+   "journals/journal-0004.md",
+   "Quantum Lantern"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Archimedes"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Einstein"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Galileo"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Quantum Engine"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Quantum Orchard"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Quantum Quarry"
+  ],
+  [
+   "journals/journal-0005.md",
+   "Tesla"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Kepler"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Lovelace"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Quantum Cipher"
+  ],
+  [
+   "journals/journal-0006.md",
+   "Quantum Mirage"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Galileo"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Quantum Meadow"
+  ],
+  [
+   "journals/journal-0007.md",
+   "Quantum Mirage"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Hopper"
+  ],
+  [
+   "journals/journal-0008.md",
+   "LLM"
+  ],
+  [
+   "journals/journal-0008.md",
+   "Turing"
+  ],
+  [
+   "journals/journal-0009.md",
+   "CRM"
+  ],
+  [
+   "journals/journal-0009.md",
+   "Quantum Atlas"
+  ],
+  [
+   "journals/journal-0009.md",
+   "Quantum Quarry"
+  ],
+  [
+   "journals/journal-0009.md",
+   "Quantum Tundra"
+  ],
+  [
+   "journals/journal-0009.md",
+   "RAG"
+  ]
+ ]
+}
